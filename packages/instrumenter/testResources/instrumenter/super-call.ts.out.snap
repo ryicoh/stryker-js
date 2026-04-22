@@ -56,12 +56,16 @@ export class InjectionError extends TypedInjectError {
 // See https://github.com/stryker-mutator/stryker-js/issues/4744
 export class UniqueKeyFailedError<T> extends UnprocessableEntityException {
   constructor(public readonly fields: ReadonlyArray<keyof T & string>) {
-    const errorBody: UnprocessableEntityBody<T> = stryMutAct_9fa48(\\"2\\") ? {} : (stryCov_9fa48(\\"2\\"), {
-      status: stryMutAct_9fa48(\\"3\\") ? \\"\\" : (stryCov_9fa48(\\"3\\"), 'uniqueness_failed'),
+    const errorBody: UnprocessableEntityBody<T> = stryMutAct_9fa48(\\"4\\") ? {
+      status: 'uniqueness_failed'
+    } : stryMutAct_9fa48(\\"3\\") ? {
+      fields
+    } : stryMutAct_9fa48(\\"2\\") ? {} : (stryCov_9fa48(\\"2\\", \\"3\\", \\"4\\"), {
+      status: stryMutAct_9fa48(\\"5\\") ? \\"\\" : (stryCov_9fa48(\\"5\\"), 'uniqueness_failed'),
       fields
     });
     super(errorBody);
-    console.log(stryMutAct_9fa48(\\"4\\") ? \`\` : (stryCov_9fa48(\\"4\\"), \`\${this.message} created\`));
+    console.log(stryMutAct_9fa48(\\"6\\") ? \`\` : (stryCov_9fa48(\\"6\\"), \`\${this.message} created\`));
   }
 }"
 `;
