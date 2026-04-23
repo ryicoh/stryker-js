@@ -60,32 +60,59 @@ function add(a: number, b: number) {
 
 <script lang=\\"ts\\">
 import type { Athlete } from './athlete.js';
-const athletes: Athlete[] = stryMutAct_9fa48(\\"2\\") ? [] : (stryCov_9fa48(\\"2\\"), [stryMutAct_9fa48(\\"3\\") ? {} : (stryCov_9fa48(\\"3\\"), {
-  sport: stryMutAct_9fa48(\\"4\\") ? \\"\\" : (stryCov_9fa48(\\"4\\"), \\"Athletics\\"),
-  name: stryMutAct_9fa48(\\"5\\") ? \\"\\" : (stryCov_9fa48(\\"5\\"), \\"Alice\\"),
+const athletes: Athlete[] = stryMutAct_9fa48(\\"2\\") ? [] : (stryCov_9fa48(\\"2\\"), [stryMutAct_9fa48(\\"6\\") ? {
+  sport: \\"Athletics\\",
+  name: \\"Alice\\"
+} : stryMutAct_9fa48(\\"5\\") ? {
+  sport: \\"Athletics\\",
   age: 16
-}), stryMutAct_9fa48(\\"6\\") ? {} : (stryCov_9fa48(\\"6\\"), {
-  sport: stryMutAct_9fa48(\\"7\\") ? \\"\\" : (stryCov_9fa48(\\"7\\"), \\"Swimming\\"),
-  name: stryMutAct_9fa48(\\"8\\") ? \\"\\" : (stryCov_9fa48(\\"8\\"), \\"Bob\\"),
+} : stryMutAct_9fa48(\\"4\\") ? {
+  name: \\"Alice\\",
+  age: 16
+} : stryMutAct_9fa48(\\"3\\") ? {} : (stryCov_9fa48(\\"3\\", \\"4\\", \\"5\\", \\"6\\"), {
+  sport: stryMutAct_9fa48(\\"7\\") ? \\"\\" : (stryCov_9fa48(\\"7\\"), \\"Athletics\\"),
+  name: stryMutAct_9fa48(\\"8\\") ? \\"\\" : (stryCov_9fa48(\\"8\\"), \\"Alice\\"),
+  age: 16
+}), stryMutAct_9fa48(\\"12\\") ? {
+  sport: \\"Swimming\\",
+  name: \\"Bob\\"
+} : stryMutAct_9fa48(\\"11\\") ? {
+  sport: \\"Swimming\\",
   age: 18
-}), stryMutAct_9fa48(\\"9\\") ? {} : (stryCov_9fa48(\\"9\\"), {
-  sport: stryMutAct_9fa48(\\"10\\") ? \\"\\" : (stryCov_9fa48(\\"10\\"), \\"Tennis\\"),
-  name: stryMutAct_9fa48(\\"11\\") ? \\"\\" : (stryCov_9fa48(\\"11\\"), \\"Charlie\\"),
+} : stryMutAct_9fa48(\\"10\\") ? {
+  name: \\"Bob\\",
+  age: 18
+} : stryMutAct_9fa48(\\"9\\") ? {} : (stryCov_9fa48(\\"9\\", \\"10\\", \\"11\\", \\"12\\"), {
+  sport: stryMutAct_9fa48(\\"13\\") ? \\"\\" : (stryCov_9fa48(\\"13\\"), \\"Swimming\\"),
+  name: stryMutAct_9fa48(\\"14\\") ? \\"\\" : (stryCov_9fa48(\\"14\\"), \\"Bob\\"),
+  age: 18
+}), stryMutAct_9fa48(\\"18\\") ? {
+  sport: \\"Tennis\\",
+  name: \\"Charlie\\"
+} : stryMutAct_9fa48(\\"17\\") ? {
+  sport: \\"Tennis\\",
+  age: 20
+} : stryMutAct_9fa48(\\"16\\") ? {
+  name: \\"Charlie\\",
+  age: 20
+} : stryMutAct_9fa48(\\"15\\") ? {} : (stryCov_9fa48(\\"15\\", \\"16\\", \\"17\\", \\"18\\"), {
+  sport: stryMutAct_9fa48(\\"19\\") ? \\"\\" : (stryCov_9fa48(\\"19\\"), \\"Tennis\\"),
+  name: stryMutAct_9fa48(\\"20\\") ? \\"\\" : (stryCov_9fa48(\\"20\\"), \\"Charlie\\"),
   age: 20
 })]);
 let a = 0;
 let b = 0;
-$: count = stryMutAct_9fa48(\\"12\\") ? a - b : (stryCov_9fa48(\\"12\\"), a + b);
+$: count = stryMutAct_9fa48(\\"21\\") ? a - b : (stryCov_9fa48(\\"21\\"), a + b);
 </script>
 
 <main>
    <script lang=\\"ts\\">
 function subtract(a: number, b: number) {
-  if (stryMutAct_9fa48(\\"13\\")) {
+  if (stryMutAct_9fa48(\\"22\\")) {
     {}
   } else {
-    stryCov_9fa48(\\"13\\");
-    return stryMutAct_9fa48(\\"14\\") ? a + b : (stryCov_9fa48(\\"14\\"), a - b);
+    stryCov_9fa48(\\"22\\");
+    return stryMutAct_9fa48(\\"23\\") ? a + b : (stryCov_9fa48(\\"23\\"), a - b);
   }
 }
 </script>
