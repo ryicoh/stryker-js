@@ -18,6 +18,7 @@ export interface NpmSearchResult {
 
 const getName = (packageName: string) => {
   return packageName
+    .replace('@stryker-mutator/', '')
     .replace('@ryicoh/', '')
     .replace('stryker-', '')
     .split('-')[0];
@@ -57,13 +58,13 @@ export class NpmClient {
 
   public getTestRunnerOptions(): Promise<PromptOption[]> {
     return this.search(
-      `/-/v1/search?text=keywords:${encodeURIComponent('@ryicoh/test-runner-plugin')}`,
+      `/-/v1/search?text=keywords:${encodeURIComponent('@stryker-mutator/test-runner-plugin')}`,
     ).then(mapSearchResultToPromptOption);
   }
 
   public getTestReporterOptions(): Promise<PromptOption[]> {
     return this.search(
-      `/-/v1/search?text=keywords:${encodeURIComponent('@ryicoh/reporter-plugin')}`,
+      `/-/v1/search?text=keywords:${encodeURIComponent('@stryker-mutator/reporter-plugin')}`,
     ).then(mapSearchResultToPromptOption);
   }
 
