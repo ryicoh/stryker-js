@@ -1,7 +1,5 @@
 import babel, { type NodePath } from '@babel/core';
 
-import { deepCloneNode } from '../util/index.js';
-
 import { NodeMutator } from './node-mutator.js';
 
 const { types } = babel;
@@ -15,7 +13,7 @@ export const objectPropertyRemovalMutator: NodeMutator = {
       for (let i = 0; i < path.node.properties.length; i++) {
         const mutatedProperties = path.node.properties
           .filter((_, index) => index !== i)
-          .map((prop) => deepCloneNode(prop));
+          .map((prop) => types.cloneNode(prop, /* deep */ true, /* withoutLocations */ true));
         yield types.objectExpression(mutatedProperties);
       }
     }
