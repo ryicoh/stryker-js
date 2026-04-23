@@ -2,7 +2,7 @@ import 'source-map-support/register.js';
 import { use } from 'chai';
 import chaiAsPromised from 'chai-as-promised';
 import sinonChai from 'sinon-chai';
-import { testInjector } from '@stryker-mutator/test-helpers';
+import { testInjector } from '@ryicoh/test-helpers';
 import sinon from 'sinon';
 
 use(sinonChai);

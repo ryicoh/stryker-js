@@ -1,6 +1,6 @@
-import { FileDescriptions, StrykerOptions } from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
-import { commonTokens, PluginContext } from '@stryker-mutator/api/plugin';
+import { FileDescriptions, StrykerOptions } from '@ryicoh/api/core';
+import { Logger } from '@ryicoh/api/logging';
+import { commonTokens, PluginContext } from '@ryicoh/api/plugin';
 import sinon from 'sinon';
 import { Injector, createInjector } from 'typed-inject';
 

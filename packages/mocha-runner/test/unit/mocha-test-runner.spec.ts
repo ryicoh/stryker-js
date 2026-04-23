@@ -1,18 +1,13 @@
 import { expect } from 'chai';
 import Mocha from 'mocha';
-import {
-  testInjector,
-  factory,
-  assertions,
-  tick,
-} from '@stryker-mutator/test-helpers';
+import { testInjector, factory, assertions, tick } from '@ryicoh/test-helpers';
 import sinon from 'sinon';
 import {
   KilledMutantRunResult,
   MutantRunStatus,
   TestRunnerCapabilities,
-} from '@stryker-mutator/api/test-runner';
-import { Task } from '@stryker-mutator/util';
+} from '@ryicoh/api/test-runner';
+import { Task } from '@ryicoh/util';
 
 import { MochaTestRunner } from '../../src/mocha-test-runner.js';
 import { StrykerMochaReporter } from '../../src/stryker-mocha-reporter.js';

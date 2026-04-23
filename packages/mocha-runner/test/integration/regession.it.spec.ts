@@ -1,12 +1,12 @@
 import path from 'path';
 
-import { FailedTestResult, TestStatus } from '@stryker-mutator/api/test-runner';
+import { FailedTestResult, TestStatus } from '@ryicoh/api/test-runner';
 import {
   assertions,
   factory,
   TempTestDirectorySandbox,
   testInjector,
-} from '@stryker-mutator/test-helpers';
+} from '@ryicoh/test-helpers';
 import { expect } from 'chai';
 
 import {

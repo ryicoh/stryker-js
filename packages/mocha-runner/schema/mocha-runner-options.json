@@ -8,7 +8,7 @@
       "title": "MochaOptions",
       "additionalProperties": false,
       "type": "object",
-      "description": "Configuration for @stryker-mutator/mocha-runner",
+      "description": "Configuration for @ryicoh/mocha-runner",
       "default": {},
       "properties": {
         "require": {
@@ -33,7 +33,7 @@
           }
         },
         "opts": {
-          "description": "Specify a ['mocha.opts' file](https://mochajs.org/#mochaopts) to be loaded. Options specified directly in your stryker.conf.js file will overrule options from the 'mocha.opts' file. Disable loading of an additional mocha.opts file with `false`. The only supported mocha options are used: `--ui`, `--require`, `--async-only`, `--timeout`, `--grep` (or their short form counterparts). Others are ignored by the @stryker-mutator/mocha-runner.",
+          "description": "Specify a ['mocha.opts' file](https://mochajs.org/#mochaopts) to be loaded. Options specified directly in your stryker.conf.js file will overrule options from the 'mocha.opts' file. Disable loading of an additional mocha.opts file with `false`. The only supported mocha options are used: `--ui`, `--require`, `--async-only`, `--timeout`, `--grep` (or their short form counterparts). Others are ignored by the @ryicoh/mocha-runner.",
           "type": "string"
         },
         "config": {

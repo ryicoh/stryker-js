@@ -1,5 +1,5 @@
 {
-  "$schema": "../../node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "$schema": "../../node_modules/@ryicoh/core/schema/stryker-schema.json",
   "mutate": [
     "src/data-access/mappers/TableStorageMapper.ts",
     "src/components/hello-component.ts"
@@ -11,5 +11,5 @@
   "checkers": ["typescript"],
   "coverageAnalysis": "off",
   "reporters": ["progress", "html", "json"],
-  "plugins": ["@stryker-mutator/jest-runner", "@stryker-mutator/typescript-checker"]
+  "plugins": ["@ryicoh/jest-runner", "@ryicoh/typescript-checker"]
 }

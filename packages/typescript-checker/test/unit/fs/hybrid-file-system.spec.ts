@@ -1,7 +1,7 @@
 import sinon from 'sinon';
 import ts from 'typescript';
 import { expect } from 'chai';
-import { testInjector } from '@stryker-mutator/test-helpers';
+import { testInjector } from '@ryicoh/test-helpers';
 
 import { HybridFileSystem } from '../../../src/fs/index.js';
 

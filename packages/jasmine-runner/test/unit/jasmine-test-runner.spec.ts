@@ -5,16 +5,16 @@ import {
   assertions,
   testInjector,
   createFakeTick,
-} from '@stryker-mutator/test-helpers';
+} from '@ryicoh/test-helpers';
 import {
   TestStatus,
   CompleteDryRunResult,
   DryRunStatus,
   TestRunnerCapabilities,
-} from '@stryker-mutator/api/test-runner';
+} from '@ryicoh/api/test-runner';
 import jasmine from 'jasmine';
-import { MutantCoverage } from '@stryker-mutator/api/core';
-import { Task } from '@stryker-mutator/util';
+import { MutantCoverage } from '@ryicoh/api/core';
+import { Task } from '@ryicoh/util';
 
 import * as pluginTokens from '../../src/plugin-tokens.js';
 import { helpers } from '../../src/helpers.js';

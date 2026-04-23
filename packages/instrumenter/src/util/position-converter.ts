@@ -1,4 +1,4 @@
-import { Position } from '@stryker-mutator/api/core';
+import { Position } from '@ryicoh/api/core';
 
 /**
  * A class that can convert a string offset back to line / column.

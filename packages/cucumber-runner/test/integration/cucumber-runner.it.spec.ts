@@ -1,13 +1,13 @@
 import path from 'path';
 
 import { expect } from 'chai';
-import { TestResult, TestStatus } from '@stryker-mutator/api/test-runner';
+import { TestResult, TestStatus } from '@ryicoh/api/test-runner';
 import {
   assertions,
   factory,
   TempTestDirectorySandbox,
   testInjector,
-} from '@stryker-mutator/test-helpers';
+} from '@ryicoh/test-helpers';
 import type { IConfiguration } from '@cucumber/cucumber/api';
 
 import * as pluginTokens from '../../src/plugin-tokens.js';

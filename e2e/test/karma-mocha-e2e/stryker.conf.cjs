@@ -18,5 +18,5 @@ module.exports = {
   timeoutMS: 120000,
   concurrency: 2,
   coverageAnalysis: 'perTest',
-  plugins: ['@stryker-mutator/karma-runner'],
+  plugins: ['@ryicoh/karma-runner'],
 };

@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { factory } from '@stryker-mutator/test-helpers';
+import { factory } from '@ryicoh/test-helpers';
 
 import { TSFileNode } from '../../../src/grouping/ts-file-node.js';
 

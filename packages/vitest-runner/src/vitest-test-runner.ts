@@ -7,14 +7,14 @@ import {
   INSTRUMENTER_CONSTANTS,
   MutantCoverage,
   StrykerOptions,
-} from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
+} from '@ryicoh/api/core';
+import { Logger } from '@ryicoh/api/logging';
 import {
   commonTokens,
   Injector,
   PluginContext,
   tokens,
-} from '@stryker-mutator/api/plugin';
+} from '@ryicoh/api/plugin';
 import {
   TestRunner,
   DryRunResult,
@@ -26,14 +26,14 @@ import {
   determineHitLimitReached,
   TestStatus,
   DryRunOptions,
-} from '@stryker-mutator/api/test-runner';
+} from '@ryicoh/api/test-runner';
 import {
   errorToString,
   escapeRegExp,
   normalizeFileName,
   notEmpty,
   testFilesProvided,
-} from '@stryker-mutator/util';
+} from '@ryicoh/util';
 
 import { vitestWrapper, Vitest } from './vitest-wrapper.js';
 import {

@@ -1,10 +1,6 @@
-import {
-  assertions,
-  factory,
-  testInjector,
-} from '@stryker-mutator/test-helpers';
+import { assertions, factory, testInjector } from '@ryicoh/test-helpers';
 import { expect } from 'chai';
-import { requireResolve } from '@stryker-mutator/util';
+import { requireResolve } from '@ryicoh/util';
 
 import { CustomJestConfigLoader } from '../../src/config-loaders/custom-jest-config-loader.js';
 import { JestRunnerOptionsWithStrykerOptions } from '../../src/jest-runner-options-with-stryker-options.js';

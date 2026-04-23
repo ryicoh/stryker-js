@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import babel from '@babel/core';
 import generator from '@babel/generator';
-import { normalizeWhitespaces } from '@stryker-mutator/util';
+import { normalizeWhitespaces } from '@ryicoh/util';
 
 import { statementMutantPlacer } from '../../../src/mutant-placers/statement-mutant-placer.js';
 import { findNodePath, parseJS } from '../../helpers/syntax-test-helpers.js';

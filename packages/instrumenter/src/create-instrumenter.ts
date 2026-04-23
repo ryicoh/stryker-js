@@ -3,7 +3,7 @@ import {
   commonTokens,
   Injector,
   tokens,
-} from '@stryker-mutator/api/plugin';
+} from '@ryicoh/api/plugin';
 
 import { instrumenterTokens } from './instrumenter-tokens.js';
 import { createParser } from './parsers/index.js';

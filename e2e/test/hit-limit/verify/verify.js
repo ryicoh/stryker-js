@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { Stryker } from '@stryker-mutator/core';
+import { Stryker } from '@ryicoh/core';
 
 describe('Limit counter', () => {
   /**

@@ -1,9 +1,9 @@
 import path from 'path';
 
-import { commonTokens, tokens } from '@stryker-mutator/api/plugin';
-import { StrykerOptions } from '@stryker-mutator/api/core';
-import type { disableTypeChecks } from '@stryker-mutator/instrumenter';
-import { Logger } from '@stryker-mutator/api/logging';
+import { commonTokens, tokens } from '@ryicoh/api/plugin';
+import { StrykerOptions } from '@ryicoh/api/core';
+import type { disableTypeChecks } from '@ryicoh/instrumenter';
+import { Logger } from '@ryicoh/api/logging';
 
 import { optionsPath } from '../utils/index.js';
 import { coreTokens } from '../di/index.js';

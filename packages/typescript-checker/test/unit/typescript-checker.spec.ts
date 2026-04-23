@@ -1,7 +1,7 @@
-import { testInjector, factory } from '@stryker-mutator/test-helpers';
+import { testInjector, factory } from '@ryicoh/test-helpers';
 import { expect } from 'chai';
 import sinon from 'sinon';
-import { strykerReportBugUrl } from '@stryker-mutator/util';
+import { strykerReportBugUrl } from '@ryicoh/util';
 import ts from 'typescript';
 
 import { TypescriptChecker } from '../../src/typescript-checker.js';

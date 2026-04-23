@@ -1,5 +1,5 @@
-import { commonTokens, tokens } from '@stryker-mutator/api/plugin';
-import { StrykerOptions } from '@stryker-mutator/api/core';
+import { commonTokens, tokens } from '@ryicoh/api/plugin';
+import { StrykerOptions } from '@ryicoh/api/core';
 
 export class HelloClass {
   public static inject = tokens(commonTokens.options);

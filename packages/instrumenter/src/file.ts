@@ -1,4 +1,4 @@
-import { FileDescription } from '@stryker-mutator/api/core';
+import { FileDescription } from '@ryicoh/api/core';
 
 export interface File extends FileDescription {
   name: string;

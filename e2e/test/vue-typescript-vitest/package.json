@@ -22,14 +22,14 @@
     "vite": "^6.3.5",
     "vitest": "^4.0.12",
     "vue-tsc": "^2.2.10",
-    "@stryker-mutator/core": "workspace:*",
-    "@stryker-mutator/vitest-runner": "workspace:*"
+    "@ryicoh/core": "workspace:*",
+    "@ryicoh/vitest-runner": "workspace:*"
   },
   "dependenciesMeta": {
-    "@stryker-mutator/core": {
+    "@ryicoh/core": {
       "injected": true
     },
-    "@stryker-mutator/vitest-runner": {
+    "@ryicoh/vitest-runner": {
       "injected": true
     }
   }

@@ -1,8 +1,8 @@
 import path from 'path';
 
-import { StrykerOptions } from '@stryker-mutator/api/core';
-import { tokens, commonTokens } from '@stryker-mutator/api/plugin';
-import { Logger } from '@stryker-mutator/api/logging';
+import { StrykerOptions } from '@ryicoh/api/core';
+import { tokens, commonTokens } from '@ryicoh/api/plugin';
+import { Logger } from '@ryicoh/api/logging';
 
 import { Project } from '../fs/project.js';
 

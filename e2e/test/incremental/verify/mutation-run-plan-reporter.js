@@ -1,8 +1,8 @@
-import { PluginKind, declareClassPlugin } from '@stryker-mutator/api/plugin';
+import { PluginKind, declareClassPlugin } from '@ryicoh/api/plugin';
 
 export class MutationRunPlanReporter {
   /**
-   * @type {import('@stryker-mutator/api/report').MutationTestingPlanReadyEvent}
+   * @type {import('@ryicoh/api/report').MutationTestingPlanReadyEvent}
    */
   event;
   /**
@@ -15,7 +15,7 @@ export class MutationRunPlanReporter {
   }
 
   /**
-   * @param {import('@stryker-mutator/api/report').MutationTestingPlanReadyEvent} event
+   * @param {import('@ryicoh/api/report').MutationTestingPlanReadyEvent} event
    * @returns {void}
    */
   onMutationTestingPlanReady(event) {

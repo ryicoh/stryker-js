@@ -7,5 +7,5 @@ export default {
     'packages/**/!(*.+(s|S)pec|*.+(t|T)est).+(cjs|mjs|js|ts|jsx|tsx|html|vue)',
     '!packages/**/vitest.*.js',
   ],
-  plugins: [import.meta.resolve('@stryker-mutator/vitest-runner')],
+  plugins: [import.meta.resolve('@ryicoh/vitest-runner')],
 };

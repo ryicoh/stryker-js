@@ -1,4 +1,4 @@
-import { Mutant } from '@stryker-mutator/api/core';
+import { Mutant } from '@ryicoh/api/core';
 
 import { toPosixFileName } from '../tsconfig-helpers.js';
 

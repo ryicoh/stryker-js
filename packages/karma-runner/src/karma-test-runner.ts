@@ -1,12 +1,12 @@
 import semver from 'semver';
-import { StrykerOptions } from '@stryker-mutator/api/core';
-import { Logger, LoggerFactoryMethod } from '@stryker-mutator/api/logging';
+import { StrykerOptions } from '@ryicoh/api/core';
+import { Logger, LoggerFactoryMethod } from '@ryicoh/api/logging';
 import {
   commonTokens,
   Injector,
   PluginContext,
   tokens,
-} from '@stryker-mutator/api/plugin';
+} from '@ryicoh/api/plugin';
 import {
   TestRunner,
   DryRunOptions,
@@ -15,9 +15,9 @@ import {
   MutantRunResult,
   toMutantRunResult,
   TestRunnerCapabilities,
-} from '@stryker-mutator/api/test-runner';
+} from '@ryicoh/api/test-runner';
 import type { Config } from 'karma';
-import { testFilesProvided } from '@stryker-mutator/util';
+import { testFilesProvided } from '@ryicoh/util';
 
 import { StrykerKarmaSetup } from '../src-generated/karma-runner-options.js';
 

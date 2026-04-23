@@ -1,6 +1,6 @@
-import { INSTRUMENTER_CONSTANTS as ID } from '@stryker-mutator/api/core';
+import { INSTRUMENTER_CONSTANTS as ID } from '@ryicoh/api/core';
 import babel from '@babel/core';
-import { deepFreeze, I } from '@stryker-mutator/util';
+import { deepFreeze, I } from '@ryicoh/util';
 
 import { Mutant } from '../mutant.js';
 

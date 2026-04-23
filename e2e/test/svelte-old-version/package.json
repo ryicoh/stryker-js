@@ -13,14 +13,14 @@
     "jest": "29.7.0",
     "svelte": "3.30",
     "svelte-jester": "3.0.0",
-    "@stryker-mutator/core": "workspace:*",
-    "@stryker-mutator/jest-runner": "workspace:*"
+    "@ryicoh/core": "workspace:*",
+    "@ryicoh/jest-runner": "workspace:*"
   },
   "dependenciesMeta": {
-    "@stryker-mutator/core": {
+    "@ryicoh/core": {
       "injected": true
     },
-    "@stryker-mutator/jest-runner": {
+    "@ryicoh/jest-runner": {
       "injected": true
     }
   }

@@ -26,7 +26,7 @@ module.exports = function (grunt) {
     }
 
     var done = this.async();
-    import('@stryker-mutator/core').then(({Stryker}) => {
+    import('@ryicoh/core').then(({Stryker}) => {
       var stryker = new Stryker(options);
       stryker.runMutationTest().then(function () {
         var success = true;

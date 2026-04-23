@@ -1,5 +1,5 @@
 {
-  "$schema": "../../node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "$schema": "../../node_modules/@ryicoh/core/schema/stryker-schema.json",
   "packageManager": "npm",
   "testRunner": "jest",
   "tempDirName": "stryker-tmp",
@@ -9,5 +9,5 @@
     "projectType": "custom",
     "configFile": "./jest.config.js"
   },
-  "plugins": ["@stryker-mutator/jest-runner"]
+  "plugins": ["@ryicoh/jest-runner"]
 }

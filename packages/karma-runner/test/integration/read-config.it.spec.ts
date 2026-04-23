@@ -1,9 +1,5 @@
-import {
-  testInjector,
-  factory,
-  assertions,
-} from '@stryker-mutator/test-helpers';
-import { TestStatus } from '@stryker-mutator/api/test-runner';
+import { testInjector, factory, assertions } from '@ryicoh/test-helpers';
+import { TestStatus } from '@ryicoh/api/test-runner';
 import { expect } from 'chai';
 
 import {

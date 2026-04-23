@@ -1,5 +1,5 @@
-import { StrykerOptions } from '@stryker-mutator/api/core';
-import { Immutable } from '@stryker-mutator/util';
+import { StrykerOptions } from '@ryicoh/api/core';
+import { Immutable } from '@ryicoh/util';
 
 import {
   CustomInitializer,
@@ -14,7 +14,7 @@ const guideUrl = 'https://stryker-mutator.io/docs/stryker-js/guides/react';
  */
 export class ReactInitializer implements CustomInitializer {
   public readonly name = 'create-react-app';
-  private readonly dependencies = ['@stryker-mutator/jest-runner'];
+  private readonly dependencies = ['@ryicoh/jest-runner'];
 
   private readonly config: Immutable<Partial<StrykerOptions>> = {
     testRunner: 'jest',

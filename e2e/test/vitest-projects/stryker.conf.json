@@ -1,5 +1,5 @@
 {
-  "$schema": "../../node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "$schema": "../../node_modules/@ryicoh/core/schema/stryker-schema.json",
   "testRunner": "vitest",
   "concurrency": 1,
   "coverageAnalysis": "perTest",
@@ -9,6 +9,6 @@
     "!packages/**/vitest.*.js"
   ],
   "plugins": [
-    "@stryker-mutator/vitest-runner"
+    "@ryicoh/vitest-runner"
   ]
 }

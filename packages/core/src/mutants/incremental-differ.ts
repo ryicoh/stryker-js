@@ -10,17 +10,17 @@ import {
   StrykerOptions,
   FileDescriptions,
   MutateDescription,
-} from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
-import { TestResult, TestStatus } from '@stryker-mutator/api/test-runner';
+} from '@ryicoh/api/core';
+import { Logger } from '@ryicoh/api/logging';
+import { TestResult, TestStatus } from '@ryicoh/api/test-runner';
 import {
   I,
   normalizeFileName,
   normalizeLineEndings,
   notEmpty,
-} from '@stryker-mutator/util';
+} from '@ryicoh/util';
 import { TestDefinition } from 'mutation-testing-report-schema';
-import { commonTokens } from '@stryker-mutator/api/plugin';
+import { commonTokens } from '@ryicoh/api/plugin';
 
 import {
   DiffChange,

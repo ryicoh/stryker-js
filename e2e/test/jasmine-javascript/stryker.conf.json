@@ -1,5 +1,5 @@
 {
-  "$schema": "../../node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "$schema": "../../node_modules/@ryicoh/core/schema/stryker-schema.json",
   "testRunner": "jasmine",
   "concurrency": 2,
   "mutate": ["lib/**/*.js"],
@@ -10,7 +10,7 @@
     "json"
   ],
   "plugins": [
-    "@stryker-mutator/jasmine-runner"
+    "@ryicoh/jasmine-runner"
   ],
   "fileLogLevel": "debug",
   "jasmineConfigFile": "spec/support/jasmine.json"

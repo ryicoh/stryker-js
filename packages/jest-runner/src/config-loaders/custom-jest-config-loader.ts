@@ -1,11 +1,11 @@
 import path from 'path';
 import fs from 'fs';
 
-import { Logger } from '@stryker-mutator/api/logging';
-import { tokens, commonTokens } from '@stryker-mutator/api/plugin';
-import { StrykerOptions } from '@stryker-mutator/api/core';
+import { Logger } from '@ryicoh/api/logging';
+import { tokens, commonTokens } from '@ryicoh/api/plugin';
+import { StrykerOptions } from '@ryicoh/api/core';
 import type { Config } from '@jest/types';
-import type { I, requireResolve } from '@stryker-mutator/util';
+import type { I, requireResolve } from '@ryicoh/util';
 
 import { JestRunnerOptionsWithStrykerOptions } from '../jest-runner-options-with-stryker-options.js';
 import { JestConfigWrapper } from '../utils/jest-config-wrapper.js';

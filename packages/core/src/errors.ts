@@ -1,4 +1,4 @@
-import { StrykerError } from '@stryker-mutator/util';
+import { StrykerError } from '@ryicoh/util';
 import { InjectionError } from 'typed-inject';
 
 export class ConfigError extends StrykerError {}

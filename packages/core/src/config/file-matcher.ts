@@ -1,7 +1,7 @@
 import path from 'path';
 
 import { minimatch } from 'minimatch';
-import { normalizeFileName } from '@stryker-mutator/util';
+import { normalizeFileName } from '@ryicoh/util';
 
 /**
  * A helper class for matching files using the `disableTypeChecks` setting.

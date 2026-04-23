@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import sinon from 'sinon';
-import { testInjector } from '@stryker-mutator/test-helpers';
-import { I } from '@stryker-mutator/util';
+import { testInjector } from '@ryicoh/test-helpers';
+import { I } from '@ryicoh/util';
 
 import { File, Instrumenter } from '../../src/index.js';
 import type * as parsers from '../../src/parsers/index.js';

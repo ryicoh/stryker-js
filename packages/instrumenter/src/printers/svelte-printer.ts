@@ -1,4 +1,4 @@
-import { notEmpty } from '@stryker-mutator/util';
+import { notEmpty } from '@ryicoh/util';
 
 import { SvelteAst } from '../syntax/index.js';
 

@@ -6,7 +6,7 @@
   "properties": {
     "jest": {
       "title": "JestOptions",
-      "description": "Configuration for @stryker-mutator/jest-runner",
+      "description": "Configuration for @ryicoh/jest-runner",
       "type": "object",
       "default": {},
       "properties": {

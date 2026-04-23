@@ -10,7 +10,7 @@ import {
   mergeMap,
 } from 'rxjs';
 import { toArray, map, shareReplay, tap } from 'rxjs/operators';
-import { tokens, commonTokens } from '@stryker-mutator/api/plugin';
+import { tokens, commonTokens } from '@ryicoh/api/plugin';
 import {
   MutantResult,
   Mutant,
@@ -18,14 +18,11 @@ import {
   PlanKind,
   MutantTestPlan,
   MutantRunPlan,
-} from '@stryker-mutator/api/core';
-import {
-  TestRunner,
-  CompleteDryRunResult,
-} from '@stryker-mutator/api/test-runner';
-import { Logger } from '@stryker-mutator/api/logging';
-import { I } from '@stryker-mutator/util';
-import { CheckStatus } from '@stryker-mutator/api/check';
+} from '@ryicoh/api/core';
+import { TestRunner, CompleteDryRunResult } from '@ryicoh/api/test-runner';
+import { Logger } from '@ryicoh/api/logging';
+import { I } from '@ryicoh/util';
+import { CheckStatus } from '@ryicoh/api/check';
 
 import { coreTokens } from '../di/index.js';
 import { StrictReporter } from '../reporters/strict-reporter.js';

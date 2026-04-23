@@ -43,13 +43,13 @@ You probably configured a test environment in jest that is not reporting code co
 See also https://jestjs.io/docs/en/configuration.html#testenvironment-string
 
 Are you using node, jsdom or jsdom-sixteen as a test environment? Please change that:
-  * node -> @stryker-mutator/jest-runner/jest-env/node
-  * jsdom -> @stryker-mutator/jest-runner/jest-env/jsdom
-  * jest-environment-jsdom-sixteen -> @stryker-mutator/jest-runner/jest-env/jsdom-sixteen
+  * node -> @ryicoh/jest-runner/jest-env/node
+  * jsdom -> @ryicoh/jest-runner/jest-env/jsdom
+  * jest-environment-jsdom-sixteen -> @ryicoh/jest-runner/jest-env/jsdom-sixteen
 
 If you're using your own custom test environment, please enrich the environment with this mixin: 
 
-const { mixinJestEnvironment} = require('@stryker-mutator/jest-runner');
+const { mixinJestEnvironment} = require('@ryicoh/jest-runner');
 module.exports = mixinJestEnvironment(MyCustomTestEnvironment);
 
 For more info, see https://stryker-mutator.io/docs/stryker-js/jest-runner#coverage-analysis`;

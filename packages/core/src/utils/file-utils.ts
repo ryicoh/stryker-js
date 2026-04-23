@@ -1,7 +1,7 @@
 import path from 'path';
 import fs from 'fs';
 
-import { isErrnoException } from '@stryker-mutator/util';
+import { isErrnoException } from '@ryicoh/util';
 
 export const fileUtils = {
   /**

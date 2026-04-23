@@ -15,12 +15,8 @@ import {
   FailedTestResult,
   TestStatus,
   TimeoutMutantRunResult,
-} from '@stryker-mutator/api/test-runner';
-import {
-  CheckResult,
-  FailedCheckResult,
-  CheckStatus,
-} from '@stryker-mutator/api/check';
+} from '@ryicoh/api/test-runner';
+import { CheckResult, FailedCheckResult, CheckStatus } from '@ryicoh/api/check';
 
 /**
  * Simple file interface, since we cannot use the File class directly because that would result in a dependency cycle

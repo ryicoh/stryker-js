@@ -11,7 +11,7 @@ import {
   tokens,
   commonTokens,
   ValuePlugin,
-} from '@stryker-mutator/api/plugin';
+} from '@ryicoh/api/plugin';
 import { InjectableFunction, InjectableClass } from 'typed-inject';
 
 import { coreTokens } from './index.js';

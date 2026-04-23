@@ -1,5 +1,5 @@
-import { TestRunner } from '@stryker-mutator/api/test-runner';
-import { factory } from '@stryker-mutator/test-helpers';
+import { TestRunner } from '@ryicoh/api/test-runner';
+import { factory } from '@ryicoh/test-helpers';
 import { expect } from 'chai';
 import sinon from 'sinon';
 

@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import { Mutant } from '@stryker-mutator/api/core';
+import { Mutant } from '@ryicoh/api/core';
 
 import { TSFileNode } from '../../../src/grouping/ts-file-node.js';
 

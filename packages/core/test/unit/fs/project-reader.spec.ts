@@ -1,13 +1,9 @@
 import path from 'path';
 import type { Dirent } from 'fs';
 
-import { MutateDescription, MutationRange } from '@stryker-mutator/api/core';
-import { factory, testInjector } from '@stryker-mutator/test-helpers';
-import {
-  I,
-  normalizeFileName,
-  normalizeWhitespaces,
-} from '@stryker-mutator/util';
+import { MutateDescription, MutationRange } from '@ryicoh/api/core';
+import { factory, testInjector } from '@ryicoh/test-helpers';
+import { I, normalizeFileName, normalizeWhitespaces } from '@ryicoh/util';
 import { expect } from 'chai';
 import sinon from 'sinon';
 

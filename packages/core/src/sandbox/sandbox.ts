@@ -2,14 +2,10 @@ import path from 'path';
 
 import type { execaCommand } from 'execa';
 import { npmRunPathEnv } from 'npm-run-path';
-import { StrykerOptions } from '@stryker-mutator/api/core';
-import {
-  normalizeWhitespaces,
-  I,
-  isErrnoException,
-} from '@stryker-mutator/util';
-import { Logger } from '@stryker-mutator/api/logging';
-import { tokens, commonTokens, Disposable } from '@stryker-mutator/api/plugin';
+import { StrykerOptions } from '@ryicoh/api/core';
+import { normalizeWhitespaces, I, isErrnoException } from '@ryicoh/util';
+import { Logger } from '@ryicoh/api/logging';
+import { tokens, commonTokens, Disposable } from '@ryicoh/api/plugin';
 
 import { TemporaryDirectory } from '../utils/temporary-directory.js';
 import { fileUtils } from '../utils/file-utils.js';

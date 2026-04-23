@@ -1,4 +1,4 @@
-import { StrykerOptions } from '@stryker-mutator/api/core';
+import { StrykerOptions } from '@ryicoh/api/core';
 
 import { KarmaRunnerOptions } from '../src-generated/karma-runner-options.js';
 

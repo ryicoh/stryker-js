@@ -1,9 +1,9 @@
 import childProcess from 'child_process';
 import { promises as fsPromises } from 'fs';
 
-import { commonTokens, tokens } from '@stryker-mutator/api/plugin';
-import { Logger } from '@stryker-mutator/api/logging';
-import { notEmpty } from '@stryker-mutator/util';
+import { commonTokens, tokens } from '@ryicoh/api/plugin';
+import { Logger } from '@ryicoh/api/logging';
+import { notEmpty } from '@ryicoh/util';
 
 import { NpmClient } from './npm-client.js';
 import { PackageInfo, PackageSummary } from './package-info.js';
@@ -273,6 +273,6 @@ export class StrykerInitializer {
   }
 
   private ensureCoreDependencyIncluded(dependencies: string[]) {
-    return Array.from(new Set(['@stryker-mutator/core', ...dependencies]));
+    return Array.from(new Set(['@ryicoh/core', ...dependencies]));
   }
 }

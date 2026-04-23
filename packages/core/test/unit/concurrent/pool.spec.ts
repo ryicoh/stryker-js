@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import sinon from 'sinon';
-import { factory, tick } from '@stryker-mutator/test-helpers';
-import { Task, ExpirableTask } from '@stryker-mutator/util';
+import { factory, tick } from '@ryicoh/test-helpers';
+import { Task, ExpirableTask } from '@ryicoh/util';
 import { toArray, mergeWith, lastValueFrom, range, ReplaySubject } from 'rxjs';
 
 import { Pool, Resource } from '../../../src/concurrent/index.js';

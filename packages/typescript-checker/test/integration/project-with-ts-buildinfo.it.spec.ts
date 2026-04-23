@@ -5,8 +5,8 @@ import os from 'os';
 import { fileURLToPath } from 'url';
 
 import { expect } from 'chai';
-import { Location, Mutant } from '@stryker-mutator/api/core';
-import { testInjector, factory } from '@stryker-mutator/test-helpers';
+import { Location, Mutant } from '@ryicoh/api/core';
+import { testInjector, factory } from '@ryicoh/test-helpers';
 
 import { createTypescriptChecker } from '../../src/index.js';
 import { TypescriptCheckerOptionsWithStrykerOptions } from '../../src/typescript-checker-options-with-stryker-options.js';

@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-import { PluginKind, declareFactoryPlugin } from '@stryker-mutator/api/plugin';
+import { PluginKind, declareFactoryPlugin } from '@ryicoh/api/plugin';
 
 import { create } from './typescript-checker.js';
 

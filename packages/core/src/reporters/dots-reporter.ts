@@ -1,8 +1,8 @@
 import os from 'os';
 
 import chalk from 'chalk';
-import { Reporter } from '@stryker-mutator/api/report';
-import type { MutantResult } from '@stryker-mutator/api/core';
+import { Reporter } from '@ryicoh/api/report';
+import type { MutantResult } from '@ryicoh/api/core';
 
 export class DotsReporter implements Reporter {
   public onMutantTested(result: MutantResult): void {

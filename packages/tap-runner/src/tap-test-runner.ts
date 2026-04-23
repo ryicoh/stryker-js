@@ -8,7 +8,7 @@ import {
   Injector,
   PluginContext,
   tokens,
-} from '@stryker-mutator/api/plugin';
+} from '@ryicoh/api/plugin';
 import {
   BaseTestResult,
   determineHitLimitReached,
@@ -23,15 +23,15 @@ import {
   TestStatus,
   TimeoutDryRunResult,
   toMutantRunResult,
-} from '@stryker-mutator/api/test-runner';
+} from '@ryicoh/api/test-runner';
 import {
   InstrumenterContext,
   INSTRUMENTER_CONSTANTS,
   MutantCoverage,
   StrykerOptions,
-} from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
-import { normalizeFileName, testFilesProvided } from '@stryker-mutator/util';
+} from '@ryicoh/api/core';
+import { Logger } from '@ryicoh/api/logging';
+import { normalizeFileName, testFilesProvided } from '@ryicoh/util';
 
 import * as pluginTokens from './plugin-tokens.js';
 import {

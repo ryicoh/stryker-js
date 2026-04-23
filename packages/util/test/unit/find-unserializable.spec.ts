@@ -1,4 +1,4 @@
-import { testInjector } from '@stryker-mutator/test-helpers';
+import { testInjector } from '@ryicoh/test-helpers';
 import { expect } from 'chai';
 
 import { findUnserializables } from '../../src/index.js';

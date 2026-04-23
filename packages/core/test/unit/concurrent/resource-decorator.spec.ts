@@ -1,5 +1,5 @@
-import { tick } from '@stryker-mutator/test-helpers';
-import { Task } from '@stryker-mutator/util';
+import { tick } from '@ryicoh/test-helpers';
+import { Task } from '@ryicoh/util';
 import { expect } from 'chai';
 import sinon from 'sinon';
 

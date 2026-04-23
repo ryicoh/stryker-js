@@ -1,13 +1,13 @@
-import { commonTokens, Scope } from '@stryker-mutator/api/plugin';
+import { commonTokens, Scope } from '@ryicoh/api/plugin';
 import { Injector } from 'typed-inject';
 import { LoggingSink } from './logging-sink.js';
 import { LoggerImpl } from './logger-impl.js';
-import { Logger, LoggerFactoryMethod } from '@stryker-mutator/api/logging';
+import { Logger, LoggerFactoryMethod } from '@ryicoh/api/logging';
 import { coreTokens } from '../di/index.js';
 import { LoggingServer, LoggingServerAddress } from './logging-server.js';
 import { LoggingBackend } from './logging-backend.js';
 import { LoggingClient } from './logging-client.js';
-import { LogLevel } from '@stryker-mutator/api/core';
+import { LogLevel } from '@ryicoh/api/core';
 
 function getLoggerFactory(loggingSink: LoggingSink) {
   return (categoryName?: string): Logger =>

@@ -1,5 +1,5 @@
-import { Mutant } from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
+import { Mutant } from '@ryicoh/api/core';
+import { Logger } from '@ryicoh/api/logging';
 
 import { ChildProcessCrashedError } from '../child-proxy/child-process-crashed-error.js';
 import { OutOfMemoryError } from '../child-proxy/out-of-memory-error.js';

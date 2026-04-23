@@ -2,7 +2,7 @@ import sinon from 'sinon';
 import { LoggingSink } from '../../../src/logging/index.js';
 import { LoggerImpl } from '../../../src/logging/logger-impl.js';
 import { expect } from 'chai';
-import { LogLevel } from '@stryker-mutator/api/core';
+import { LogLevel } from '@ryicoh/api/core';
 
 describe(LoggerImpl.name, () => {
   let loggingBackendMock: sinon.SinonStubbedInstance<LoggingSink>;

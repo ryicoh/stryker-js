@@ -37,11 +37,11 @@
   ],
   "main": "Gruntfile.js",
   "devDependencies": {
-    "@stryker-mutator/api": "workspace:*",
+    "@ryicoh/api": "workspace:*",
     "@types/node": "24.12.2"
   },
   "peerDependencies": {
-    "@stryker-mutator/core": "workspace:*",
+    "@ryicoh/core": "workspace:*",
     "grunt": ">=0.4.5"
   }
 }

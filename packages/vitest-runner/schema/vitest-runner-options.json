@@ -5,7 +5,7 @@
   "additionalProperties": false,
   "properties": {
     "vitest": {
-      "description": "Configuration for @stryker-mutator/vitest-runner",
+      "description": "Configuration for @ryicoh/vitest-runner",
       "title": "VitestRunnerOptions",
       "additionalProperties": false,
       "type": "object",

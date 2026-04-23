@@ -1,5 +1,5 @@
-import { PluginContext } from '@stryker-mutator/api/plugin';
-import type { requireResolve } from '@stryker-mutator/util';
+import { PluginContext } from '@ryicoh/api/plugin';
+import type { requireResolve } from '@ryicoh/util';
 
 import { JestWrapper, JestConfigWrapper } from './utils/index.js';
 

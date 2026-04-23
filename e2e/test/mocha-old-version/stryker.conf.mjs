@@ -4,5 +4,5 @@ export default {
   coverageAnalysis: 'off',
   reporters: ['json', 'clear-text', 'html', 'event-recorder'],
   fileLogLevel: 'info',
-  plugins: [import.meta.resolve('@stryker-mutator/mocha-runner')],
+  plugins: [import.meta.resolve('@ryicoh/mocha-runner')],
 };

@@ -24,7 +24,7 @@ module.exports = function (grunt) {
               ],
             },
           },
-          plugins: ['@stryker-mutator/karma-runner'],
+          plugins: ['@ryicoh/karma-runner'],
         },
       },
       withConfigFile: {

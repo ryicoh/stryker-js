@@ -3,7 +3,7 @@ import path from 'path';
 
 import sinon from 'sinon';
 import { expect } from 'chai';
-import { testInjector } from '@stryker-mutator/test-helpers';
+import { testInjector } from '@ryicoh/test-helpers';
 
 import { LibWrapper } from '../../src/lib-wrapper.js';
 import { MochaOptions } from '../../src-generated/mocha-runner-options.js';

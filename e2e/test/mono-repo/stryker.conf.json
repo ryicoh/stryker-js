@@ -1,5 +1,5 @@
 {
-  "$schema": "../../node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "$schema": "../../node_modules/@ryicoh/core/schema/stryker-schema.json",
   "testRunner": "mocha",
   "concurrency": 2,
   "mutate": [
@@ -8,6 +8,6 @@
   "coverageAnalysis": "perTest",
   "reporters": ["json", "clear-text", "html", "event-recorder"],
   "plugins": [
-    "@stryker-mutator/mocha-runner"
+    "@ryicoh/mocha-runner"
   ]
 }

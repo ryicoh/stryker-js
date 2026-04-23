@@ -6,7 +6,7 @@ import {
   DashboardOptions,
   ALL_REPORT_TYPES,
   PartialStrykerOptions,
-} from '@stryker-mutator/api/core';
+} from '@ryicoh/api/core';
 
 import { initializerFactory } from './initializer/index.js';
 import { Stryker } from './stryker.js';

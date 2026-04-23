@@ -1,10 +1,10 @@
 import os from 'os';
 
 import chalk, { Color } from 'chalk';
-import { schema, Position, StrykerOptions } from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
-import { commonTokens } from '@stryker-mutator/api/plugin';
-import { Reporter } from '@stryker-mutator/api/report';
+import { schema, Position, StrykerOptions } from '@ryicoh/api/core';
+import { Logger } from '@ryicoh/api/logging';
+import { commonTokens } from '@ryicoh/api/plugin';
+import { Reporter } from '@ryicoh/api/report';
 import {
   MetricsResult,
   MutantModel,

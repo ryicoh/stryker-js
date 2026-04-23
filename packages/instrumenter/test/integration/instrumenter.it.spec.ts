@@ -1,6 +1,6 @@
 import { promises as fsPromises } from 'fs';
 
-import { testInjector } from '@stryker-mutator/test-helpers';
+import { testInjector } from '@ryicoh/test-helpers';
 import { expect } from 'chai';
 import chaiJestSnapshot from 'chai-jest-snapshot';
 

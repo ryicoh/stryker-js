@@ -3,14 +3,14 @@ import {
   MutantRunPlan,
   MutantTestPlan,
   PlanKind,
-} from '@stryker-mutator/api/core';
+} from '@ryicoh/api/core';
 import {
   DryRunCompletedEvent,
   MutationTestingPlanReadyEvent,
   Reporter,
   RunTiming,
-} from '@stryker-mutator/api/report';
-import { TestRunnerCapabilities } from '@stryker-mutator/api/test-runner';
+} from '@ryicoh/api/report';
+import { TestRunnerCapabilities } from '@ryicoh/api/test-runner';
 
 import { Timer } from '../utils/timer.js';
 

@@ -1,9 +1,9 @@
 import fs from 'fs';
 import { URL } from 'url';
 
-import { factory, testInjector } from '@stryker-mutator/test-helpers';
+import { factory, testInjector } from '@ryicoh/test-helpers';
 import { expect } from 'chai';
-import { CheckResult, CheckStatus } from '@stryker-mutator/api/check';
+import { CheckResult, CheckStatus } from '@ryicoh/api/check';
 
 import {
   CheckerFacade,

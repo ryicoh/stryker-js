@@ -1,8 +1,8 @@
-import { Logger } from '@stryker-mutator/api/logging';
-import { commonTokens, tokens } from '@stryker-mutator/api/plugin';
-import { StrykerError } from '@stryker-mutator/util';
+import { Logger } from '@ryicoh/api/logging';
+import { commonTokens, tokens } from '@ryicoh/api/plugin';
+import { StrykerError } from '@ryicoh/util';
 import { HttpClient } from 'typed-rest-client/HttpClient.js';
-import { StrykerOptions } from '@stryker-mutator/api/core';
+import { StrykerOptions } from '@ryicoh/api/core';
 
 import { objectUtils } from '../../utils/object-utils.js';
 

@@ -1,5 +1,5 @@
-import { TestRunnerCapabilities } from '@stryker-mutator/api/test-runner';
-import { testInjector } from '@stryker-mutator/test-helpers';
+import { TestRunnerCapabilities } from '@ryicoh/api/test-runner';
+import { testInjector } from '@ryicoh/test-helpers';
 import { expect } from 'chai';
 
 import {
@@ -33,7 +33,7 @@ describe(CucumberTestRunner.name, () => {
     });
     it('should throw for v7', () => {
       expect(() => guardForCucumberJSVersion('7.99.99')).throws(
-        '@stryker-mutator/cucumber-runner only supports @cucumber/cucumber@>=8.0.0. Found v7.99.99',
+        '@ryicoh/cucumber-runner only supports @cucumber/cucumber@>=8.0.0. Found v7.99.99',
       );
     });
   });

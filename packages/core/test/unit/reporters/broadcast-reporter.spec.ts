@@ -1,6 +1,6 @@
-import { PluginKind } from '@stryker-mutator/api/plugin';
-import { Reporter } from '@stryker-mutator/api/report';
-import { factory, testInjector } from '@stryker-mutator/test-helpers';
+import { PluginKind } from '@ryicoh/api/plugin';
+import { Reporter } from '@ryicoh/api/report';
+import { factory, testInjector } from '@ryicoh/test-helpers';
 import { expect } from 'chai';
 import sinon from 'sinon';
 

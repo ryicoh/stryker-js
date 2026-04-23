@@ -1,10 +1,10 @@
 import { expect } from 'chai';
-import { factory } from '@stryker-mutator/test-helpers';
+import { factory } from '@ryicoh/test-helpers';
 
 import {
   DryRunCompletedEvent,
   MutationTestingPlanReadyEvent,
-} from '@stryker-mutator/api/report';
+} from '@ryicoh/api/report';
 
 import { ProgressKeeper } from '../../../src/reporters/progress-keeper.js';
 

@@ -1,9 +1,9 @@
 import { createRequire } from 'module';
 
-import { testInjector, factory } from '@stryker-mutator/test-helpers';
+import { testInjector, factory } from '@ryicoh/test-helpers';
 import { expect } from 'chai';
-import { commonTokens } from '@stryker-mutator/api/plugin';
-import { requireResolve } from '@stryker-mutator/util';
+import { commonTokens } from '@ryicoh/api/plugin';
+import { requireResolve } from '@ryicoh/util';
 import sinon from 'sinon';
 
 import { CustomJestConfigLoader } from '../../../src/config-loaders/custom-jest-config-loader.js';

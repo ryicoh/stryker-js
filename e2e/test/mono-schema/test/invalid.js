@@ -1,4 +1,4 @@
-/** @type {import('@stryker-mutator/api/core').PartialStrykerOptions} */
+/** @type {import('@ryicoh/api/core').PartialStrykerOptions} */
 const config = {
   allowConsoleColors: true,
   checkers: 'typescript',

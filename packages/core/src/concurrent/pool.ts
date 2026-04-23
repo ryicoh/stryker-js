@@ -1,5 +1,5 @@
-import { TestRunner } from '@stryker-mutator/api/test-runner';
-import { notEmpty } from '@stryker-mutator/util';
+import { TestRunner } from '@ryicoh/api/test-runner';
+import { notEmpty } from '@ryicoh/util';
 import {
   BehaviorSubject,
   filter,

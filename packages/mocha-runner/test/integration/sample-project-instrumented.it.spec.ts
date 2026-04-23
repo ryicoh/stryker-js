@@ -5,9 +5,9 @@ import {
   factory,
   assertions,
   TempTestDirectorySandbox,
-} from '@stryker-mutator/test-helpers';
+} from '@ryicoh/test-helpers';
 import { expect } from 'chai';
-import { MutantCoverage } from '@stryker-mutator/api/core';
+import { MutantCoverage } from '@ryicoh/api/core';
 
 import {
   MochaTestRunner,

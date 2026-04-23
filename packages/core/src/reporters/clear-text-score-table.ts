@@ -1,9 +1,6 @@
 import os from 'os';
 
-import {
-  MutationScoreThresholds,
-  StrykerOptions,
-} from '@stryker-mutator/api/core';
+import { MutationScoreThresholds, StrykerOptions } from '@ryicoh/api/core';
 
 import { MetricsResult } from 'mutation-testing-metrics';
 

@@ -2,8 +2,8 @@ import sinon from 'sinon';
 import { expect } from 'chai';
 import babel from '@babel/core';
 import generator from '@babel/generator';
-import { normalizeWhitespaces } from '@stryker-mutator/util';
-import { MutateDescription } from '@stryker-mutator/api/core';
+import { normalizeWhitespaces } from '@ryicoh/util';
+import { MutateDescription } from '@ryicoh/api/core';
 
 import { transformerContextStub } from '../../helpers/stubs.js';
 import {

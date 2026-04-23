@@ -5,14 +5,11 @@ import {
   commonTokens,
   PluginContext,
   PluginKind,
-} from '@stryker-mutator/api/plugin';
-import {
-  createInstrumenter,
-  InstrumentResult,
-} from '@stryker-mutator/instrumenter';
-import { StrykerOptions } from '@stryker-mutator/api/core';
-import { Reporter } from '@stryker-mutator/api/report';
-import { I } from '@stryker-mutator/util';
+} from '@ryicoh/api/plugin';
+import { createInstrumenter, InstrumentResult } from '@ryicoh/instrumenter';
+import { StrykerOptions } from '@ryicoh/api/core';
+import { Reporter } from '@ryicoh/api/report';
+import { I } from '@ryicoh/util';
 
 import { coreTokens, PluginCreator } from '../di/index.js';
 import { Sandbox } from '../sandbox/sandbox.js';

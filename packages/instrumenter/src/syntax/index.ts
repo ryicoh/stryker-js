@@ -1,5 +1,5 @@
 import type { types as babelTypes } from '@babel/core';
-import { Position } from '@stryker-mutator/api/core';
+import { Position } from '@ryicoh/api/core';
 
 export enum AstFormat {
   Html = 'html',

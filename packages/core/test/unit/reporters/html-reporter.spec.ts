@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import sinon from 'sinon';
-import { testInjector } from '@stryker-mutator/test-helpers';
-import { schema } from '@stryker-mutator/api/core';
+import { testInjector } from '@ryicoh/test-helpers';
+import { schema } from '@ryicoh/api/core';
 
 import { HtmlReporter } from '../../../src/reporters/html-reporter.js';
 import { reporterUtil } from '../../../src/reporters/reporter-util.js';

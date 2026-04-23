@@ -3,7 +3,7 @@ import fs from 'fs';
 
 import sinon from 'sinon';
 import { expect } from 'chai';
-import { testInjector } from '@stryker-mutator/test-helpers';
+import { testInjector } from '@ryicoh/test-helpers';
 
 import { MochaAdapter } from '../../src/mocha-adapter.js';
 import { LibWrapper } from '../../src/lib-wrapper.js';

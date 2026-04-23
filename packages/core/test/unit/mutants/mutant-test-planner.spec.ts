@@ -2,7 +2,7 @@ import path from 'path';
 
 import sinon from 'sinon';
 import { expect } from 'chai';
-import { factory, testInjector } from '@stryker-mutator/test-helpers';
+import { factory, testInjector } from '@ryicoh/test-helpers';
 import {
   MutantEarlyResultPlan,
   MutantRunPlan,
@@ -10,8 +10,8 @@ import {
   PlanKind,
   Mutant,
   schema,
-} from '@stryker-mutator/api/core';
-import { Reporter } from '@stryker-mutator/api/report';
+} from '@ryicoh/api/core';
+import { Reporter } from '@ryicoh/api/report';
 
 import { MutantTestPlanner } from '../../../src/mutants/index.js';
 import { coreTokens } from '../../../src/di/index.js';

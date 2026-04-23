@@ -1,5 +1,5 @@
-import { MutantResult } from '@stryker-mutator/api/core';
-import { MutationTestingPlanReadyEvent } from '@stryker-mutator/api/report';
+import { MutantResult } from '@ryicoh/api/core';
+import { MutationTestingPlanReadyEvent } from '@ryicoh/api/report';
 
 import { progressBarWrapper } from './progress-bar.js';
 import { ProgressKeeper } from './progress-keeper.js';

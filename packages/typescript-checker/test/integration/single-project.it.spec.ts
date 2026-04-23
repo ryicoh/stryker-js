@@ -2,14 +2,10 @@ import path from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
 
-import {
-  testInjector,
-  factory,
-  assertions,
-} from '@stryker-mutator/test-helpers';
+import { testInjector, factory, assertions } from '@ryicoh/test-helpers';
 import { expect } from 'chai';
-import { Location, Mutant } from '@stryker-mutator/api/core';
-import { CheckResult, CheckStatus } from '@stryker-mutator/api/check';
+import { Location, Mutant } from '@ryicoh/api/core';
+import { CheckResult, CheckStatus } from '@ryicoh/api/check';
 
 import { createTypescriptChecker } from '../../src/index.js';
 import { TypescriptChecker } from '../../src/typescript-checker.js';

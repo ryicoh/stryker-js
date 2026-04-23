@@ -2,9 +2,9 @@ import { promises as fsPromises } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-import { Stryker } from '@stryker-mutator/core';
+import { Stryker } from '@ryicoh/core';
 import { expect } from 'chai';
-import { PlanKind } from '@stryker-mutator/api/core';
+import { PlanKind } from '@ryicoh/api/core';
 
 import { MutationRunPlanReporter } from './mutation-run-plan-reporter.js';
 
@@ -17,7 +17,7 @@ const incrementalFile = new URL(
 
 describe('incremental', () => {
   /**
-   * @type {import('@stryker-mutator/api/core').PartialStrykerOptions}
+   * @type {import('@ryicoh/api/core').PartialStrykerOptions}
    */
   let strykerOptions;
 
@@ -49,7 +49,7 @@ describe('incremental', () => {
   });
 
   /**
-   * @type {Array<[string, number, import('@stryker-mutator/api/core').PartialStrykerOptions?, boolean?]>}
+   * @type {Array<[string, number, import('@ryicoh/api/core').PartialStrykerOptions?, boolean?]>}
    */
   const tests = [
     ['cucumber', reuseCountExpectation.withFullTestResults],
@@ -96,7 +96,7 @@ describe('incremental', () => {
           strykerOptions.testRunner = testRunner;
           if (testRunner !== 'command') {
             strykerOptions.plugins.push(
-              import.meta.resolve(`@stryker-mutator/${testRunner}-runner`),
+              import.meta.resolve(`@ryicoh/${testRunner}-runner`),
             );
           }
           const stryker = new Stryker({

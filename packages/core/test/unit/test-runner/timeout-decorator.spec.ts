@@ -6,11 +6,11 @@ import {
   TimeoutMutantRunResult,
   DryRunResult,
   MutantRunResult,
-} from '@stryker-mutator/api/test-runner';
+} from '@ryicoh/api/test-runner';
 import { expect } from 'chai';
 import sinon from 'sinon';
 
-import { factory, testInjector } from '@stryker-mutator/test-helpers';
+import { factory, testInjector } from '@ryicoh/test-helpers';
 
 import { TimeoutDecorator } from '../../../src/test-runner/timeout-decorator.js';
 

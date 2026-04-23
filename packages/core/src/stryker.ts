@@ -1,6 +1,6 @@
-import { MutantResult, PartialStrykerOptions } from '@stryker-mutator/api/core';
+import { MutantResult, PartialStrykerOptions } from '@ryicoh/api/core';
 import { createInjector, Injector } from 'typed-inject';
-import { commonTokens } from '@stryker-mutator/api/plugin';
+import { commonTokens } from '@ryicoh/api/plugin';
 
 import {
   PrepareExecutor,

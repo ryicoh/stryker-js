@@ -1,6 +1,6 @@
-import { Logger } from '@stryker-mutator/api/logging';
-import { FileDescriptions, StrykerOptions } from '@stryker-mutator/api/core';
-import { I, normalizeWhitespaces, propertyPath } from '@stryker-mutator/util';
+import { Logger } from '@ryicoh/api/logging';
+import { FileDescriptions, StrykerOptions } from '@ryicoh/api/core';
+import { I, normalizeWhitespaces, propertyPath } from '@ryicoh/util';
 import { MutationTestResult } from 'mutation-testing-report-schema';
 
 import { FileSystem } from './file-system.js';

@@ -1,6 +1,6 @@
 import ts from 'typescript';
-import { Logger } from '@stryker-mutator/api/logging';
-import { tokens, commonTokens } from '@stryker-mutator/api/plugin';
+import { Logger } from '@ryicoh/api/logging';
+import { tokens, commonTokens } from '@ryicoh/api/plugin';
 
 import { toPosixFileName } from '../tsconfig-helpers.js';
 

@@ -6,8 +6,8 @@ import {
   factory,
   TempTestDirectorySandbox,
   testInjector,
-} from '@stryker-mutator/test-helpers';
-import { TestStatus } from '@stryker-mutator/api/test-runner';
+} from '@ryicoh/test-helpers';
+import { TestStatus } from '@ryicoh/api/test-runner';
 import { expect } from 'chai';
 
 import {

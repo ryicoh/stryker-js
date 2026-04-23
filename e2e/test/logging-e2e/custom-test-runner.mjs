@@ -4,8 +4,8 @@ import {
   PluginKind,
   tokens,
   commonTokens,
-} from '@stryker-mutator/api/plugin';
-import { DryRunStatus } from '@stryker-mutator/api/test-runner';
+} from '@ryicoh/api/plugin';
+import { DryRunStatus } from '@ryicoh/api/test-runner';
 
 export const strykerPlugins = [
   declareClassPlugin(
@@ -16,21 +16,21 @@ export const strykerPlugins = [
 
       /**
        *
-       * @param {import('@stryker-mutator/api/logging').Logger} logger
+       * @param {import('@ryicoh/api/logging').Logger} logger
        */
       constructor(logger) {
         this.logger = logger;
       }
 
       /**
-       * @returns {import('@stryker-mutator/api/test-runner').TestRunnerCapabilities}
+       * @returns {import('@ryicoh/api/test-runner').TestRunnerCapabilities}
        */
       capabilities() {
         return { reloadEnvironment: true };
       }
       /**
-       * @param {import('@stryker-mutator/api/test-runner').DryRunOptions} options
-       * @returns {Promise<import('@stryker-mutator/api/test-runner').DryRunResult>}
+       * @param {import('@ryicoh/api/test-runner').DryRunOptions} options
+       * @returns {Promise<import('@ryicoh/api/test-runner').DryRunResult>}
        */
       dryRun(options) {
         if (this.logger.isTraceEnabled()) {
@@ -44,7 +44,7 @@ export const strykerPlugins = [
       }
 
       /**
-       * @returns {Promise<import('@stryker-mutator/api/test-runner').MutantRunResult>}
+       * @returns {Promise<import('@ryicoh/api/test-runner').MutantRunResult>}
        */
       mutantRun() {
         throw new Error('Not implemented');

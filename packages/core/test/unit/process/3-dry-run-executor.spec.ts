@@ -1,11 +1,7 @@
 import { EOL } from 'os';
 
 import { Injector } from 'typed-inject';
-import {
-  assertions,
-  factory,
-  testInjector,
-} from '@stryker-mutator/test-helpers';
+import { assertions, factory, testInjector } from '@ryicoh/test-helpers';
 import sinon from 'sinon';
 import {
   TestRunner,
@@ -14,10 +10,10 @@ import {
   TimeoutDryRunResult,
   DryRunResult,
   TestRunnerCapabilities,
-} from '@stryker-mutator/api/test-runner';
+} from '@ryicoh/api/test-runner';
 import { expect } from 'chai';
 import { Observable, mergeMap } from 'rxjs';
-import { I } from '@stryker-mutator/util';
+import { I } from '@ryicoh/util';
 
 import { Timer } from '../../../src/utils/timer.js';
 import {

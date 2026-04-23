@@ -2,10 +2,10 @@ import {
   InstrumenterContext,
   type INSTRUMENTER_CONSTANTS,
   StrykerOptions,
-} from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
-import { commonTokens, tokens } from '@stryker-mutator/api/plugin';
-import { I, escapeRegExp, testFilesProvided } from '@stryker-mutator/util';
+} from '@ryicoh/api/core';
+import { Logger } from '@ryicoh/api/logging';
+import { commonTokens, tokens } from '@ryicoh/api/plugin';
+import { I, escapeRegExp, testFilesProvided } from '@ryicoh/util';
 
 import {
   TestRunner,
@@ -19,7 +19,7 @@ import {
   determineHitLimitReached,
   TestRunnerCapabilities,
   MutantActivation,
-} from '@stryker-mutator/api/test-runner';
+} from '@ryicoh/api/test-runner';
 
 import { Context, RootHookObject, Suite } from 'mocha';
 

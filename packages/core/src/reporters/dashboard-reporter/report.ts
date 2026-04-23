@@ -1,4 +1,4 @@
-import { schema } from '@stryker-mutator/api/core';
+import { schema } from '@ryicoh/api/core';
 
 export interface MutationScoreOnlyReport {
   mutationScore: number;

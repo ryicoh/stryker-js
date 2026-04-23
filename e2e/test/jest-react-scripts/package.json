@@ -35,17 +35,17 @@
     ]
   },
   "devDependencies": {
-    "@stryker-mutator/core": "workspace:*",
-    "@stryker-mutator/jest-runner": "workspace:*",
+    "@ryicoh/core": "workspace:*",
+    "@ryicoh/jest-runner": "workspace:*",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0"
   },
   "dependenciesMeta": {
-    "@stryker-mutator/core": {
+    "@ryicoh/core": {
       "injected": true
     },
-    "@stryker-mutator/jest-runner": {
+    "@ryicoh/jest-runner": {
       "injected": true
     }
   }

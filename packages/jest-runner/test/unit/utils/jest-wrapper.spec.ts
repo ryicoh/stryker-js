@@ -1,6 +1,6 @@
 import path from 'path';
 
-import type { requireResolve } from '@stryker-mutator/util';
+import type { requireResolve } from '@ryicoh/util';
 import { expect } from 'chai';
 import sinon from 'sinon';
 

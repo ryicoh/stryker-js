@@ -5,14 +5,14 @@ import {
   StrykerOptions,
   INSTRUMENTER_CONSTANTS,
   CoverageAnalysis,
-} from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
+} from '@ryicoh/api/core';
+import { Logger } from '@ryicoh/api/logging';
 import {
   commonTokens,
   Injector,
   PluginContext,
   tokens,
-} from '@stryker-mutator/api/plugin';
+} from '@ryicoh/api/plugin';
 import {
   TestRunner,
   MutantRunOptions,
@@ -26,8 +26,8 @@ import {
   BaseTestResult,
   TestRunnerCapabilities,
   determineHitLimitReached,
-} from '@stryker-mutator/api/test-runner';
-import { escapeRegExp, notEmpty, requireResolve } from '@stryker-mutator/util';
+} from '@ryicoh/api/test-runner';
+import { escapeRegExp, notEmpty, requireResolve } from '@ryicoh/util';
 import type * as jest from '@jest/types';
 import type * as jestTestResult from '@jest/test-result';
 

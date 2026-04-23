@@ -1,6 +1,6 @@
-import { Logger } from '@stryker-mutator/api/logging';
-import { commonTokens, tokens } from '@stryker-mutator/api/plugin';
-import { errorToString } from '@stryker-mutator/util';
+import { Logger } from '@ryicoh/api/logging';
+import { commonTokens, tokens } from '@ryicoh/api/plugin';
+import { errorToString } from '@ryicoh/util';
 import type {
   IRestResponse,
   RestClient,
@@ -18,7 +18,7 @@ export interface NpmSearchResult {
 
 const getName = (packageName: string) => {
   return packageName
-    .replace('@stryker-mutator/', '')
+    .replace('@ryicoh/', '')
     .replace('stryker-', '')
     .split('-')[0];
 };
@@ -57,13 +57,13 @@ export class NpmClient {
 
   public getTestRunnerOptions(): Promise<PromptOption[]> {
     return this.search(
-      `/-/v1/search?text=keywords:${encodeURIComponent('@stryker-mutator/test-runner-plugin')}`,
+      `/-/v1/search?text=keywords:${encodeURIComponent('@ryicoh/test-runner-plugin')}`,
     ).then(mapSearchResultToPromptOption);
   }
 
   public getTestReporterOptions(): Promise<PromptOption[]> {
     return this.search(
-      `/-/v1/search?text=keywords:${encodeURIComponent('@stryker-mutator/reporter-plugin')}`,
+      `/-/v1/search?text=keywords:${encodeURIComponent('@ryicoh/reporter-plugin')}`,
     ).then(mapSearchResultToPromptOption);
   }
 

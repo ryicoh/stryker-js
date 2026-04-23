@@ -3,9 +3,9 @@ import {
   Injector,
   commonTokens,
   PluginContext,
-} from '@stryker-mutator/api/plugin';
+} from '@ryicoh/api/plugin';
 
-import { disableTypeChecks } from '@stryker-mutator/instrumenter';
+import { disableTypeChecks } from '@ryicoh/instrumenter';
 
 import { coreTokens } from '../di/index.js';
 

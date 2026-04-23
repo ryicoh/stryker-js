@@ -1,4 +1,4 @@
-import { LogLevel } from '@stryker-mutator/api/core';
+import { LogLevel } from '@ryicoh/api/core';
 
 export const logLevelPriority = Object.freeze({
   [LogLevel.Trace]: 0,

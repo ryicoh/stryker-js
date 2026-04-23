@@ -4,9 +4,9 @@ import sinon from 'sinon';
 import { JSONSchema7 } from 'json-schema';
 import { Injector } from 'typed-inject';
 import { expect } from 'chai';
-import { testInjector, factory } from '@stryker-mutator/test-helpers';
-import { PartialStrykerOptions } from '@stryker-mutator/api/core';
-import { frameworkPluginsFileUrl } from '@stryker-mutator/instrumenter';
+import { testInjector, factory } from '@ryicoh/test-helpers';
+import { PartialStrykerOptions } from '@ryicoh/api/core';
+import { frameworkPluginsFileUrl } from '@ryicoh/instrumenter';
 
 import {
   MutantInstrumenterContext,
@@ -106,17 +106,14 @@ describe(PrepareExecutor.name, () => {
   it('should load the plugins', async () => {
     // Arrange
     testInjector.options.appendPlugins = ['appended'];
-    testInjector.options.plugins = [
-      '@stryker-mutator/*',
-      './my-custom-plugin.js',
-    ];
+    testInjector.options.plugins = ['@ryicoh/*', './my-custom-plugin.js'];
 
     // Act
     await sut.execute({ cliOptions, targetMutatePatterns: undefined });
 
     // Assert
     sinon.assert.calledWithExactly(pluginLoaderMock.load, [
-      '@stryker-mutator/*',
+      '@ryicoh/*',
       './my-custom-plugin.js',
       frameworkPluginsFileUrl,
       reporterPluginsFileUrl,
@@ -127,7 +124,7 @@ describe(PrepareExecutor.name, () => {
   it('should provided the loaded modules as pluginModulePaths', async () => {
     // Arrange
     const expectedPluginPaths = [
-      '@stryker-mutator/core',
+      '@ryicoh/core',
       path.resolve('./my-custom-plugin.js'),
       'appended',
     ];

@@ -1,6 +1,6 @@
 import { promises as fsPromises } from 'fs';
 
-import { normalizeWhitespaces } from '@stryker-mutator/util';
+import { normalizeWhitespaces } from '@ryicoh/util';
 import { expect } from 'chai';
 
 import { createParser } from '../../src/parsers/index.js';

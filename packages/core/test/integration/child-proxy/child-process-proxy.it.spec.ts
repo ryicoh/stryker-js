@@ -1,8 +1,8 @@
 import path from 'path';
 import { URL } from 'url';
 
-import { FileDescriptions, LogLevel } from '@stryker-mutator/api/core';
-import { testInjector } from '@stryker-mutator/test-helpers';
+import { FileDescriptions, LogLevel } from '@ryicoh/api/core';
+import { testInjector } from '@ryicoh/test-helpers';
 import { expect } from 'chai';
 
 import { ChildProcessCrashedError } from '../../../src/child-proxy/child-process-crashed-error.js';

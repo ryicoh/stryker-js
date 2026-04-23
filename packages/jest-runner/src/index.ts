@@ -1,7 +1,7 @@
 import fs from 'fs';
 import { URL } from 'url';
 
-import { declareFactoryPlugin, PluginKind } from '@stryker-mutator/api/plugin';
+import { declareFactoryPlugin, PluginKind } from '@ryicoh/api/plugin';
 
 import { mixinJestEnvironment } from './jest-plugins/index.js';
 import { jestTestRunnerFactory } from './jest-test-runner.js';

@@ -3,7 +3,7 @@ import {
   SuccessTestResult,
   FailedTestResult,
   SkippedTestResult,
-} from '@stryker-mutator/api/test-runner';
+} from '@ryicoh/api/test-runner';
 import { expect } from 'chai';
 
 type TimelessTestResult =

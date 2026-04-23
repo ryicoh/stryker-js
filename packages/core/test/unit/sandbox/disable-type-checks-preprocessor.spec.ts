@@ -1,7 +1,7 @@
 import path from 'path';
 
-import type { disableTypeChecks } from '@stryker-mutator/instrumenter';
-import { testInjector } from '@stryker-mutator/test-helpers';
+import type { disableTypeChecks } from '@ryicoh/instrumenter';
+import { testInjector } from '@ryicoh/test-helpers';
 import sinon from 'sinon';
 
 import { expect } from 'chai';

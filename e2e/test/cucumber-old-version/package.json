@@ -10,14 +10,14 @@
   },
   "devDependencies": {
     "@cucumber/cucumber": "8.0.0",
-    "@stryker-mutator/core": "workspace:*",
-    "@stryker-mutator/cucumber-runner": "workspace:*"
+    "@ryicoh/core": "workspace:*",
+    "@ryicoh/cucumber-runner": "workspace:*"
   },
   "dependenciesMeta": {
-    "@stryker-mutator/core": {
+    "@ryicoh/core": {
       "injected": true
     },
-    "@stryker-mutator/cucumber-runner": {
+    "@ryicoh/cucumber-runner": {
       "injected": true
     }
   },

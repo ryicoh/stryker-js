@@ -1,21 +1,21 @@
 // @ts-check
-import { PluginKind, commonTokens, declareClassPlugin, declareFactoryPlugin, declareValuePlugin } from '@stryker-mutator/api/plugin';
-import { DryRunStatus, MutantRunStatus } from '@stryker-mutator/api/test-runner';
+import { PluginKind, commonTokens, declareClassPlugin, declareFactoryPlugin, declareValuePlugin } from '@ryicoh/api/plugin';
+import { DryRunStatus, MutantRunStatus } from '@ryicoh/api/test-runner';
 
 /**
- * @typedef {import('@stryker-mutator/api/test-runner').TestRunner} TestRunner 
- * @typedef {import('@stryker-mutator/api/plugin').Injector} Injector
+ * @typedef {import('@ryicoh/api/test-runner').TestRunner} TestRunner 
+ * @typedef {import('@ryicoh/api/plugin').Injector} Injector
  */
 
 class MyReporter {
   static inject = [commonTokens.logger] /** @type {const} */;
 
-  /** @param {import('@stryker-mutator/api/logging').Logger} logger */
+  /** @param {import('@ryicoh/api/logging').Logger} logger */
   constructor(logger) {
     this.logger = logger;
   }
 
-  /** @param {Readonly<import('@stryker-mutator/api/core').schema.MutationTestResult>} result */
+  /** @param {Readonly<import('@ryicoh/api/core').schema.MutationTestResult>} result */
   onMutationTestReportReady(result) {
     this.logger.info(`${result.files}`);
   }

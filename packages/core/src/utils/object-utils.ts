@@ -1,11 +1,6 @@
 import treeKill from 'tree-kill';
-import { StrykerError, KnownKeys } from '@stryker-mutator/util';
-import {
-  Location,
-  Position,
-  schema,
-  WarningOptions,
-} from '@stryker-mutator/api/core';
+import { StrykerError, KnownKeys } from '@ryicoh/util';
+import { Location, Position, schema, WarningOptions } from '@ryicoh/api/core';
 
 export const objectUtils = {
   /**

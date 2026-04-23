@@ -1,12 +1,9 @@
 import { promises as fs } from 'fs';
 
-import {
-  PartialStrykerOptions,
-  StrykerOptions,
-} from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
-import { commonTokens, tokens } from '@stryker-mutator/api/plugin';
-import { Immutable, childProcessAsPromised } from '@stryker-mutator/util';
+import { PartialStrykerOptions, StrykerOptions } from '@ryicoh/api/core';
+import { Logger } from '@ryicoh/api/logging';
+import { commonTokens, tokens } from '@ryicoh/api/plugin';
+import { Immutable, childProcessAsPromised } from '@ryicoh/util';
 
 import { fileUtils } from '../utils/file-utils.js';
 import { CommandTestRunner } from '../test-runner/command-test-runner.js';
@@ -119,7 +116,7 @@ export class StrykerConfigWriter {
     const rawConfig = this.stringify(commentedConfig);
 
     const formattedConfig = `// @ts-check
-    /** @type {import('@stryker-mutator/api/core').PartialStrykerOptions} */
+    /** @type {import('@ryicoh/api/core').PartialStrykerOptions} */
       const config = ${rawConfig};
       export default config;`;
     await fs.writeFile(configFileName, formattedConfig);
@@ -142,8 +139,7 @@ export class StrykerConfigWriter {
     const configFileName = DEFAULT_CONFIG_FILE_NAMES.JSON;
     this.out(`Writing & formatting ${configFileName}...`);
     const typedConfig = {
-      $schema:
-        './node_modules/@stryker-mutator/core/schema/stryker-schema.json',
+      $schema: './node_modules/@ryicoh/core/schema/stryker-schema.json',
       ...commentedConfig,
     };
     const formattedConfig = this.stringify(typedConfig);

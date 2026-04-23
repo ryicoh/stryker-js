@@ -1,4 +1,4 @@
-import { requireResolve } from '@stryker-mutator/util';
+import { requireResolve } from '@ryicoh/util';
 
 /**
  * The local karma export to be used inside this plugin

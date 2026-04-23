@@ -1,5 +1,5 @@
-import { testInjector } from '@stryker-mutator/test-helpers';
-import type { requireResolve } from '@stryker-mutator/util';
+import { testInjector } from '@ryicoh/test-helpers';
+import type { requireResolve } from '@ryicoh/util';
 import { expect } from 'chai';
 import sinon from 'sinon';
 

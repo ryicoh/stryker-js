@@ -2,10 +2,10 @@
 import os from 'os';
 import fs from 'fs';
 
-import { Checker, CheckResult, CheckStatus } from '@stryker-mutator/api/check';
-import { Mutant } from '@stryker-mutator/api/core';
-import { declareClassPlugin, PluginKind } from '@stryker-mutator/api/plugin';
-import { factory } from '@stryker-mutator/test-helpers';
+import { Checker, CheckResult, CheckStatus } from '@ryicoh/api/check';
+import { Mutant } from '@ryicoh/api/core';
+import { declareClassPlugin, PluginKind } from '@ryicoh/api/plugin';
+import { factory } from '@ryicoh/test-helpers';
 
 class HealthyChecker implements Checker {
   public async init(): Promise<void> {

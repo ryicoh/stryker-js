@@ -3,7 +3,7 @@ import os from 'os';
 import { expect } from 'chai';
 import sinon from 'sinon';
 import { lastValueFrom, toArray } from 'rxjs';
-import { testInjector } from '@stryker-mutator/test-helpers';
+import { testInjector } from '@ryicoh/test-helpers';
 
 import { ConcurrencyTokenProvider } from '../../../src/concurrent/index.js';
 

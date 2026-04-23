@@ -1,9 +1,9 @@
 import { createRequire } from 'module';
 
 import sinon from 'sinon';
-import { testInjector } from '@stryker-mutator/test-helpers';
+import { testInjector } from '@ryicoh/test-helpers';
 import { expect } from 'chai';
-import { requireResolve } from '@stryker-mutator/util';
+import { requireResolve } from '@ryicoh/util';
 
 import {
   JestTestAdapter,
@@ -63,7 +63,7 @@ describe(jestTestAdapterFactory.name, () => {
 
     expect(act).to.throw(
       Error,
-      'You need Jest version >= 22.0.0 to use the @stryker-mutator/jest-runner plugin, found 21.0.0',
+      'You need Jest version >= 22.0.0 to use the @ryicoh/jest-runner plugin, found 21.0.0',
     );
   });
 
@@ -72,7 +72,7 @@ describe(jestTestAdapterFactory.name, () => {
 
     expect(act).to.throw(
       Error,
-      'You need Jest version >= 22.0.0 to use the @stryker-mutator/jest-runner plugin, found 21.0.0-alpha.6',
+      'You need Jest version >= 22.0.0 to use the @ryicoh/jest-runner plugin, found 21.0.0-alpha.6',
     );
   });
 
@@ -82,7 +82,7 @@ describe(jestTestAdapterFactory.name, () => {
 
     expect(act).to.throw(
       Error,
-      'You need Jest version >= 24.0.0 to use the @stryker-mutator/jest-runner with "coverageAnalysis": "all", you\'re currently using version 23.0.0. Please upgrade your jest version, or set "coverageAnalysis": "off".',
+      'You need Jest version >= 24.0.0 to use the @ryicoh/jest-runner with "coverageAnalysis": "all", you\'re currently using version 23.0.0. Please upgrade your jest version, or set "coverageAnalysis": "off".',
     );
   });
 

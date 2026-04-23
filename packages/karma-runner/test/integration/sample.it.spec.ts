@@ -1,9 +1,5 @@
-import { TestStatus } from '@stryker-mutator/api/test-runner';
-import {
-  testInjector,
-  assertions,
-  factory,
-} from '@stryker-mutator/test-helpers';
+import { TestStatus } from '@ryicoh/api/test-runner';
+import { testInjector, assertions, factory } from '@ryicoh/test-helpers';
 
 import {
   createKarmaTestRunner,

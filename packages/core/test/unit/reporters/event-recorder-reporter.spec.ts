@@ -1,7 +1,7 @@
 import fs from 'fs';
 
-import { Reporter } from '@stryker-mutator/api/report';
-import { testInjector, factory } from '@stryker-mutator/test-helpers';
+import { Reporter } from '@ryicoh/api/report';
+import { testInjector, factory } from '@ryicoh/test-helpers';
 import { expect } from 'chai';
 import sinon from 'sinon';
 

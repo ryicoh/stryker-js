@@ -1,5 +1,5 @@
 // @ts-check
-import { PluginKind, declareValuePlugin } from '@stryker-mutator/api/plugin';
+import { PluginKind, declareValuePlugin } from '@ryicoh/api/plugin';
 
 export const strykerPlugins = [
   declareValuePlugin(PluginKind.Ignore, 'ConsoleIgnorer', {

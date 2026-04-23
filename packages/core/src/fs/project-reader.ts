@@ -8,15 +8,10 @@ import {
   FileDescription,
   Location,
   Position,
-} from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
-import { commonTokens, tokens } from '@stryker-mutator/api/plugin';
-import {
-  ERROR_CODES,
-  I,
-  isErrnoException,
-  notEmpty,
-} from '@stryker-mutator/util';
+} from '@ryicoh/api/core';
+import { Logger } from '@ryicoh/api/logging';
+import { commonTokens, tokens } from '@ryicoh/api/plugin';
+import { ERROR_CODES, I, isErrnoException, notEmpty } from '@ryicoh/util';
 import type { MutationTestResult } from 'mutation-testing-report-schema/api';
 
 import { OpenEndLocation } from 'mutation-testing-report-schema';

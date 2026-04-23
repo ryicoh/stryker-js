@@ -3,7 +3,7 @@ import {
   factory,
   TempTestDirectorySandbox,
   testInjector,
-} from '@stryker-mutator/test-helpers';
+} from '@ryicoh/test-helpers';
 import { expect } from 'chai';
 
 import * as pluginTokens from '../../src/plugin-tokens.js';

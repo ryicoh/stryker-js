@@ -1,4 +1,4 @@
-import { Ignorer } from '@stryker-mutator/api/ignore';
+import { Ignorer } from '@ryicoh/api/ignore';
 
 import { MutatorOptions } from '../mutators/index.js';
 

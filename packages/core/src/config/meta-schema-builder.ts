@@ -1,6 +1,6 @@
-import { commonTokens, tokens } from '@stryker-mutator/api/plugin';
+import { commonTokens, tokens } from '@ryicoh/api/plugin';
 import type { JSONSchema7 } from 'json-schema';
-import { Logger } from '@stryker-mutator/api/logging';
+import { Logger } from '@ryicoh/api/logging';
 
 import { coreTokens } from '../di/index.js';
 

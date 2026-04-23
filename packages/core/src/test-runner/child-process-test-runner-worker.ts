@@ -1,5 +1,5 @@
-import { StrykerOptions } from '@stryker-mutator/api/core';
-import { commonTokens, PluginKind, tokens } from '@stryker-mutator/api/plugin';
+import { StrykerOptions } from '@ryicoh/api/core';
+import { commonTokens, PluginKind, tokens } from '@ryicoh/api/plugin';
 import {
   TestRunner,
   DryRunOptions,
@@ -9,8 +9,8 @@ import {
   DryRunStatus,
   MutantRunStatus,
   TestRunnerCapabilities,
-} from '@stryker-mutator/api/test-runner';
-import { errorToString } from '@stryker-mutator/util';
+} from '@ryicoh/api/test-runner';
+import { errorToString } from '@ryicoh/util';
 
 import { coreTokens, PluginCreator } from '../di/index.js';
 

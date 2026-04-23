@@ -3,15 +3,15 @@ import path from 'path';
 
 import { Minimatch } from 'minimatch';
 import ajvModule, { ValidateFunction } from 'ajv';
-import { StrykerOptions, strykerCoreSchema } from '@stryker-mutator/api/core';
-import { tokens, commonTokens } from '@stryker-mutator/api/plugin';
+import { StrykerOptions, strykerCoreSchema } from '@ryicoh/api/core';
+import { tokens, commonTokens } from '@ryicoh/api/plugin';
 import {
   noopLogger,
   findUnserializables,
   Immutable,
   deepFreeze,
-} from '@stryker-mutator/util';
-import { Logger } from '@stryker-mutator/api/logging';
+} from '@ryicoh/util';
+import { Logger } from '@ryicoh/api/logging';
 import type { JSONSchema7 } from 'json-schema';
 
 import { coreTokens } from '../di/index.js';

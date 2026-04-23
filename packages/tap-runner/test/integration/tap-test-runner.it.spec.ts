@@ -8,12 +8,9 @@ import {
   TempTestDirectorySandbox,
   testInjector,
   assertions,
-} from '@stryker-mutator/test-helpers';
-import {
-  DryRunStatus,
-  KilledMutantRunResult,
-} from '@stryker-mutator/api/test-runner';
-import { normalizeFileName } from '@stryker-mutator/util';
+} from '@ryicoh/test-helpers';
+import { DryRunStatus, KilledMutantRunResult } from '@ryicoh/api/test-runner';
+import { normalizeFileName } from '@ryicoh/util';
 
 import { TapTestRunner } from '../../src/index.js';
 import { createTapTestRunnerFactory } from '../../src/tap-test-runner.js';

@@ -1,18 +1,14 @@
 import path from 'path';
 import { promises as fsPromises } from 'fs';
 
-import {
-  MutantResult,
-  schema,
-  StrykerOptions,
-} from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
-import { commonTokens, tokens } from '@stryker-mutator/api/plugin';
+import { MutantResult, schema, StrykerOptions } from '@ryicoh/api/core';
+import { Logger } from '@ryicoh/api/logging';
+import { commonTokens, tokens } from '@ryicoh/api/plugin';
 import {
   DryRunCompletedEvent,
   MutationTestingPlanReadyEvent,
   Reporter,
-} from '@stryker-mutator/api/report';
+} from '@ryicoh/api/report';
 
 import { fileUtils } from '../utils/file-utils.js';
 

@@ -1,4 +1,4 @@
-import { LogLevel } from '@stryker-mutator/api/core';
+import { LogLevel } from '@ryicoh/api/core';
 import util from 'util';
 
 const pattern = [

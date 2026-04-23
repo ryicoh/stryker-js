@@ -1,8 +1,8 @@
 import sinon from 'sinon';
 import { expect } from 'chai';
 
-import { PartialStrykerOptions } from '@stryker-mutator/api/core';
-import { testInjector } from '@stryker-mutator/test-helpers';
+import { PartialStrykerOptions } from '@ryicoh/api/core';
+import { testInjector } from '@ryicoh/test-helpers';
 
 import { resolveFromRoot } from '../../helpers/test-utils.js';
 import { PrepareExecutor } from '../../../src/process/index.js';

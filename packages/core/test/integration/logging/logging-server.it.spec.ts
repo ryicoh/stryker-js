@@ -1,10 +1,10 @@
 import sinon from 'sinon';
-import { testInjector } from '@stryker-mutator/test-helpers';
+import { testInjector } from '@ryicoh/test-helpers';
 import { LoggingServer } from '../../../src/logging/logging-server.js';
 import { LoggingSink } from '../../../src/logging/logging-sink.js';
 import { coreTokens } from '../../../src/di/index.js';
 import { LoggingClient } from '../../../src/logging/logging-client.js';
-import { LogLevel } from '@stryker-mutator/api/core';
+import { LogLevel } from '@ryicoh/api/core';
 import { LoggingEvent } from '../../../src/logging/logging-event.js';
 import { expect } from 'chai';
 import { sleep } from '../../helpers/test-utils.js';

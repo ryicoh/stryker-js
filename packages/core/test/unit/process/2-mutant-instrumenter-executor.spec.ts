@@ -1,16 +1,16 @@
 import sinon from 'sinon';
 import { expect } from 'chai';
 import { Injector } from 'typed-inject';
-import { factory, testInjector } from '@stryker-mutator/test-helpers';
+import { factory, testInjector } from '@ryicoh/test-helpers';
 import {
   Instrumenter,
   InstrumentResult,
   InstrumenterOptions,
   createInstrumenter,
-} from '@stryker-mutator/instrumenter';
-import { I } from '@stryker-mutator/util';
-import { FileDescriptions } from '@stryker-mutator/api/core';
-import { PluginKind } from '@stryker-mutator/api/plugin';
+} from '@ryicoh/instrumenter';
+import { I } from '@ryicoh/util';
+import { FileDescriptions } from '@ryicoh/api/core';
+import { PluginKind } from '@ryicoh/api/plugin';
 
 import {
   DryRunContext,

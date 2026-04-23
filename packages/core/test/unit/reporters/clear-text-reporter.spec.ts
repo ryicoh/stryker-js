@@ -1,7 +1,7 @@
 import os from 'os';
 
-import { schema } from '@stryker-mutator/api/core';
-import { testInjector, factory } from '@stryker-mutator/test-helpers';
+import { schema } from '@ryicoh/api/core';
+import { testInjector, factory } from '@ryicoh/test-helpers';
 import { expect } from 'chai';
 import sinon from 'sinon';
 

@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-import { declareFactoryPlugin, PluginKind } from '@stryker-mutator/api/plugin';
+import { declareFactoryPlugin, PluginKind } from '@ryicoh/api/plugin';
 
 import { createTapTestRunner } from './tap-test-runner.js';
 

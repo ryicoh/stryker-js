@@ -1,5 +1,5 @@
 {
-  "$schema": "../../node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "$schema": "../../node_modules/@ryicoh/core/schema/stryker-schema.json",
   "packageManager": "npm",
   "reporters": ["json"],
   "testRunner_comment": "Test runner is set in verify.ts",
@@ -15,12 +15,12 @@
     "testFiles": ["test/loop.tap.js"]
   },
   "plugins": [
-    "@stryker-mutator/karma-runner",
-    "@stryker-mutator/tap-runner",
-    "@stryker-mutator/jasmine-runner",
-    "@stryker-mutator/jest-runner",
-    "@stryker-mutator/mocha-runner",
-    "@stryker-mutator/cucumber-runner",
-    "@stryker-mutator/vitest-runner"
+    "@ryicoh/karma-runner",
+    "@ryicoh/tap-runner",
+    "@ryicoh/jasmine-runner",
+    "@ryicoh/jest-runner",
+    "@ryicoh/mocha-runner",
+    "@ryicoh/cucumber-runner",
+    "@ryicoh/vitest-runner"
   ]
 }

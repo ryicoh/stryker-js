@@ -1,13 +1,9 @@
-import {
-  testInjector,
-  factory,
-  assertions,
-} from '@stryker-mutator/test-helpers';
+import { testInjector, factory, assertions } from '@ryicoh/test-helpers';
 import { expect } from 'chai';
 import {
   KilledMutantRunResult,
   MutantRunStatus,
-} from '@stryker-mutator/api/test-runner';
+} from '@ryicoh/api/test-runner';
 
 import {
   createKarmaTestRunner,

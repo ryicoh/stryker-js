@@ -1,8 +1,8 @@
 import path from 'path';
 
-import { Mutant, MutantStatus, schema } from '@stryker-mutator/api/core';
-import { factory, testInjector } from '@stryker-mutator/test-helpers';
-import { deepFreeze } from '@stryker-mutator/util';
+import { Mutant, MutantStatus, schema } from '@ryicoh/api/core';
+import { factory, testInjector } from '@ryicoh/test-helpers';
+import { deepFreeze } from '@ryicoh/util';
 import { expect } from 'chai';
 import chalk from 'chalk';
 import sinon from 'sinon';

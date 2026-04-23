@@ -2,9 +2,9 @@ import {
   MutantRunOptions,
   MutantRunResult,
   TestRunner,
-} from '@stryker-mutator/api/test-runner';
+} from '@ryicoh/api/test-runner';
 
-import { StrykerOptions } from '@stryker-mutator/api/core';
+import { StrykerOptions } from '@ryicoh/api/core';
 
 import { TestRunnerDecorator } from './test-runner-decorator.js';
 

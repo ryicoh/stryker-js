@@ -1,5 +1,5 @@
 import ts from 'typescript';
-import { Mutant, Position } from '@stryker-mutator/api/core';
+import { Mutant, Position } from '@ryicoh/api/core';
 
 export class ScriptFile {
   private readonly originalContent: string;

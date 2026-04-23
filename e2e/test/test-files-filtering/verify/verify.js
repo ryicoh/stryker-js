@@ -1,6 +1,6 @@
 import { expect, use } from 'chai';
 import chaiAsPromised from 'chai-as-promised';
-import Stryker from '@stryker-mutator/core';
+import Stryker from '@ryicoh/core';
 
 use(chaiAsPromised);
 
@@ -10,7 +10,7 @@ describe('Filtering tests with --testFiles', () => {
       const stryker = new Stryker({
         testRunner: 'command',
         testFiles: ['test/vitest/math.spec.js'],
-        plugins: ['@stryker-mutator/core'],
+        plugins: ['@ryicoh/core'],
         commandRunner: { command: 'echo pass' },
       });
 
@@ -27,7 +27,7 @@ describe('Filtering tests with --testFiles', () => {
         testFiles: ['test/vitest/math.spec.js'],
         mutate: ['src/math.js'],
         concurrency: 1,
-        plugins: ['@stryker-mutator/vitest-runner'],
+        plugins: ['@ryicoh/vitest-runner'],
         vitest: {
           configFile: 'vitest.config.js',
         },
@@ -46,7 +46,7 @@ describe('Filtering tests with --testFiles', () => {
         testFiles: ['test/vitest/survive.spec.js'],
         mutate: ['src/math.js'],
         concurrency: 1,
-        plugins: ['@stryker-mutator/vitest-runner'],
+        plugins: ['@ryicoh/vitest-runner'],
         vitest: {
           configFile: 'vitest.config.js',
         },
@@ -66,7 +66,7 @@ describe('Filtering tests with --testFiles', () => {
         testFiles: ['test/jest/math.spec.js'],
         mutate: ['src/math.cjs'],
         concurrency: 1,
-        plugins: ['@stryker-mutator/jest-runner'],
+        plugins: ['@ryicoh/jest-runner'],
         jest: {
           configFile: 'jest.config.js',
         },
@@ -86,7 +86,7 @@ describe('Filtering tests with --testFiles', () => {
         testFiles: ['test/jest/survive.spec.js'],
         mutate: ['src/math.cjs'],
         concurrency: 1,
-        plugins: ['@stryker-mutator/jest-runner'],
+        plugins: ['@ryicoh/jest-runner'],
         jest: {
           configFile: 'jest.config.js',
         },
@@ -107,7 +107,7 @@ describe('Filtering tests with --testFiles', () => {
         testFiles: ['test/mocha/math.spec.cjs'],
         mutate: ['src/math.cjs'],
         concurrency: 1,
-        plugins: ['@stryker-mutator/mocha-runner'],
+        plugins: ['@ryicoh/mocha-runner'],
       });
 
       const result = await stryker.runMutationTest();
@@ -123,7 +123,7 @@ describe('Filtering tests with --testFiles', () => {
         testFiles: ['test/mocha/survive.spec.cjs'],
         mutate: ['src/math.cjs'],
         concurrency: 1,
-        plugins: ['@stryker-mutator/mocha-runner'],
+        plugins: ['@ryicoh/mocha-runner'],
       });
 
       const result = await stryker.runMutationTest();
@@ -140,7 +140,7 @@ describe('Filtering tests with --testFiles', () => {
         testFiles: ['test/jasmine/math.spec.js'],
         mutate: ['src/math.js'],
         concurrency: 1,
-        plugins: ['@stryker-mutator/jasmine-runner'],
+        plugins: ['@ryicoh/jasmine-runner'],
       });
 
       const result = await stryker.runMutationTest();
@@ -156,7 +156,7 @@ describe('Filtering tests with --testFiles', () => {
         testFiles: ['test/jasmine/survive.spec.js'],
         mutate: ['src/math.js'],
         concurrency: 1,
-        plugins: ['@stryker-mutator/jasmine-runner'],
+        plugins: ['@ryicoh/jasmine-runner'],
       });
 
       const result = await stryker.runMutationTest();
@@ -173,7 +173,7 @@ describe('Filtering tests with --testFiles', () => {
         testFiles: ['test/tap/math.spec.js'],
         mutate: ['src/math.js'],
         concurrency: 1,
-        plugins: ['@stryker-mutator/tap-runner'],
+        plugins: ['@ryicoh/tap-runner'],
       });
 
       const result = await stryker.runMutationTest();
@@ -189,7 +189,7 @@ describe('Filtering tests with --testFiles', () => {
         testFiles: ['test/tap/survive.spec.js'],
         mutate: ['src/math.js'],
         concurrency: 1,
-        plugins: ['@stryker-mutator/tap-runner'],
+        plugins: ['@ryicoh/tap-runner'],
       });
 
       const result = await stryker.runMutationTest();
@@ -209,7 +209,7 @@ describe('Filtering tests with --testFiles', () => {
         testFiles: ['test/cucumber/features/math.feature'],
         mutate: ['src/math.js'],
         concurrency: 1,
-        plugins: ['@stryker-mutator/cucumber-runner'],
+        plugins: ['@ryicoh/cucumber-runner'],
         cucumber: {
           features: ['test/cucumber/features/**/*.feature'],
         },
@@ -228,7 +228,7 @@ describe('Filtering tests with --testFiles', () => {
         testFiles: ['test/cucumber/features/survive.feature'],
         mutate: ['src/math.js'],
         concurrency: 1,
-        plugins: ['@stryker-mutator/cucumber-runner'],
+        plugins: ['@ryicoh/cucumber-runner'],
         cucumber: {
           features: ['test/cucumber/features/**/*.feature'],
         },
@@ -246,7 +246,7 @@ describe('Filtering tests with --testFiles', () => {
       const stryker = new Stryker({
         testRunner: 'karma',
         testFiles: ['test/karma/math.spec.js'],
-        plugins: ['@stryker-mutator/karma-runner'],
+        plugins: ['@ryicoh/karma-runner'],
       });
 
       await expect(stryker.runMutationTest()).to.be.rejectedWith(

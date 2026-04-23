@@ -1,8 +1,8 @@
-import { TestStatus, DryRunStatus } from '@stryker-mutator/api/test-runner';
-import { factory, assertions } from '@stryker-mutator/test-helpers';
+import { TestStatus, DryRunStatus } from '@ryicoh/api/test-runner';
+import { factory, assertions } from '@ryicoh/test-helpers';
 import { expect } from 'chai';
 import sinon from 'sinon';
-import { CommandRunnerOptions } from '@stryker-mutator/api/core';
+import { CommandRunnerOptions } from '@ryicoh/api/core';
 
 import { CommandTestRunner } from '../../../src/test-runner/command-test-runner.js';
 import { objectUtils } from '../../../src/utils/object-utils.js';

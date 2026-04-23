@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { FailedTestResult, TestStatus } from '@stryker-mutator/api/test-runner';
+import { FailedTestResult, TestStatus } from '@ryicoh/api/test-runner';
 
 import {
   collectTestsFromSuite,

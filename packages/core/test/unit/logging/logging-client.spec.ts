@@ -1,9 +1,9 @@
 import net from 'net';
 import sinon from 'sinon';
-import { testInjector } from '@stryker-mutator/test-helpers';
+import { testInjector } from '@ryicoh/test-helpers';
 import { LoggingClient } from '../../../src/logging/logging-client.js';
 import { coreTokens } from '../../../src/di/index.js';
-import { LogLevel } from '@stryker-mutator/api/core';
+import { LogLevel } from '@ryicoh/api/core';
 import { LoggingServerAddress } from '../../../src/logging/index.js';
 import { expect } from 'chai';
 import { LoggingEvent } from '../../../src/logging/logging-event.js';

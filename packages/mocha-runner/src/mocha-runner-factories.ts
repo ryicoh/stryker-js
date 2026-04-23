@@ -1,10 +1,10 @@
-import { INSTRUMENTER_CONSTANTS } from '@stryker-mutator/api/core';
+import { INSTRUMENTER_CONSTANTS } from '@ryicoh/api/core';
 import {
   commonTokens,
   Injector,
   PluginContext,
   tokens,
-} from '@stryker-mutator/api/plugin';
+} from '@ryicoh/api/plugin';
 
 import { MochaAdapter } from './mocha-adapter.js';
 import { MochaOptionsLoader } from './mocha-options-loader.js';

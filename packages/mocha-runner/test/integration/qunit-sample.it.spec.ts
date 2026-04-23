@@ -1,8 +1,4 @@
-import {
-  testInjector,
-  factory,
-  assertions,
-} from '@stryker-mutator/test-helpers';
+import { testInjector, factory, assertions } from '@ryicoh/test-helpers';
 import { expect } from 'chai';
 
 import { createMochaOptions } from '../helpers/factories.js';

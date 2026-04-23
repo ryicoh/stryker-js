@@ -2,12 +2,9 @@ import path from 'path';
 import url, { fileURLToPath } from 'url';
 
 import { RequestHandler } from 'express';
-import {
-  CoverageAnalysis,
-  INSTRUMENTER_CONSTANTS,
-} from '@stryker-mutator/api/core';
-import { MutantRunOptions } from '@stryker-mutator/api/test-runner';
-import { escapeRegExpLiteral } from '@stryker-mutator/util';
+import { CoverageAnalysis, INSTRUMENTER_CONSTANTS } from '@ryicoh/api/core';
+import { MutantRunOptions } from '@ryicoh/api/test-runner';
+import { escapeRegExpLiteral } from '@ryicoh/util';
 
 export const TEST_HOOKS_FILE_NAME = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
@@ -118,7 +115,7 @@ export class TestHooksMiddleware {
         break;
       case undefined:
         throw new Error(
-          `Could not configure coverageAnalysis "perTest". Your test framework is not supported by the \`@stryker-mutator/karma-runner\`. Supported test frameworks: ${SUPPORTED_FRAMEWORKS.join(
+          `Could not configure coverageAnalysis "perTest". Your test framework is not supported by the \`@ryicoh/karma-runner\`. Supported test frameworks: ${SUPPORTED_FRAMEWORKS.join(
             ', ',
           )}.`,
         );

@@ -2,7 +2,7 @@ import os from 'os';
 
 import chalk from 'chalk';
 import { expect } from 'chai';
-import { testInjector, factory } from '@stryker-mutator/test-helpers';
+import { testInjector, factory } from '@ryicoh/test-helpers';
 import { MetricsResult } from 'mutation-testing-metrics';
 
 import { ClearTextScoreTable } from '../../../src/reporters/clear-text-score-table.js';

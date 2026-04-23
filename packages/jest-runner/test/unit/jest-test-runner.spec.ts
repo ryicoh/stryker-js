@@ -2,11 +2,7 @@ import path from 'path';
 import { fileURLToPath, URL } from 'url';
 import { createRequire } from 'module';
 
-import {
-  testInjector,
-  factory,
-  assertions,
-} from '@stryker-mutator/test-helpers';
+import { testInjector, factory, assertions } from '@ryicoh/test-helpers';
 import { expect } from 'chai';
 import sinon from 'sinon';
 import {
@@ -15,13 +11,10 @@ import {
   CompleteDryRunResult,
   ErrorDryRunResult,
   TestRunnerCapabilities,
-} from '@stryker-mutator/api/test-runner';
-import {
-  INSTRUMENTER_CONSTANTS,
-  MutantCoverage,
-} from '@stryker-mutator/api/core';
+} from '@ryicoh/api/test-runner';
+import { INSTRUMENTER_CONSTANTS, MutantCoverage } from '@ryicoh/api/core';
 import { Config } from '@jest/types';
-import { Task } from '@stryker-mutator/util';
+import { Task } from '@ryicoh/util';
 
 import { JestTestAdapter } from '../../src/jest-test-adapters/index.js';
 import { JestTestRunner } from '../../src/jest-test-runner.js';
@@ -584,7 +577,7 @@ describe(JestTestRunner.name, () => {
           factory.dryRunOptions({ coverageAnalysis: 'perTest' }),
         );
         await expect(onGoingRun).rejectedWith(
-          'The @stryker-mutator/jest-runner doesn\'t support coverageAnalysis "perTest" with "jestConfig.testRunner": "foo/runner". Please open an issue if you want support for this: https://github.com/stryker-mutator/stryker-js/issues',
+          'The @ryicoh/jest-runner doesn\'t support coverageAnalysis "perTest" with "jestConfig.testRunner": "foo/runner". Please open an issue if you want support for this: https://github.com/stryker-mutator/stryker-js/issues',
         );
       });
 

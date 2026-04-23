@@ -3,7 +3,7 @@ import os from 'os';
 import { expect } from 'chai';
 import sinon from 'sinon';
 import chalk from 'chalk';
-import { factory } from '@stryker-mutator/test-helpers';
+import { factory } from '@ryicoh/test-helpers';
 
 import { DotsReporter } from '../../../src/reporters/dots-reporter.js';
 

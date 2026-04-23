@@ -1,4 +1,4 @@
-import { Position } from '@stryker-mutator/api/core';
+import { Position } from '@ryicoh/api/core';
 
 export class ParseError extends Error {
   constructor(message: string, fileName: string, location: Position) {

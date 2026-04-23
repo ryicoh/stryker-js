@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import { minPriority } from '../../../src/logging/priority.js';
-import { LogLevel } from '@stryker-mutator/api/core';
+import { LogLevel } from '@ryicoh/api/core';
 
 describe('Logging priority', () => {
   describe(minPriority.name, () => {

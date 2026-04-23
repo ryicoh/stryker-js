@@ -2,7 +2,7 @@ import path from 'path';
 
 import { fileURLToPath } from 'url';
 
-import { testInjector } from '@stryker-mutator/test-helpers';
+import { testInjector } from '@ryicoh/test-helpers';
 import { expect } from 'chai';
 
 import { createTypescriptChecker } from '../../src/index.js';

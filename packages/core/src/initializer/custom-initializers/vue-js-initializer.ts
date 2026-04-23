@@ -1,5 +1,5 @@
-import { PartialStrykerOptions } from '@stryker-mutator/api/core';
-import { Immutable } from '@stryker-mutator/util';
+import { PartialStrykerOptions } from '@ryicoh/api/core';
+import { Immutable } from '@ryicoh/util';
 
 import {
   CustomInitializer,
@@ -23,7 +23,7 @@ export class VueJsInitializer implements CustomInitializer {
   public createConfig(): Promise<CustomInitializerConfiguration> {
     return Promise.resolve({
       config: this.vitestConf,
-      dependencies: ['@stryker-mutator/vitest-runner'],
+      dependencies: ['@ryicoh/vitest-runner'],
       guideUrl,
     });
   }

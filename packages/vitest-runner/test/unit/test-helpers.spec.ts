@@ -1,4 +1,4 @@
-import { normalizeFileName } from '@stryker-mutator/util';
+import { normalizeFileName } from '@ryicoh/util';
 import { expect } from 'chai';
 import path from 'path';
 import { toRawTestId } from '../../src/test-helpers.js';

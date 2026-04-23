@@ -36,14 +36,14 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.4.3",
-    "@stryker-mutator/core": "workspace:*",
-    "@stryker-mutator/karma-runner": "workspace:*"
+    "@ryicoh/core": "workspace:*",
+    "@ryicoh/karma-runner": "workspace:*"
   },
   "dependenciesMeta": {
-    "@stryker-mutator/core": {
+    "@ryicoh/core": {
       "injected": true
     },
-    "@stryker-mutator/karma-runner": {
+    "@ryicoh/karma-runner": {
       "injected": true
     }
   }

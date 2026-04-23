@@ -1,5 +1,5 @@
-import { propertyPath } from '@stryker-mutator/util';
-import { StrykerOptions, schema } from '@stryker-mutator/api/core';
+import { propertyPath } from '@ryicoh/util';
+import { StrykerOptions, schema } from '@ryicoh/api/core';
 import emojiRegex from 'emoji-regex';
 
 const emojiRe = emojiRegex();

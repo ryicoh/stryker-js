@@ -5,7 +5,7 @@
   "title": "StrykerTapRunnerOptions",
   "properties": {
     "tap": {
-      "description": "Configuration for @stryker-mutator/tap-runner",
+      "description": "Configuration for @ryicoh/tap-runner",
       "title": "TapRunnerOptions",
       "additionalProperties": false,
       "type": "object",

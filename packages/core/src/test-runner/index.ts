@@ -1,7 +1,7 @@
-import { TestRunner } from '@stryker-mutator/api/test-runner';
-import { FileDescriptions, StrykerOptions } from '@stryker-mutator/api/core';
-import { tokens, commonTokens } from '@stryker-mutator/api/plugin';
-import { LoggerFactoryMethod } from '@stryker-mutator/api/logging';
+import { TestRunner } from '@ryicoh/api/test-runner';
+import { FileDescriptions, StrykerOptions } from '@ryicoh/api/core';
+import { tokens, commonTokens } from '@ryicoh/api/plugin';
+import { LoggerFactoryMethod } from '@ryicoh/api/logging';
 
 import { LoggingServerAddress } from '../logging/index.js';
 import { coreTokens } from '../di/index.js';

@@ -1,13 +1,9 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-import { errorToString } from '@stryker-mutator/util';
+import { errorToString } from '@ryicoh/util';
 import { createInjector } from 'typed-inject';
-import {
-  commonTokens,
-  PluginContext,
-  Injector,
-} from '@stryker-mutator/api/plugin';
+import { commonTokens, PluginContext, Injector } from '@ryicoh/api/plugin';
 
 import { deserialize, serialize } from '../utils/string-utils.js';
 import { coreTokens, PluginCreator } from '../di/index.js';
@@ -25,7 +21,7 @@ import {
   provideLogging,
   provideLoggingClient,
 } from '../logging/provide-logging.js';
-import { Logger } from '@stryker-mutator/api/logging';
+import { Logger } from '@ryicoh/api/logging';
 import { minPriority } from '../logging/priority.js';
 
 export interface ChildProcessContext extends PluginContext {

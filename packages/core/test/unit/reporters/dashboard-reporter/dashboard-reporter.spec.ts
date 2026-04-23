@@ -1,7 +1,7 @@
-import { testInjector, factory } from '@stryker-mutator/test-helpers';
+import { testInjector, factory } from '@ryicoh/test-helpers';
 import { expect } from 'chai';
 import sinon from 'sinon';
-import { ReportType, schema } from '@stryker-mutator/api/core';
+import { ReportType, schema } from '@ryicoh/api/core';
 
 import { calculateMutationTestMetrics } from 'mutation-testing-metrics';
 

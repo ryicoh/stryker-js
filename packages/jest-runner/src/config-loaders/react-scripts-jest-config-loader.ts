@@ -1,9 +1,9 @@
 import path from 'path';
 
 import type { Config } from '@jest/types';
-import { commonTokens, tokens } from '@stryker-mutator/api/plugin';
-import { propertyPath, type requireResolve } from '@stryker-mutator/util';
-import { Logger } from '@stryker-mutator/api/logging';
+import { commonTokens, tokens } from '@ryicoh/api/plugin';
+import { propertyPath, type requireResolve } from '@ryicoh/util';
+import { Logger } from '@ryicoh/api/logging';
 
 import { pluginTokens } from '../plugin-di.js';
 import { JestRunnerOptionsWithStrykerOptions } from '../jest-runner-options-with-stryker-options.js';

@@ -6,12 +6,8 @@ import {
   CompleteDryRunResult,
   TestResult,
   FailedTestResult,
-} from '@stryker-mutator/api/test-runner';
-import {
-  testInjector,
-  assertions,
-  factory,
-} from '@stryker-mutator/test-helpers';
+} from '@ryicoh/api/test-runner';
+import { testInjector, assertions, factory } from '@ryicoh/test-helpers';
 import { expect } from 'chai';
 import { FilePattern } from 'karma';
 

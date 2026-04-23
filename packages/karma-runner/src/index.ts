@@ -1,7 +1,7 @@
 import { URL } from 'url';
 import fs from 'fs';
 
-import { declareFactoryPlugin, PluginKind } from '@stryker-mutator/api/plugin';
+import { declareFactoryPlugin, PluginKind } from '@ryicoh/api/plugin';
 
 import { createKarmaTestRunner } from './karma-test-runner.js';
 

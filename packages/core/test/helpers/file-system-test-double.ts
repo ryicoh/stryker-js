@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/require-await */
 import { Dirent, PathLike } from 'fs';
 
-import { FileDescriptions, MutateDescription } from '@stryker-mutator/api/core';
-import { factory } from '@stryker-mutator/test-helpers';
-import { I } from '@stryker-mutator/util';
+import { FileDescriptions, MutateDescription } from '@ryicoh/api/core';
+import { factory } from '@ryicoh/test-helpers';
+import { I } from '@ryicoh/util';
 
 import { FileSystem } from '../../src/fs/index.js';
 

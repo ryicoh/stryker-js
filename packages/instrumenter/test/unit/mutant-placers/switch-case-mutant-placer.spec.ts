@@ -1,6 +1,6 @@
 import babel, { type NodePath } from '@babel/core';
 import generator from '@babel/generator';
-import { normalizeWhitespaces } from '@stryker-mutator/util';
+import { normalizeWhitespaces } from '@ryicoh/util';
 import { expect } from 'chai';
 
 import { switchCaseMutantPlacer as sut } from '../../../src/mutant-placers/switch-case-mutant-placer.js';

@@ -1,6 +1,6 @@
-import { FileDescriptions, StrykerOptions } from '@stryker-mutator/api/core';
-import { LoggerFactoryMethod } from '@stryker-mutator/api/logging';
-import { commonTokens, tokens } from '@stryker-mutator/api/plugin';
+import { FileDescriptions, StrykerOptions } from '@ryicoh/api/core';
+import { LoggerFactoryMethod } from '@ryicoh/api/logging';
+import { commonTokens, tokens } from '@ryicoh/api/plugin';
 
 import { IdGenerator } from '../child-proxy/id-generator.js';
 

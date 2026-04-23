@@ -1,8 +1,8 @@
 import sinon from 'sinon';
 import { expect } from 'chai';
 import fs from 'fs';
-import { factory, testInjector } from '@stryker-mutator/test-helpers';
-import { TestRunnerCapabilities } from '@stryker-mutator/api/test-runner';
+import { factory, testInjector } from '@ryicoh/test-helpers';
+import { TestRunnerCapabilities } from '@ryicoh/api/test-runner';
 import { Vitest } from 'vitest/node';
 
 import { VitestTestRunner } from '../../src/vitest-test-runner.js';

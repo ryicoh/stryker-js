@@ -1,17 +1,13 @@
-import { errorToString } from '@stryker-mutator/util';
+import { errorToString } from '@ryicoh/util';
 import {
   TestRunner,
   DryRunOptions,
   MutantRunOptions,
   DryRunResult,
   MutantRunResult,
-} from '@stryker-mutator/api/test-runner';
+} from '@ryicoh/api/test-runner';
 import { expect } from 'chai';
-import {
-  factory,
-  assertions,
-  testInjector,
-} from '@stryker-mutator/test-helpers';
+import { factory, assertions, testInjector } from '@ryicoh/test-helpers';
 
 import { ChildProcessCrashedError } from '../../../src/child-proxy/child-process-crashed-error.js';
 import { OutOfMemoryError } from '../../../src/child-proxy/out-of-memory-error.js';

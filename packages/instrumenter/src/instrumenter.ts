@@ -1,8 +1,8 @@
 import path from 'path';
 
-import { tokens, commonTokens } from '@stryker-mutator/api/plugin';
-import { Logger } from '@stryker-mutator/api/logging';
-import { MutateDescription } from '@stryker-mutator/api/core';
+import { tokens, commonTokens } from '@ryicoh/api/plugin';
+import { Logger } from '@ryicoh/api/logging';
+import { MutateDescription } from '@ryicoh/api/core';
 
 import { createParser } from './parsers/index.js';
 import { transform, MutantCollector } from './transformers/index.js';

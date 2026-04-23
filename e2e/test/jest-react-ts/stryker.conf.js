@@ -9,5 +9,5 @@ module.exports = {
   coverageAnalysis: 'perTest',
   reporters: ['json', 'progress', 'clear-text', 'html'],
   jest: { projectType: 'create-react-app', config: { testEnvironment: require.resolve('jest-environment-jsdom') } },
-  plugins: ['@stryker-mutator/jest-runner'],
+  plugins: ['@ryicoh/jest-runner'],
 };

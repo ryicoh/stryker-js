@@ -1,4 +1,4 @@
-import { factory, testInjector } from '@stryker-mutator/test-helpers';
+import { factory, testInjector } from '@ryicoh/test-helpers';
 import { expect } from 'chai';
 import sinon from 'sinon';
 import * as typedInject from 'typed-inject';
@@ -6,9 +6,9 @@ import {
   PartialStrykerOptions,
   LogLevel,
   MutantResult,
-} from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
-import { commonTokens } from '@stryker-mutator/api/plugin';
+} from '@ryicoh/api/core';
+import { Logger } from '@ryicoh/api/logging';
+import { commonTokens } from '@ryicoh/api/plugin';
 
 import { Stryker } from '../../src/stryker.js';
 import {

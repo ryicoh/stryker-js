@@ -1,7 +1,7 @@
 import path from 'path';
 
-import { MutateDescription } from '@stryker-mutator/api/core';
-import { File } from '@stryker-mutator/instrumenter';
+import { MutateDescription } from '@ryicoh/api/core';
+import { File } from '@ryicoh/instrumenter';
 import { expect } from 'chai';
 import sinon from 'sinon';
 

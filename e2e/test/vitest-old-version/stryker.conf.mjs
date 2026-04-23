@@ -3,5 +3,5 @@ export default {
   concurrency: 1,
   coverageAnalysis: 'perTest',
   reporters: ['json', 'clear-text', 'html', 'event-recorder'],
-  plugins: [import.meta.resolve('@stryker-mutator/vitest-runner')],
+  plugins: [import.meta.resolve('@ryicoh/vitest-runner')],
 };

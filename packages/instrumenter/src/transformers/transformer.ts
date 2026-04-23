@@ -1,6 +1,6 @@
-import { MutateDescription } from '@stryker-mutator/api/core';
-import { I } from '@stryker-mutator/util';
-import { Logger } from '@stryker-mutator/api/logging';
+import { MutateDescription } from '@ryicoh/api/core';
+import { I } from '@ryicoh/util';
+import { Logger } from '@ryicoh/api/logging';
 
 import { Ast, AstByFormat, AstFormat } from '../syntax/index.js';
 

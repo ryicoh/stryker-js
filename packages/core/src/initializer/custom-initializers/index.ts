@@ -1,9 +1,5 @@
-import {
-  BaseContext,
-  commonTokens,
-  Injector,
-} from '@stryker-mutator/api/plugin';
-import type { resolveFromCwd } from '@stryker-mutator/util';
+import { BaseContext, commonTokens, Injector } from '@ryicoh/api/plugin';
+import type { resolveFromCwd } from '@ryicoh/util';
 
 import { coreTokens } from '../../di/index.js';
 

@@ -1,4 +1,4 @@
-import { StrykerOptions } from '@stryker-mutator/api/core';
+import { StrykerOptions } from '@ryicoh/api/core';
 
 import { MochaRunnerOptions } from '../src-generated/mocha-runner-options.js';
 

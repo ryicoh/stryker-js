@@ -2,13 +2,10 @@ import fs from 'fs';
 import path from 'path';
 import { pathToFileURL } from 'url';
 
-import {
-  PartialStrykerOptions,
-  StrykerOptions,
-} from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
-import { commonTokens, tokens } from '@stryker-mutator/api/plugin';
-import { deepMerge, I } from '@stryker-mutator/util';
+import { PartialStrykerOptions, StrykerOptions } from '@ryicoh/api/core';
+import { Logger } from '@ryicoh/api/logging';
+import { commonTokens, tokens } from '@ryicoh/api/plugin';
+import { deepMerge, I } from '@ryicoh/util';
 
 import { coreTokens } from '../di/index.js';
 import { ConfigError } from '../errors.js';
@@ -20,7 +17,7 @@ import { SUPPORTED_CONFIG_FILE_NAMES } from './config-file-formats.js';
 export const CONFIG_SYNTAX_HELP = `
 Example of how a config file should look:
 /**
-  * @type {import('@stryker-mutator/api/core').StrykerOptions}
+  * @type {import('@ryicoh/api/core').StrykerOptions}
   */
 export default {
   // You're options here!
@@ -28,7 +25,7 @@ export default {
 
 Or using commonjs:
 /**
-  * @type {import('@stryker-mutator/api/core').StrykerOptions}
+  * @type {import('@ryicoh/api/core').StrykerOptions}
   */
 module.exports = {
   // You're options here!

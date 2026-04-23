@@ -1,5 +1,5 @@
-import { CheckStatus } from '@stryker-mutator/api/check';
-import { factory } from '@stryker-mutator/test-helpers';
+import { CheckStatus } from '@ryicoh/api/check';
+import { factory } from '@ryicoh/test-helpers';
 
 import { expect } from 'chai';
 import sinon from 'sinon';

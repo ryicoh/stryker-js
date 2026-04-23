@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import babel, { type NodePath } from '@babel/core';
-import { normalizeWhitespaces } from '@stryker-mutator/util';
+import { normalizeWhitespaces } from '@ryicoh/util';
 import generator from '@babel/generator';
 
 import { expressionMutantPlacer } from '../../../src/mutant-placers/expression-mutant-placer.js';

@@ -1,4 +1,4 @@
-import { TestResult, TestStatus } from '@stryker-mutator/api/test-runner';
+import { TestResult, TestStatus } from '@ryicoh/api/test-runner';
 import jasmine from 'jasmine';
 
 export const helpers = {

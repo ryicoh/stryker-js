@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-import { Task } from '@stryker-mutator/util';
+import { Task } from '@ryicoh/util';
 import { mergeMap, Subject } from 'rxjs';
 import { Disposable } from 'typed-inject';
 

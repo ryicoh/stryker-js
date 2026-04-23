@@ -1,4 +1,4 @@
-import { Ignorer, NodePath } from '@stryker-mutator/api/ignore';
+import { Ignorer, NodePath } from '@ryicoh/api/ignore';
 
 const ANGULAR_SIGNAL_IO_FUNCTIONS = Object.freeze(['input', 'model', 'output']);
 

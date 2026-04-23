@@ -5,7 +5,7 @@ import {
   MutantRunResult,
   DryRunResult,
   TestRunnerCapabilities,
-} from '@stryker-mutator/api/test-runner';
+} from '@ryicoh/api/test-runner';
 
 import { ResourceDecorator } from '../concurrent/index.js';
 

@@ -1,4 +1,4 @@
-import { StrykerOptions } from '@stryker-mutator/api/core';
+import { StrykerOptions } from '@ryicoh/api/core';
 
 import { StrykerVitestRunnerOptions } from '../src-generated/vitest-runner-options.js';
 

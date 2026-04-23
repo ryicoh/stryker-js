@@ -1,4 +1,4 @@
-import { factory, testInjector } from '@stryker-mutator/test-helpers';
+import { factory, testInjector } from '@ryicoh/test-helpers';
 import { expect } from 'chai';
 
 import { TestCoverage } from '../../../src/mutants/index.js';

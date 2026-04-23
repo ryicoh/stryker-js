@@ -1,7 +1,7 @@
 import { fileURLToPath, URL } from 'url';
 import fs from 'fs';
 
-import { deepFreeze } from '@stryker-mutator/util';
+import { deepFreeze } from '@ryicoh/util';
 
 const pkg = deepFreeze(
   JSON.parse(

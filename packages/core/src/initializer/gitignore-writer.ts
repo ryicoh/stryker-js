@@ -1,7 +1,7 @@
 import os from 'os';
 import { existsSync, promises as fs } from 'fs';
 
-import { tokens } from '@stryker-mutator/api/plugin';
+import { tokens } from '@ryicoh/api/plugin';
 
 import { defaultOptions } from '../config/index.js';
 

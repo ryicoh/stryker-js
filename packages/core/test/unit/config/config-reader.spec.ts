@@ -3,7 +3,7 @@ import { syncBuiltinESMExports } from 'module';
 import { pathToFileURL } from 'url';
 import path from 'path';
 
-import { testInjector } from '@stryker-mutator/test-helpers';
+import { testInjector } from '@ryicoh/test-helpers';
 import sinon from 'sinon';
 import { expect } from 'chai';
 

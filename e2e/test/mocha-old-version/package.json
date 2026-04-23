@@ -14,14 +14,14 @@
   "license": "ISC",
   "devDependencies": {
     "mocha": "7.2",
-    "@stryker-mutator/core": "workspace:*",
-    "@stryker-mutator/mocha-runner": "workspace:*"
+    "@ryicoh/core": "workspace:*",
+    "@ryicoh/mocha-runner": "workspace:*"
   },
   "dependenciesMeta": {
-    "@stryker-mutator/core": {
+    "@ryicoh/core": {
       "injected": true
     },
-    "@stryker-mutator/mocha-runner": {
+    "@ryicoh/mocha-runner": {
       "injected": true
     }
   }

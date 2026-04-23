@@ -1,9 +1,9 @@
 import decamelize from 'decamelize';
-import { Logger } from '@stryker-mutator/api/logging';
+import { Logger } from '@ryicoh/api/logging';
 import semver from 'semver';
-import type { requireResolve } from '@stryker-mutator/util';
-import { StrykerOptions } from '@stryker-mutator/api/core';
-import { commonTokens, tokens } from '@stryker-mutator/api/plugin';
+import type { requireResolve } from '@ryicoh/util';
+import { StrykerOptions } from '@ryicoh/api/core';
+import { commonTokens, tokens } from '@ryicoh/api/plugin';
 
 import { NgTestArguments } from '../../src-generated/karma-runner-options.js';
 import { strykerKarmaConfigPath } from '../karma-plugins/index.js';

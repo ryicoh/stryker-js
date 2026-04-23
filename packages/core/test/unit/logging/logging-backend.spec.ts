@@ -2,7 +2,7 @@ import sinon from 'sinon';
 import fs, { WriteStream } from 'fs';
 import { LoggingBackend } from '../../../src/logging/logging-backend.js';
 import { LoggingEvent } from '../../../src/logging/logging-event.js';
-import { LogLevel } from '@stryker-mutator/api/core';
+import { LogLevel } from '@ryicoh/api/core';
 import { Writable } from 'stream';
 import { expect } from 'chai';
 

@@ -1,7 +1,4 @@
-import {
-  TestStatus,
-  SuccessTestResult,
-} from '@stryker-mutator/api/test-runner';
+import { TestStatus, SuccessTestResult } from '@ryicoh/api/test-runner';
 
 export const jasmineInitResultTestNames = Object.freeze([
   'Player should be able to play a Song',

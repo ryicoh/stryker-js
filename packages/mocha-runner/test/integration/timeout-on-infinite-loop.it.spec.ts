@@ -5,7 +5,7 @@ import {
   factory,
   assertions,
   TempTestDirectorySandbox,
-} from '@stryker-mutator/test-helpers';
+} from '@ryicoh/test-helpers';
 import { expect } from 'chai';
 
 import { createMochaOptions } from '../helpers/factories.js';

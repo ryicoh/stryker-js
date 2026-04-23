@@ -1,15 +1,11 @@
-import {
-  MutantResult,
-  schema,
-  StrykerOptions,
-} from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
-import { commonTokens, PluginKind } from '@stryker-mutator/api/plugin';
+import { MutantResult, schema, StrykerOptions } from '@ryicoh/api/core';
+import { Logger } from '@ryicoh/api/logging';
+import { commonTokens, PluginKind } from '@ryicoh/api/plugin';
 import {
   DryRunCompletedEvent,
   MutationTestingPlanReadyEvent,
   Reporter,
-} from '@stryker-mutator/api/report';
+} from '@ryicoh/api/report';
 import { MutationTestMetricsResult } from 'mutation-testing-metrics';
 import { tokens } from 'typed-inject';
 

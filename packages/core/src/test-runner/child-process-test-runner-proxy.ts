@@ -1,7 +1,7 @@
 import { URL } from 'url';
 
-import { FileDescriptions, StrykerOptions } from '@stryker-mutator/api/core';
-import { LoggerFactoryMethod } from '@stryker-mutator/api/logging';
+import { FileDescriptions, StrykerOptions } from '@ryicoh/api/core';
+import { LoggerFactoryMethod } from '@ryicoh/api/logging';
 import {
   TestRunner,
   DryRunOptions,
@@ -9,8 +9,8 @@ import {
   MutantRunResult,
   DryRunResult,
   TestRunnerCapabilities,
-} from '@stryker-mutator/api/test-runner';
-import { ExpirableTask } from '@stryker-mutator/util';
+} from '@ryicoh/api/test-runner';
+import { ExpirableTask } from '@ryicoh/util';
 
 import { ChildProcessCrashedError } from '../child-proxy/child-process-crashed-error.js';
 import { ChildProcessProxy } from '../child-proxy/child-process-proxy.js';

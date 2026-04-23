@@ -1,7 +1,7 @@
 import net from 'net';
-import { Disposable } from '@stryker-mutator/api/plugin';
+import { Disposable } from '@ryicoh/api/plugin';
 import { LoggingServerAddress, LoggingSink } from '../logging/index.js';
-import { LogLevel } from '@stryker-mutator/api/core';
+import { LogLevel } from '@ryicoh/api/core';
 import { LoggingEvent } from './logging-event.js';
 import { promisify } from 'util';
 import { DELIMITER } from './logging-server.js';

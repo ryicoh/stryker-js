@@ -3,7 +3,7 @@ import {
   factory,
   TempTestDirectorySandbox,
   testInjector,
-} from '@stryker-mutator/test-helpers';
+} from '@ryicoh/test-helpers';
 
 import {
   createVitestTestRunnerFactory,

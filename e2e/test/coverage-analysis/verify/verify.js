@@ -1,4 +1,4 @@
-import { Stryker } from '@stryker-mutator/core';
+import { Stryker } from '@ryicoh/core';
 import { expect } from 'chai';
 import { calculateMetrics } from 'mutation-testing-metrics';
 
@@ -6,7 +6,7 @@ import { CoverageAnalysisReporter } from './coverage-analysis-reporter.js';
 
 describe('Coverage analysis', () => {
   /**
-   * @type {import('@stryker-mutator/api/core').PartialStrykerOptions}
+   * @type {import('@ryicoh/api/core').PartialStrykerOptions}
    */
   let strykerOptions;
 
@@ -24,7 +24,7 @@ describe('Coverage analysis', () => {
     beforeEach(() => {
       strykerOptions.testRunner = 'jasmine';
       strykerOptions.plugins.push(
-        import.meta.resolve('@stryker-mutator/jasmine-runner'),
+        import.meta.resolve('@ryicoh/jasmine-runner'),
       );
       strykerOptions.jasmineConfigFile = 'jasmine.json';
     });
@@ -35,7 +35,7 @@ describe('Coverage analysis', () => {
     beforeEach(() => {
       strykerOptions.testRunner = 'cucumber';
       strykerOptions.plugins.push(
-        import.meta.resolve('@stryker-mutator/cucumber-runner'),
+        import.meta.resolve('@ryicoh/cucumber-runner'),
       );
     });
     describeTests();
@@ -45,7 +45,7 @@ describe('Coverage analysis', () => {
     beforeEach(() => {
       strykerOptions.testRunner = 'jest';
       strykerOptions.plugins.push(
-        import.meta.resolve('@stryker-mutator/jest-runner'),
+        import.meta.resolve('@ryicoh/jest-runner'),
       );
       strykerOptions.testRunnerNodeArgs = ['--experimental-vm-modules'];
       strykerOptions.jest = { configFile: 'jest.config.json' };
@@ -58,7 +58,7 @@ describe('Coverage analysis', () => {
     beforeEach(() => {
       strykerOptions.testRunner = 'mocha';
       strykerOptions.plugins.push(
-        import.meta.resolve('@stryker-mutator/mocha-runner'),
+        import.meta.resolve('@ryicoh/mocha-runner'),
       );
     });
     describeTests();
@@ -68,7 +68,7 @@ describe('Coverage analysis', () => {
     beforeEach(() => {
       strykerOptions.testRunner = 'vitest';
       strykerOptions.plugins.push(
-        import.meta.resolve('@stryker-mutator/vitest-runner'),
+        import.meta.resolve('@ryicoh/vitest-runner'),
       );
     });
 
@@ -91,7 +91,7 @@ describe('Coverage analysis', () => {
     beforeEach(() => {
       strykerOptions.testRunner = 'karma';
       strykerOptions.plugins.push(
-        import.meta.resolve('@stryker-mutator/karma-runner'),
+        import.meta.resolve('@ryicoh/karma-runner'),
       );
       karmaConfigOverrides = {};
       strykerOptions.karma = {

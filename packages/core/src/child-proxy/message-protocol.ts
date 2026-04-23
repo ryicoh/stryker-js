@@ -1,4 +1,4 @@
-import { FileDescriptions, StrykerOptions } from '@stryker-mutator/api/core';
+import { FileDescriptions, StrykerOptions } from '@ryicoh/api/core';
 
 import type { LoggingServerAddress } from '../logging/index.js';
 

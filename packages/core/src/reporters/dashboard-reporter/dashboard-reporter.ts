@@ -1,7 +1,7 @@
-import { StrykerOptions, ReportType, schema } from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
-import { commonTokens, tokens } from '@stryker-mutator/api/plugin';
-import { Reporter } from '@stryker-mutator/api/report';
+import { StrykerOptions, ReportType, schema } from '@ryicoh/api/core';
+import { Logger } from '@ryicoh/api/logging';
+import { commonTokens, tokens } from '@ryicoh/api/plugin';
+import { Reporter } from '@ryicoh/api/report';
 import { MutationTestMetricsResult } from 'mutation-testing-metrics';
 
 import { CIProvider } from '../ci/provider.js';

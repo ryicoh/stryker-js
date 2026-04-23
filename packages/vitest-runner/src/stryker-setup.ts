@@ -1,5 +1,5 @@
-import type { MutantCoverage } from '@stryker-mutator/api/core';
-import type { MutantActivation } from '@stryker-mutator/api/test-runner';
+import type { MutantCoverage } from '@ryicoh/api/core';
+import type { MutantActivation } from '@ryicoh/api/test-runner';
 import {
   beforeEach,
   afterAll,

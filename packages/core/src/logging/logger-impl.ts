@@ -1,5 +1,5 @@
-import { Logger } from '@stryker-mutator/api/logging';
-import { LogLevel } from '@stryker-mutator/api/core';
+import { Logger } from '@ryicoh/api/logging';
+import { LogLevel } from '@ryicoh/api/core';
 import { LoggingEvent } from './logging-event.js';
 import { LoggingSink } from './logging-sink.js';
 

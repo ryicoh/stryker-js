@@ -7,8 +7,8 @@ import {
   ReportType,
   strykerCoreSchema,
   StrykerOptions,
-} from '@stryker-mutator/api/core';
-import { factory, testInjector } from '@stryker-mutator/test-helpers';
+} from '@ryicoh/api/core';
+import { factory, testInjector } from '@ryicoh/test-helpers';
 import { expect } from 'chai';
 
 import { OptionsValidator } from '../../../src/config/options-validator.js';
@@ -89,7 +89,7 @@ describe(OptionsValidator.name, () => {
           excludedMutations: [],
           plugins: null,
         },
-        plugins: ['@stryker-mutator/*'],
+        plugins: ['@ryicoh/*'],
         reporters: ['clear-text', 'progress', 'html'],
         symlinkNodeModules: true,
         tempDirName: '.stryker-tmp',
@@ -245,7 +245,7 @@ describe(OptionsValidator.name, () => {
 
   describe('plugins', () => {
     it('should be invalid with non-array plugins', () => {
-      breakConfig('plugins', '@stryker-mutator/typescript');
+      breakConfig('plugins', '@ryicoh/typescript');
       actValidationErrors(
         'Config option "plugins" has the wrong type. It should be a array, but was a string.',
       );
@@ -261,7 +261,7 @@ describe(OptionsValidator.name, () => {
 
   describe('appendPlugins', () => {
     it('should be invalid with non-array plugins', () => {
-      breakConfig('appendPlugins', '@stryker-mutator/typescript');
+      breakConfig('appendPlugins', '@ryicoh/typescript');
       actValidationErrors(
         'Config option "appendPlugins" has the wrong type. It should be a array, but was a string.',
       );
@@ -353,7 +353,7 @@ describe(OptionsValidator.name, () => {
 
   describe('reporters', () => {
     it('should be invalid with non-array reporters', () => {
-      breakConfig('reporters', '@stryker-mutator/typescript');
+      breakConfig('reporters', '@ryicoh/typescript');
       actValidationErrors(
         'Config option "reporters" has the wrong type. It should be a array, but was a string.',
       );

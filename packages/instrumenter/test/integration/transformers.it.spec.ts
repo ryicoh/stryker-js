@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { testInjector } from '@stryker-mutator/test-helpers';
+import { testInjector } from '@ryicoh/test-helpers';
 
 import {
   createHtmlAst,

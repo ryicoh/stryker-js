@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import { URL } from 'url';
 
-import { declareFactoryPlugin, PluginKind } from '@stryker-mutator/api/plugin';
+import { declareFactoryPlugin, PluginKind } from '@ryicoh/api/plugin';
 
 import { cucumberTestRunnerFactory } from './cucumber-test-runner.js';
 

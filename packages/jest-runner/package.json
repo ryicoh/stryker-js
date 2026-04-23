@@ -1,5 +1,5 @@
 {
-  "name": "@stryker-mutator/jest-runner",
+  "name": "@ryicoh/jest-runner",
   "version": "9.6.1",
   "description": "A plugin to use the jest test runner and framework in Stryker, the JavaScript mutation testing framework",
   "files": [
@@ -71,7 +71,7 @@
     "@jest/environment": "30.3.0",
     "@jest/test-result": "30.3.0",
     "@jest/types": "30.3.0",
-    "@stryker-mutator/test-helpers": "workspace:*",
+    "@ryicoh/test-helpers": "workspace:*",
     "@types/node": "24.12.2",
     "@types/semver": "7.7.1",
     "jest": "30.3.0",
@@ -84,11 +84,11 @@
     "ts-node": "10.9.2"
   },
   "peerDependencies": {
-    "@stryker-mutator/core": "workspace:*"
+    "@ryicoh/core": "workspace:*"
   },
   "dependencies": {
-    "@stryker-mutator/api": "workspace:*",
-    "@stryker-mutator/util": "workspace:*",
+    "@ryicoh/api": "workspace:*",
+    "@ryicoh/util": "workspace:*",
     "semver": "~7.7.0",
     "tslib": "~2.8.0"
   },

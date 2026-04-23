@@ -1,5 +1,5 @@
 import fs from 'fs';
-import { LogLevel, PartialStrykerOptions } from '@stryker-mutator/api/core';
+import { LogLevel, PartialStrykerOptions } from '@ryicoh/api/core';
 import { LoggingEvent } from './logging-event.js';
 import { Disposable } from 'typed-inject';
 import { promisify } from 'util';

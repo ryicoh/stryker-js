@@ -1,11 +1,11 @@
-import { Logger } from '@stryker-mutator/api/logging';
+import { Logger } from '@ryicoh/api/logging';
 import {
   FailedTestResult,
   TestResult,
   SuccessTestResult,
   TestStatus,
-} from '@stryker-mutator/api/test-runner';
-import { I } from '@stryker-mutator/util';
+} from '@ryicoh/api/test-runner';
+import { I } from '@ryicoh/util';
 
 import { Timer } from './timer.js';
 

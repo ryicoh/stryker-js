@@ -1,5 +1,5 @@
 /**
- * @jest-environment @stryker-mutator/jest-runner/jest-env/jsdom
+ * @jest-environment @ryicoh/jest-runner/jest-env/jsdom
  */
 import { titleSum } from './title-sum';
 

@@ -2,8 +2,8 @@ import path from 'path';
 import { fileURLToPath, URL } from 'url';
 
 import type { Config } from '@jest/types';
-import { CoverageAnalysis, StrykerOptions } from '@stryker-mutator/api/core';
-import { propertyPath } from '@stryker-mutator/util';
+import { CoverageAnalysis, StrykerOptions } from '@ryicoh/api/core';
+import { propertyPath } from '@ryicoh/util';
 import semver from 'semver';
 
 import { JestWrapper } from '../utils/jest-wrapper.js';
@@ -90,7 +90,7 @@ function setupFramework(
     // 'jest-circus/runner' is supported, via handleTestEvent, see https://jestjs.io/docs/en/configuration#testenvironment-string
     // Use includes here, since "react-scripts" will specify the full path to `jest-circus`, see https://github.com/stryker-mutator/stryker-js/issues/2789
     throw new Error(
-      `The @stryker-mutator/jest-runner doesn't support ${propertyPath<StrykerOptions>()(
+      `The @ryicoh/jest-runner doesn't support ${propertyPath<StrykerOptions>()(
         'coverageAnalysis',
       )} "perTest" with "jestConfig.testRunner": "${
         jestConfig.testRunner

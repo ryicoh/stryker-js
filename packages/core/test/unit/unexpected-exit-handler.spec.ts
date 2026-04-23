@@ -1,6 +1,6 @@
 import { EventEmitter } from 'events';
 
-import { testInjector } from '@stryker-mutator/test-helpers';
+import { testInjector } from '@ryicoh/test-helpers';
 import sinon from 'sinon';
 import { expect } from 'chai';
 

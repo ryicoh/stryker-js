@@ -1,6 +1,6 @@
 import net from 'net';
 import sinon from 'sinon';
-import { testInjector } from '@stryker-mutator/test-helpers';
+import { testInjector } from '@ryicoh/test-helpers';
 import {
   LoggingServer,
   LoggingServerAddress,
@@ -9,7 +9,7 @@ import { LoggingSink } from '../../../src/logging/index.js';
 import { coreTokens } from '../../../src/di/index.js';
 import { expect } from 'chai';
 import { LoggingEvent } from '../../../src/logging/logging-event.js';
-import { LogLevel } from '@stryker-mutator/api/core';
+import { LogLevel } from '@ryicoh/api/core';
 
 describe(LoggingServer.name, () => {
   let sut: LoggingServer;

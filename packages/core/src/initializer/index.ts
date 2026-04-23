@@ -1,6 +1,6 @@
 import { Injector } from 'typed-inject';
 import { execaCommand, execaCommandSync } from 'execa';
-import { resolveFromCwd } from '@stryker-mutator/util';
+import { resolveFromCwd } from '@ryicoh/util';
 
 import { coreTokens } from '../di/index.js';
 

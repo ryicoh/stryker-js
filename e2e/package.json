@@ -12,16 +12,16 @@
     "@babel/preset-env": "7.29.2",
     "@babel/preset-flow": "7.27.1",
     "@cucumber/cucumber": "12.8.1",
-    "@stryker-mutator/api": "workspace:*",
-    "@stryker-mutator/core": "workspace:*",
-    "@stryker-mutator/cucumber-runner": "workspace:*",
-    "@stryker-mutator/jasmine-runner": "workspace:*",
-    "@stryker-mutator/jest-runner": "workspace:*",
-    "@stryker-mutator/karma-runner": "workspace:*",
-    "@stryker-mutator/mocha-runner": "workspace:*",
-    "@stryker-mutator/tap-runner": "workspace:*",
-    "@stryker-mutator/typescript-checker": "workspace:*",
-    "@stryker-mutator/vitest-runner": "workspace:*",
+    "@ryicoh/api": "workspace:*",
+    "@ryicoh/core": "workspace:*",
+    "@ryicoh/cucumber-runner": "workspace:*",
+    "@ryicoh/jasmine-runner": "workspace:*",
+    "@ryicoh/jest-runner": "workspace:*",
+    "@ryicoh/karma-runner": "workspace:*",
+    "@ryicoh/mocha-runner": "workspace:*",
+    "@ryicoh/tap-runner": "workspace:*",
+    "@ryicoh/typescript-checker": "workspace:*",
+    "@ryicoh/vitest-runner": "workspace:*",
     "@sveltejs/adapter-auto": "7.0.1",
     "@sveltejs/kit": "2.57.1",
     "@sveltejs/vite-plugin-svelte": "7.0.0",
@@ -87,34 +87,34 @@
     "webpack-cli": "7.0.2"
   },
   "dependenciesMeta": {
-    "@stryker-mutator/api": {
+    "@ryicoh/api": {
       "injected": true
     },
-    "@stryker-mutator/core": {
+    "@ryicoh/core": {
       "injected": true
     },
-    "@stryker-mutator/jasmine-runner": {
+    "@ryicoh/jasmine-runner": {
       "injected": true
     },
-    "@stryker-mutator/jest-runner": {
+    "@ryicoh/jest-runner": {
       "injected": true
     },
-    "@stryker-mutator/karma-runner": {
+    "@ryicoh/karma-runner": {
       "injected": true
     },
-    "@stryker-mutator/mocha-runner": {
+    "@ryicoh/mocha-runner": {
       "injected": true
     },
-    "@stryker-mutator/cucumber-runner": {
+    "@ryicoh/cucumber-runner": {
       "injected": true
     },
-    "@stryker-mutator/tap-runner": {
+    "@ryicoh/tap-runner": {
       "injected": true
     },
-    "@stryker-mutator/typescript-checker": {
+    "@ryicoh/typescript-checker": {
       "injected": true
     },
-    "@stryker-mutator/vitest-runner": {
+    "@ryicoh/vitest-runner": {
       "injected": true
     },
     "grunt-stryker": {

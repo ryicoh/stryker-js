@@ -1,9 +1,5 @@
-import {
-  assertions,
-  factory,
-  testInjector,
-} from '@stryker-mutator/test-helpers';
-import { commonTokens } from '@stryker-mutator/api/plugin';
+import { assertions, factory, testInjector } from '@ryicoh/test-helpers';
+import { commonTokens } from '@ryicoh/api/plugin';
 import { expect } from 'chai';
 
 import {

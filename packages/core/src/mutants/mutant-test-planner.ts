@@ -1,6 +1,6 @@
 import path from 'path';
 
-import { TestResult } from '@stryker-mutator/api/test-runner';
+import { TestResult } from '@ryicoh/api/test-runner';
 import {
   MutantRunPlan,
   MutantTestPlan,
@@ -9,10 +9,10 @@ import {
   StrykerOptions,
   MutantStatus,
   MutantEarlyResultPlan,
-} from '@stryker-mutator/api/core';
-import { commonTokens, tokens } from '@stryker-mutator/api/plugin';
-import { Logger } from '@stryker-mutator/api/logging';
-import { I, notEmpty, split } from '@stryker-mutator/util';
+} from '@ryicoh/api/core';
+import { commonTokens, tokens } from '@ryicoh/api/plugin';
+import { Logger } from '@ryicoh/api/logging';
+import { I, notEmpty, split } from '@ryicoh/util';
 
 import { coreTokens } from '../di/index.js';
 import { StrictReporter } from '../reporters/strict-reporter.js';

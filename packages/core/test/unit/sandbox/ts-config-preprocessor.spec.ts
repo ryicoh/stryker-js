@@ -1,7 +1,7 @@
 import path from 'path';
 
 import { expect } from 'chai';
-import { testInjector } from '@stryker-mutator/test-helpers';
+import { testInjector } from '@ryicoh/test-helpers';
 
 import { TSConfigPreprocessor } from '../../../src/sandbox/ts-config-preprocessor.js';
 import { FileSystemTestDouble } from '../../helpers/file-system-test-double.js';

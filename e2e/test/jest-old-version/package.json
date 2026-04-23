@@ -11,14 +11,14 @@
   "devDependencies": {
     "jest": "~24.9.0",
     "jest-environment-node": "~24.9.0",
-    "@stryker-mutator/core": "workspace:*",
-    "@stryker-mutator/jest-runner": "workspace:*"
+    "@ryicoh/core": "workspace:*",
+    "@ryicoh/jest-runner": "workspace:*"
   },
   "dependenciesMeta": {
-    "@stryker-mutator/core": {
+    "@ryicoh/core": {
       "injected": true
     },
-    "@stryker-mutator/jest-runner": {
+    "@ryicoh/jest-runner": {
       "injected": true
     }
   },

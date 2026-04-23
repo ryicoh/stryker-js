@@ -3,7 +3,7 @@ import {
   Injector,
   PluginContext,
   tokens,
-} from '@stryker-mutator/api/plugin';
+} from '@ryicoh/api/plugin';
 import { HttpClient } from 'typed-rest-client/HttpClient.js';
 
 import { determineCIProvider } from '../ci/provider.js';

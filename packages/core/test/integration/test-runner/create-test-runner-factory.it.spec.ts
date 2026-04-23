@@ -4,13 +4,9 @@ import path from 'path';
 
 import sinon from 'sinon';
 import { expect } from 'chai';
-import { LogLevel } from '@stryker-mutator/api/core';
-import {
-  testInjector,
-  factory,
-  assertions,
-} from '@stryker-mutator/test-helpers';
-import { DryRunStatus } from '@stryker-mutator/api/test-runner';
+import { LogLevel } from '@ryicoh/api/core';
+import { testInjector, factory, assertions } from '@ryicoh/test-helpers';
+import { DryRunStatus } from '@ryicoh/api/test-runner';
 
 import {
   LoggingServerAddress,

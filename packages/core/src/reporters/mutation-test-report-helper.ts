@@ -6,16 +6,16 @@ import {
   MutantResult,
   schema,
   MutantStatus,
-} from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
-import { commonTokens, tokens } from '@stryker-mutator/api/plugin';
-import { Reporter } from '@stryker-mutator/api/report';
+} from '@ryicoh/api/core';
+import { Logger } from '@ryicoh/api/logging';
+import { commonTokens, tokens } from '@ryicoh/api/plugin';
+import { Reporter } from '@ryicoh/api/report';
 import {
   I,
   normalizeFileName,
   normalizeWhitespaces,
   type requireResolve,
-} from '@stryker-mutator/util';
+} from '@ryicoh/util';
 import {
   calculateMutationTestMetrics,
   MutationTestMetricsResult,
@@ -24,12 +24,8 @@ import {
   MutantRunResult,
   MutantRunStatus,
   TestResult,
-} from '@stryker-mutator/api/test-runner';
-import {
-  CheckStatus,
-  PassedCheckResult,
-  CheckResult,
-} from '@stryker-mutator/api/check';
+} from '@ryicoh/api/test-runner';
+import { CheckStatus, PassedCheckResult, CheckResult } from '@ryicoh/api/check';
 
 import { strykerVersion } from '../stryker-package.js';
 import { coreTokens } from '../di/index.js';
@@ -376,11 +372,11 @@ export class MutationTestReportHelper {
       }
     };
     const dependencies = [
-      '@stryker-mutator/mocha-runner',
-      '@stryker-mutator/karma-runner',
-      '@stryker-mutator/jasmine-runner',
-      '@stryker-mutator/jest-runner',
-      '@stryker-mutator/typescript-checker',
+      '@ryicoh/mocha-runner',
+      '@ryicoh/karma-runner',
+      '@ryicoh/jasmine-runner',
+      '@ryicoh/jest-runner',
+      '@ryicoh/typescript-checker',
       'karma',
       'karma-chai',
       'karma-chrome-launcher',

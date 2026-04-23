@@ -3,8 +3,8 @@ import { EventEmitter } from 'events';
 import os from 'os';
 import { fileURLToPath, URL } from 'url';
 
-import { FileDescriptions, StrykerOptions } from '@stryker-mutator/api/core';
-import { factory, testInjector, tick } from '@stryker-mutator/test-helpers';
+import { FileDescriptions, StrykerOptions } from '@ryicoh/api/core';
+import { factory, testInjector, tick } from '@ryicoh/test-helpers';
 import { expect } from 'chai';
 import sinon from 'sinon';
 

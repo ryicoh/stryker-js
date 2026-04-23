@@ -1,7 +1,7 @@
 import path from 'path';
 
 import { expect } from 'chai';
-import { factory } from '@stryker-mutator/test-helpers';
+import { factory } from '@ryicoh/test-helpers';
 import { Request, NextFunction, Response } from 'express';
 import sinon from 'sinon';
 
@@ -35,7 +35,7 @@ describe(TestHooksMiddleware.name, () => {
       it('should throw if the current test framework is not supported', () => {
         sut.configureTestFramework(['chai', 'requirejs', 'tap']); // "tap" is not yet supported
         expect(() => sut.configureCoverageAnalysis('perTest')).throws(
-          'Could not configure coverageAnalysis "perTest". Your test framework is not supported by the `@stryker-mutator/karma-runner`. Supported test frameworks: mocha, jasmine',
+          'Could not configure coverageAnalysis "perTest". Your test framework is not supported by the `@ryicoh/karma-runner`. Supported test frameworks: mocha, jasmine',
         );
       });
 

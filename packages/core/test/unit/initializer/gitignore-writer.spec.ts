@@ -3,7 +3,7 @@ import fs from 'fs';
 import { syncBuiltinESMExports } from 'module';
 
 import sinon from 'sinon';
-import { testInjector } from '@stryker-mutator/test-helpers';
+import { testInjector } from '@ryicoh/test-helpers';
 import { expect } from 'chai';
 
 import { GitignoreWriter } from '../../../src/initializer/gitignore-writer.js';

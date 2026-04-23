@@ -1,9 +1,9 @@
 import path from 'path';
 
-import { schema, StrykerOptions } from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
-import { commonTokens, tokens } from '@stryker-mutator/api/plugin';
-import { Reporter } from '@stryker-mutator/api/report';
+import { schema, StrykerOptions } from '@ryicoh/api/core';
+import { Logger } from '@ryicoh/api/logging';
+import { commonTokens, tokens } from '@ryicoh/api/plugin';
+import { Reporter } from '@ryicoh/api/report';
 import { pathToFileURL } from 'url';
 import { reporterUtil } from './reporter-util.js';
 

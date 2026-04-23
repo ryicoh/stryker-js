@@ -9,7 +9,7 @@ import type {
   JestEnvironmentConfig,
 } from '@jest/environment';
 import { Circus, Config } from '@jest/types';
-import { factory } from '@stryker-mutator/test-helpers';
+import { factory } from '@ryicoh/test-helpers';
 
 import { JestOptions } from '../../src-generated/jest-runner-options.js';
 import { JestRunResult } from '../../src/jest-run-result.js';

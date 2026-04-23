@@ -2,11 +2,11 @@ import path from 'path';
 
 import { fileURLToPath } from 'url';
 
-import { testInjector, tick } from '@stryker-mutator/test-helpers';
+import { testInjector, tick } from '@ryicoh/test-helpers';
 import { expect } from 'chai';
 import { Config, ConfigOptions, ClientOptions } from 'karma';
 import sinon from 'sinon';
-import type { requireResolve } from '@stryker-mutator/util';
+import type { requireResolve } from '@ryicoh/util';
 
 import { configureKarma as sut } from '../../../src/karma-plugins/stryker-karma.conf.js';
 import { strykerReporterFactory } from '../../../src/karma-plugins/stryker-reporter.js';

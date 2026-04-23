@@ -1,11 +1,11 @@
-import { StrykerOptions } from '@stryker-mutator/api/core';
+import { StrykerOptions } from '@ryicoh/api/core';
 import {
   commonTokens,
   Injector,
   PluginContext,
   tokens,
-} from '@stryker-mutator/api/plugin';
-import { requireResolve } from '@stryker-mutator/util';
+} from '@ryicoh/api/plugin';
+import { requireResolve } from '@ryicoh/util';
 
 import { KarmaRunnerOptionsWithStrykerOptions } from '../karma-runner-options-with-stryker-options.js';
 import { pluginTokens } from '../plugin-tokens.js';

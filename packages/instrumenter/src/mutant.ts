@@ -1,10 +1,6 @@
 import babel, { type types } from '@babel/core';
 import generate from '@babel/generator';
-import {
-  Mutant as ApiMutant,
-  Location,
-  Position,
-} from '@stryker-mutator/api/core';
+import { Mutant as ApiMutant, Location, Position } from '@ryicoh/api/core';
 
 import { deepCloneNode, eqNode } from './util/index.js';
 

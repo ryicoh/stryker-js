@@ -1,11 +1,8 @@
-import { CoverageData } from '@stryker-mutator/api/core';
-import { Logger } from '@stryker-mutator/api/logging';
-import { commonTokens } from '@stryker-mutator/api/plugin';
-import {
-  CompleteDryRunResult,
-  TestResult,
-} from '@stryker-mutator/api/test-runner';
-import { notEmpty } from '@stryker-mutator/util';
+import { CoverageData } from '@ryicoh/api/core';
+import { Logger } from '@ryicoh/api/logging';
+import { commonTokens } from '@ryicoh/api/plugin';
+import { CompleteDryRunResult, TestResult } from '@ryicoh/api/test-runner';
+import { notEmpty } from '@ryicoh/util';
 
 import { coreTokens } from '../di/index.js';
 

@@ -6,18 +6,18 @@ import {
   Location,
   Mutant,
   schema,
-} from '@stryker-mutator/api/core';
+} from '@ryicoh/api/core';
 import sinon from 'sinon';
 import { ReplaySubject } from 'rxjs';
-import { TestRunner } from '@stryker-mutator/api/test-runner';
-import { I } from '@stryker-mutator/util';
+import { TestRunner } from '@ryicoh/api/test-runner';
+import { I } from '@ryicoh/util';
 
 import { Pool, ConcurrencyTokenProvider } from '../../src/concurrent/index.js';
 import { CheckerFacade } from '../../src/checker/index.js';
 import { FileSystem } from '../../src/fs/file-system.js';
 import { TSConfig } from '../../src/sandbox/ts-config-preprocessor.js';
 import { LoggingSink } from '../../src/logging/logging-sink.js';
-import { Logger } from '@stryker-mutator/api/logging';
+import { Logger } from '@ryicoh/api/logging';
 
 export type Mutable<T> = {
   -readonly [K in keyof T]: T[K];

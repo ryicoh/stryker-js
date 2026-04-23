@@ -5,7 +5,7 @@
   "additionalProperties": false,
   "properties": {
     "typescriptChecker": {
-      "description": "Configuration for @stryker-mutator/typescript-checker",
+      "description": "Configuration for @ryicoh/typescript-checker",
       "title": "TypescriptCheckerOptions",
       "additionalProperties": false,
       "type": "object",

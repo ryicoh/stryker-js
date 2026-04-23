@@ -1,7 +1,7 @@
-import { TestRunner } from '@stryker-mutator/api/test-runner';
+import { TestRunner } from '@ryicoh/api/test-runner';
 import { expect } from 'chai';
 import sinon from 'sinon';
-import { factory } from '@stryker-mutator/test-helpers';
+import { factory } from '@ryicoh/test-helpers';
 
 import { TestRunnerDecorator } from '../../../src/test-runner/test-runner-decorator.js';
 import { MaxTestRunnerReuseDecorator } from '../../../src/test-runner/max-test-runner-reuse-decorator.js';
