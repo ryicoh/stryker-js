@@ -13,7 +13,9 @@ export const objectPropertyRemovalMutator: NodeMutator = {
       for (let i = 0; i < path.node.properties.length; i++) {
         const mutatedProperties = path.node.properties
           .filter((_, index) => index !== i)
-          .map((prop) => types.cloneNode(prop, /* deep */ true, /* withoutLocations */ true));
+          .map((prop) =>
+            types.cloneNode(prop, /* deep */ true, /* withoutLocations */ true),
+          );
         yield types.objectExpression(mutatedProperties);
       }
     }

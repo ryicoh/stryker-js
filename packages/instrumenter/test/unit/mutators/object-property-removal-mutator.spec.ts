@@ -9,7 +9,12 @@ describe(sut.name, () => {
   });
 
   it('should mutate an object with 2 properties by removing each', () => {
-    expectJSMutation(sut, '({ a: 1, b: 2 })', '({\n  a: 1\n})', '({\n  b: 2\n})');
+    expectJSMutation(
+      sut,
+      '({ a: 1, b: 2 })',
+      '({\n  a: 1\n})',
+      '({\n  b: 2\n})',
+    );
   });
 
   it('should mutate an object with 3 properties by removing each', () => {
@@ -31,11 +36,21 @@ describe(sut.name, () => {
   });
 
   it('should handle spread elements', () => {
-    expectJSMutation(sut, '({ ...base, id: 1 })', '({\n  ...base\n})', '({\n  id: 1\n})');
+    expectJSMutation(
+      sut,
+      '({ ...base, id: 1 })',
+      '({\n  ...base\n})',
+      '({\n  id: 1\n})',
+    );
   });
 
   it('should handle computed property keys', () => {
-    expectJSMutation(sut, '({ [key]: 1, b: 2 })', '({\n  [key]: 1\n})', '({\n  b: 2\n})');
+    expectJSMutation(
+      sut,
+      '({ [key]: 1, b: 2 })',
+      '({\n  [key]: 1\n})',
+      '({\n  b: 2\n})',
+    );
   });
 
   it('should handle shorthand properties', () => {
