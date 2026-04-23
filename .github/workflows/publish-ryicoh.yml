@@ -1,0 +1,32 @@
+name: Publish @ryicoh/stryker-instrumenter
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'packages/instrumenter/**'
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write # for npm provenance
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ./.github/setup
+        with:
+          install-chromium: false
+
+      - name: Configure npm auth
+        run: npm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
+
+      - name: Build
+        run: pnpm run build
+
+      - name: Publish to npm
+        run: npm publish --provenance
+        working-directory: packages/instrumenter
