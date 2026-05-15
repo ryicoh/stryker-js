@@ -1,4 +1,5 @@
 import { arithmeticOperatorMutator } from './arithmetic-operator-mutator.js';
+import { ascDescSwapMutator } from './asc-desc-swap-mutator.js';
 import { NodeMutator } from './node-mutator.js';
 import { blockStatementMutator } from './block-statement-mutator.js';
 import { conditionalExpressionMutator } from './conditional-expression-mutator.js';
@@ -20,6 +21,7 @@ export const allMutators: NodeMutator[] = [
   arithmeticOperatorMutator,
   arrayDeclarationMutator,
   arrowFunctionMutator,
+  ascDescSwapMutator,
   blockStatementMutator,
   booleanLiteralMutator,
   conditionalExpressionMutator,
