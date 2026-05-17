@@ -15,11 +15,13 @@ import { updateOperatorMutator } from './update-operator-mutator.js';
 import { regexMutator } from './regex-mutator.js';
 import { optionalChainingMutator } from './optional-chaining-mutator.js';
 import { assignmentOperatorMutator } from './assignment-operator-mutator.js';
+import { ascDescSwapMutator } from './asc-desc-swap-mutator.js';
 
 export const allMutators: NodeMutator[] = [
   arithmeticOperatorMutator,
   arrayDeclarationMutator,
   arrowFunctionMutator,
+  ascDescSwapMutator,
   blockStatementMutator,
   booleanLiteralMutator,
   conditionalExpressionMutator,
