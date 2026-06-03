@@ -10,6 +10,7 @@ import { equalityOperatorMutator } from './equality-operator-mutator.js';
 import { methodExpressionMutator } from './method-expression-mutator.js';
 import { logicalOperatorMutator } from './logical-operator-mutator.js';
 import { objectLiteralMutator } from './object-literal-mutator.js';
+import { objectPropertyRemovalMutator } from './object-property-removal-mutator.js';
 import { unaryOperatorMutator } from './unary-operator-mutator.js';
 import { updateOperatorMutator } from './update-operator-mutator.js';
 import { regexMutator } from './regex-mutator.js';
@@ -27,6 +28,7 @@ export const allMutators: NodeMutator[] = [
   logicalOperatorMutator,
   methodExpressionMutator,
   objectLiteralMutator,
+  objectPropertyRemovalMutator,
   stringLiteralMutator,
   unaryOperatorMutator,
   updateOperatorMutator,
