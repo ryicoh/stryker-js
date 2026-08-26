@@ -3,6 +3,7 @@ import { NodeMutator } from './node-mutator.js';
 import { blockStatementMutator } from './block-statement-mutator.js';
 import { conditionalExpressionMutator } from './conditional-expression-mutator.js';
 import { stringLiteralMutator } from './string-literal-mutator.js';
+import { arrayElementRemovalMutator } from './array-element-removal-mutator.js';
 import { arrayDeclarationMutator } from './array-declaration-mutator.js';
 import { arrowFunctionMutator } from './arrow-function-mutator.js';
 import { booleanLiteralMutator } from './boolean-literal-mutator.js';
@@ -22,6 +23,7 @@ import { comparisonBoundarySwapMutator } from './comparison-boundary-swap-mutato
 export const allMutators: NodeMutator[] = [
   arithmeticOperatorMutator,
   arrayDeclarationMutator,
+  arrayElementRemovalMutator,
   arrowFunctionMutator,
   ascDescSwapMutator,
   blockStatementMutator,

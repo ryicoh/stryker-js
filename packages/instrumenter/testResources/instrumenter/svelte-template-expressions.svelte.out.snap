@@ -52,69 +52,93 @@ function stryMutAct_9fa48(id) {
 
 </script>
 <script>
-const athletes = stryMutAct_9fa48(\\"0\\") ? [] : (stryCov_9fa48(\\"0\\"), [stryMutAct_9fa48(\\"6\\") ? {
-  sport: stryMutAct_9fa48(\\"3\\") ? \\"\\" : (stryCov_9fa48(\\"3\\"), \\"Athletics\\"),
-  name: stryMutAct_9fa48(\\"5\\") ? \\"\\" : (stryCov_9fa48(\\"5\\"), \\"Alice\\")
-} : stryMutAct_9fa48(\\"4\\") ? {
-  sport: stryMutAct_9fa48(\\"3\\") ? \\"\\" : (stryCov_9fa48(\\"3\\"), \\"Athletics\\"),
-  age: 16
-} : stryMutAct_9fa48(\\"2\\") ? {
+const athletes = stryMutAct_9fa48(\\"3\\") ? [{
+  sport: \\"Athletics\\",
   name: \\"Alice\\",
   age: 16
-} : stryMutAct_9fa48(\\"1\\") ? {} : (stryCov_9fa48(\\"1\\", \\"2\\", \\"4\\", \\"6\\"), {
-  sport: stryMutAct_9fa48(\\"3\\") ? \\"\\" : (stryCov_9fa48(\\"3\\"), \\"Athletics\\"),
-  name: stryMutAct_9fa48(\\"5\\") ? \\"\\" : (stryCov_9fa48(\\"5\\"), \\"Alice\\"),
-  age: 16
-}), stryMutAct_9fa48(\\"12\\") ? {
-  sport: stryMutAct_9fa48(\\"9\\") ? \\"\\" : (stryCov_9fa48(\\"9\\"), \\"Swimming\\"),
-  name: stryMutAct_9fa48(\\"11\\") ? \\"\\" : (stryCov_9fa48(\\"11\\"), \\"Bob\\")
-} : stryMutAct_9fa48(\\"10\\") ? {
-  sport: stryMutAct_9fa48(\\"9\\") ? \\"\\" : (stryCov_9fa48(\\"9\\"), \\"Swimming\\"),
-  age: 18
-} : stryMutAct_9fa48(\\"8\\") ? {
+}, {
+  sport: \\"Swimming\\",
   name: \\"Bob\\",
   age: 18
-} : stryMutAct_9fa48(\\"7\\") ? {} : (stryCov_9fa48(\\"7\\", \\"8\\", \\"10\\", \\"12\\"), {
-  sport: stryMutAct_9fa48(\\"9\\") ? \\"\\" : (stryCov_9fa48(\\"9\\"), \\"Swimming\\"),
-  name: stryMutAct_9fa48(\\"11\\") ? \\"\\" : (stryCov_9fa48(\\"11\\"), \\"Bob\\"),
-  age: 18
-}), stryMutAct_9fa48(\\"18\\") ? {
-  sport: stryMutAct_9fa48(\\"15\\") ? \\"\\" : (stryCov_9fa48(\\"15\\"), \\"Tennis\\"),
-  name: stryMutAct_9fa48(\\"17\\") ? \\"\\" : (stryCov_9fa48(\\"17\\"), \\"Charlie\\")
-} : stryMutAct_9fa48(\\"16\\") ? {
-  sport: stryMutAct_9fa48(\\"15\\") ? \\"\\" : (stryCov_9fa48(\\"15\\"), \\"Tennis\\"),
-  age: 20
-} : stryMutAct_9fa48(\\"14\\") ? {
+}] : stryMutAct_9fa48(\\"2\\") ? [{
+  sport: \\"Athletics\\",
+  name: \\"Alice\\",
+  age: 16
+}, {
+  sport: \\"Tennis\\",
   name: \\"Charlie\\",
   age: 20
-} : stryMutAct_9fa48(\\"13\\") ? {} : (stryCov_9fa48(\\"13\\", \\"14\\", \\"16\\", \\"18\\"), {
-  sport: stryMutAct_9fa48(\\"15\\") ? \\"\\" : (stryCov_9fa48(\\"15\\"), \\"Tennis\\"),
-  name: stryMutAct_9fa48(\\"17\\") ? \\"\\" : (stryCov_9fa48(\\"17\\"), \\"Charlie\\"),
+}] : stryMutAct_9fa48(\\"1\\") ? [{
+  sport: \\"Swimming\\",
+  name: \\"Bob\\",
+  age: 18
+}, {
+  sport: \\"Tennis\\",
+  name: \\"Charlie\\",
+  age: 20
+}] : stryMutAct_9fa48(\\"0\\") ? [] : (stryCov_9fa48(\\"0\\", \\"1\\", \\"2\\", \\"3\\"), [stryMutAct_9fa48(\\"9\\") ? {
+  sport: stryMutAct_9fa48(\\"6\\") ? \\"\\" : (stryCov_9fa48(\\"6\\"), \\"Athletics\\"),
+  name: stryMutAct_9fa48(\\"8\\") ? \\"\\" : (stryCov_9fa48(\\"8\\"), \\"Alice\\")
+} : stryMutAct_9fa48(\\"7\\") ? {
+  sport: stryMutAct_9fa48(\\"6\\") ? \\"\\" : (stryCov_9fa48(\\"6\\"), \\"Athletics\\"),
+  age: 16
+} : stryMutAct_9fa48(\\"5\\") ? {
+  name: \\"Alice\\",
+  age: 16
+} : stryMutAct_9fa48(\\"4\\") ? {} : (stryCov_9fa48(\\"4\\", \\"5\\", \\"7\\", \\"9\\"), {
+  sport: stryMutAct_9fa48(\\"6\\") ? \\"\\" : (stryCov_9fa48(\\"6\\"), \\"Athletics\\"),
+  name: stryMutAct_9fa48(\\"8\\") ? \\"\\" : (stryCov_9fa48(\\"8\\"), \\"Alice\\"),
+  age: 16
+}), stryMutAct_9fa48(\\"15\\") ? {
+  sport: stryMutAct_9fa48(\\"12\\") ? \\"\\" : (stryCov_9fa48(\\"12\\"), \\"Swimming\\"),
+  name: stryMutAct_9fa48(\\"14\\") ? \\"\\" : (stryCov_9fa48(\\"14\\"), \\"Bob\\")
+} : stryMutAct_9fa48(\\"13\\") ? {
+  sport: stryMutAct_9fa48(\\"12\\") ? \\"\\" : (stryCov_9fa48(\\"12\\"), \\"Swimming\\"),
+  age: 18
+} : stryMutAct_9fa48(\\"11\\") ? {
+  name: \\"Bob\\",
+  age: 18
+} : stryMutAct_9fa48(\\"10\\") ? {} : (stryCov_9fa48(\\"10\\", \\"11\\", \\"13\\", \\"15\\"), {
+  sport: stryMutAct_9fa48(\\"12\\") ? \\"\\" : (stryCov_9fa48(\\"12\\"), \\"Swimming\\"),
+  name: stryMutAct_9fa48(\\"14\\") ? \\"\\" : (stryCov_9fa48(\\"14\\"), \\"Bob\\"),
+  age: 18
+}), stryMutAct_9fa48(\\"21\\") ? {
+  sport: stryMutAct_9fa48(\\"18\\") ? \\"\\" : (stryCov_9fa48(\\"18\\"), \\"Tennis\\"),
+  name: stryMutAct_9fa48(\\"20\\") ? \\"\\" : (stryCov_9fa48(\\"20\\"), \\"Charlie\\")
+} : stryMutAct_9fa48(\\"19\\") ? {
+  sport: stryMutAct_9fa48(\\"18\\") ? \\"\\" : (stryCov_9fa48(\\"18\\"), \\"Tennis\\"),
+  age: 20
+} : stryMutAct_9fa48(\\"17\\") ? {
+  name: \\"Charlie\\",
+  age: 20
+} : stryMutAct_9fa48(\\"16\\") ? {} : (stryCov_9fa48(\\"16\\", \\"17\\", \\"19\\", \\"21\\"), {
+  sport: stryMutAct_9fa48(\\"18\\") ? \\"\\" : (stryCov_9fa48(\\"18\\"), \\"Tennis\\"),
+  name: stryMutAct_9fa48(\\"20\\") ? \\"\\" : (stryCov_9fa48(\\"20\\"), \\"Charlie\\"),
   age: 20
 })]);
 let a = 0;
 let b = 0;
-$: count = stryMutAct_9fa48(\\"19\\") ? a - b : (stryCov_9fa48(\\"19\\"), a + b);
+$: count = stryMutAct_9fa48(\\"22\\") ? a - b : (stryCov_9fa48(\\"22\\"), a + b);
 </script>
   
 <main>
-    <button on:click={stryMutAct_9fa48(\\"20\\") ? () => undefined : (stryCov_9fa48(\\"20\\"), () => stryMutAct_9fa48(\\"21\\") ? a -= 1 : (stryCov_9fa48(\\"21\\"), a += 1))}>
+    <button on:click={stryMutAct_9fa48(\\"23\\") ? () => undefined : (stryCov_9fa48(\\"23\\"), () => stryMutAct_9fa48(\\"24\\") ? a -= 1 : (stryCov_9fa48(\\"24\\"), a += 1))}>
         increase a: {a}
     </button>
-    <button on:click={stryMutAct_9fa48(\\"22\\") ? () => undefined : (stryCov_9fa48(\\"22\\"), () => stryMutAct_9fa48(\\"23\\") ? b -= 1 : (stryCov_9fa48(\\"23\\"), b += 1))}>
+    <button on:click={stryMutAct_9fa48(\\"25\\") ? () => undefined : (stryCov_9fa48(\\"25\\"), () => stryMutAct_9fa48(\\"26\\") ? b -= 1 : (stryCov_9fa48(\\"26\\"), b += 1))}>
         increase b: {b}
     </button>
-    <button disabled={stryMutAct_9fa48(\\"24\\") ? false : (stryCov_9fa48(\\"24\\"), true)}>
+    <button disabled={stryMutAct_9fa48(\\"27\\") ? false : (stryCov_9fa48(\\"27\\"), true)}>
         disabled button
     </button>
     <p>{a} + {b} = {count}.</p>
 
-    {#if stryMutAct_9fa48(\\"28\\") ? a >= 5 : stryMutAct_9fa48(\\"27\\") ? a <= 5 : stryMutAct_9fa48(\\"26\\") ? false : stryMutAct_9fa48(\\"25\\") ? true : (stryCov_9fa48(\\"25\\", \\"26\\", \\"27\\", \\"28\\"), a < 5)}
+    {#if stryMutAct_9fa48(\\"31\\") ? a >= 5 : stryMutAct_9fa48(\\"30\\") ? a <= 5 : stryMutAct_9fa48(\\"29\\") ? false : stryMutAct_9fa48(\\"28\\") ? true : (stryCov_9fa48(\\"28\\", \\"29\\", \\"30\\", \\"31\\"), a < 5)}
         <p>a is lower than 5, it's: {a}</p>
-    {:else if stryMutAct_9fa48(\\"32\\") ? b >= 5 : stryMutAct_9fa48(\\"31\\") ? b <= 5 : stryMutAct_9fa48(\\"30\\") ? false : stryMutAct_9fa48(\\"29\\") ? true : (stryCov_9fa48(\\"29\\", \\"30\\", \\"31\\", \\"32\\"), b < 5)}
+    {:else if stryMutAct_9fa48(\\"35\\") ? b >= 5 : stryMutAct_9fa48(\\"34\\") ? b <= 5 : stryMutAct_9fa48(\\"33\\") ? false : stryMutAct_9fa48(\\"32\\") ? true : (stryCov_9fa48(\\"32\\", \\"33\\", \\"34\\", \\"35\\"), b < 5)}
         <p>b is lower than 5, it's: {b}</p>
     {:else}
-        <p>just right! total: {stryMutAct_9fa48(\\"33\\") ? a - b : (stryCov_9fa48(\\"33\\"), a + b)}</p>
+        <p>just right! total: {stryMutAct_9fa48(\\"36\\") ? a - b : (stryCov_9fa48(\\"36\\"), a + b)}</p>
     {/if}
 
     <table>
@@ -125,12 +149,12 @@ $: count = stryMutAct_9fa48(\\"19\\") ? a - b : (stryCov_9fa48(\\"19\\"), a + b)
         <td>of age</td>
         </tr>
         {#each athletes as athlete}
-        {@const ofAge = stryMutAct_9fa48(\\"37\\") ? athlete.age < 18 : stryMutAct_9fa48(\\"36\\") ? athlete.age > 18 : stryMutAct_9fa48(\\"35\\") ? false : stryMutAct_9fa48(\\"34\\") ? true : (stryCov_9fa48(\\"34\\", \\"35\\", \\"36\\", \\"37\\"), athlete.age >= 18)}
+        {@const ofAge = stryMutAct_9fa48(\\"40\\") ? athlete.age < 18 : stryMutAct_9fa48(\\"39\\") ? athlete.age > 18 : stryMutAct_9fa48(\\"38\\") ? false : stryMutAct_9fa48(\\"37\\") ? true : (stryCov_9fa48(\\"37\\", \\"38\\", \\"39\\", \\"40\\"), athlete.age >= 18)}
         <tr>
             <td>{athlete.sport}</td>
             <td>{athlete.name}</td>
             <td>{athlete.age}</td>
-            <td>{ofAge ? stryMutAct_9fa48(\\"38\\") ? \\"\\" : (stryCov_9fa48(\\"38\\"), \\"Yes\\") : stryMutAct_9fa48(\\"39\\") ? \\"\\" : (stryCov_9fa48(\\"39\\"), \\"No\\")}</td>
+            <td>{ofAge ? stryMutAct_9fa48(\\"41\\") ? \\"\\" : (stryCov_9fa48(\\"41\\"), \\"Yes\\") : stryMutAct_9fa48(\\"42\\") ? \\"\\" : (stryCov_9fa48(\\"42\\"), \\"No\\")}</td>
         </tr>
         {/each}
     </table>
