@@ -8,7 +8,7 @@ export const objectLiteralMutator: NodeMutator = {
   name: 'ObjectLiteral',
 
   *mutate(path) {
-    if (path.isObjectExpression() && path.node.properties.length > 0) {
+    if (path.isObjectExpression() && path.node.properties.length === 1) {
       yield types.objectExpression([]);
     }
   },
