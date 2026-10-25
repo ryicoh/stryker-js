@@ -208,7 +208,10 @@ export class MutantTestPlanner {
           mutatorName: mutant.mutatorName,
           replacement: mutant.replacement,
         },
-        mutantActivation: testFilter ? 'runtime' : 'static',
+        mutantActivation:
+          testFilter && (isStatic === false || this.options.ignoreStatic)
+            ? 'runtime'
+            : 'static',
         timeout,
         testFilter,
         sandboxFileName: this.sandbox.sandboxFileFor(mutant.fileName),
