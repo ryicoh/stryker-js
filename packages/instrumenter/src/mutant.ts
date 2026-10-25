@@ -41,7 +41,14 @@ export class Mutant implements Mutable {
     return {
       fileName: this.fileName,
       id: this.id,
-      location: toApiLocation(this.original.loc!, this.offset),
+      // Mutators that "remove" rather than substitute a node (yielding a
+      // `Noop`) can attach a `loc` to the replacement so the report's diff
+      // covers the trailing comma + line break. Otherwise fall back to the
+      // original node's location.
+      location: toApiLocation(
+        this.replacement.loc ?? this.original.loc!,
+        this.offset,
+      ),
       mutatorName: this.mutatorName,
       replacement: this.replacementCode,
       statusReason: this.ignoreReason,
@@ -66,7 +73,14 @@ export class Mutant implements Mutable {
         noScope: true,
         enter(path) {
           if (eqNode(path.node, original)) {
-            path.replaceWith(replacement);
+            // A Noop replacement means "remove this node" — used by mutators
+            // (e.g. ObjectPropertyRemoval) that delete an element of a list
+            // instead of substituting it.
+            if (replacement.type === 'Noop') {
+              path.remove();
+            } else {
+              path.replaceWith(replacement);
+            }
             path.stop();
             applied = true;
           }
