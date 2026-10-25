@@ -84,16 +84,16 @@ export class AppDirective {
     read: TemplateRef,
     descendants: true
   });
-  readonly viewChildField = viewChild(stryMutAct_9fa48(\\"21\\") ? \\"\\" : (stryCov_9fa48(\\"21\\"), 'tpl'), {
+  readonly viewChildField = viewChild(stryMutAct_9fa48(\\"20\\") ? \\"\\" : (stryCov_9fa48(\\"20\\"), 'tpl'), {
     read: TemplateRef
   });
-  readonly viewChildrenField = viewChildren(stryMutAct_9fa48(\\"23\\") ? \\"\\" : (stryCov_9fa48(\\"23\\"), 'tpl'), {
+  readonly viewChildrenField = viewChildren(stryMutAct_9fa48(\\"22\\") ? \\"\\" : (stryCov_9fa48(\\"22\\"), 'tpl'), {
     read: TemplateRef
   });
   readonly contentChildRequiredField = contentChild.required(StepDetailDirective, {
     read: TemplateRef
   });
-  readonly viewChildRequiredField = viewChild.required(stryMutAct_9fa48(\\"26\\") ? \\"\\" : (stryCov_9fa48(\\"26\\"), 'tpl'), {
+  readonly viewChildRequiredField = viewChild.required(stryMutAct_9fa48(\\"25\\") ? \\"\\" : (stryCov_9fa48(\\"25\\"), 'tpl'), {
     read: TemplateRef
   });
   readonly contentChildNoOptionsField = contentChild(StepDetailDirective);
