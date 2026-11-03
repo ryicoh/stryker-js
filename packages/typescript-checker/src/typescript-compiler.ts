@@ -65,6 +65,9 @@ export class TypescriptCompiler implements ITypescriptCompiler {
     const host = ts.createSolutionBuilderWithWatchHost(
       {
         ...ts.sys,
+        // Mutant changes are applied synchronously; defer only to batch their watcher callbacks.
+        setTimeout: (callback, _ms, ...args: unknown[]) =>
+          setTimeout(callback, 0, ...args),
         readFile: (fileName) => {
           if (this.fileNameIsBuildInfo(fileName)) {
             return undefined;
