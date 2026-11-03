@@ -6,7 +6,11 @@ import { fileURLToPath } from 'url';
 import { expect } from 'chai';
 import { Location, Mutant } from '@stryker-mutator/api/core';
 import { CheckResult, CheckStatus } from '@stryker-mutator/api/check';
-import { testInjector, factory } from '@stryker-mutator/test-helpers';
+import {
+  testInjector,
+  factory,
+  assertions,
+} from '@stryker-mutator/test-helpers';
 
 import { createTypescriptChecker } from '../../src/index.js';
 import { TypescriptChecker } from '../../src/typescript-checker.js';
@@ -64,6 +68,16 @@ describe('Typescript checker on a project with project references', () => {
     expect(actual).deep.eq(expectedResult);
   });
 
+  it('should report errors in projects referencing a mutated project', async () => {
+    const mutant = createMutant('text.ts', 'text: string', 'text: "mutated"');
+
+    const actual = await sut.check([mutant]);
+    const result = actual[mutant.id];
+
+    assertions.expectCompileError(result);
+    expect(result.reason).has.string('job.ts(5,27): error TS2345');
+  });
+
   it('should create multiple groups if reference between project', async () => {
     const mutantInSourceProject = createMutant(
       'job.ts',
@@ -118,7 +132,10 @@ function createMutant(
   };
   return factory.mutant({
     id,
-    fileName: resolveTestResource('src', fileName),
+    fileName: resolveTestResource(
+      fileName === 'text.ts' || fileName === 'math.ts' ? 'utils' : 'src',
+      fileName,
+    ),
     mutatorName: 'foo-mutator',
     location,
     replacement,
