@@ -17,7 +17,10 @@ import { Mutant, StrykerOptions } from '@stryker-mutator/api/core';
 import { split, strykerReportBugUrl } from '@stryker-mutator/util';
 
 import * as pluginTokens from './plugin-tokens.js';
-import { TypescriptCompiler } from './typescript-compiler.js';
+import {
+  TypescriptCompiler,
+  ITypescriptCompiler,
+} from './typescript-compiler.js';
 import { createGroups } from './grouping/create-groups.js';
 import { toPosixFileName } from './tsconfig-helpers.js';
 import { TSFileNode } from './grouping/ts-file-node.js';
@@ -73,7 +76,7 @@ export class TypescriptChecker implements Checker {
   constructor(
     private readonly logger: Logger,
     options: StrykerOptions,
-    private readonly tsCompiler: TypescriptCompiler,
+    private readonly tsCompiler: ITypescriptCompiler,
   ) {
     this.options = options as TypescriptCheckerOptionsWithStrykerOptions;
   }

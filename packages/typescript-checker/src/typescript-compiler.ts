@@ -19,12 +19,9 @@ import { TSFileNode } from './grouping/ts-file-node.js';
 import * as pluginTokens from './plugin-tokens.js';
 
 export interface ITypescriptCompiler {
+  readonly nodes: Map<string, TSFileNode>;
   init(): Promise<ts.Diagnostic[]>;
   check(mutants: Mutant[]): Promise<ts.Diagnostic[]>;
-}
-
-export interface IFileRelationCreator {
-  get nodes(): Map<string, TSFileNode>;
 }
 
 export type SourceFiles = Map<
@@ -36,9 +33,7 @@ export type SourceFiles = Map<
 >;
 const FILE_CHANGE_DETECTED_DIAGNOSTIC_CODE = 6032;
 
-export class TypescriptCompiler
-  implements ITypescriptCompiler, IFileRelationCreator
-{
+export class TypescriptCompiler implements ITypescriptCompiler {
   public static inject = tokens(
     commonTokens.logger,
     commonTokens.options,
