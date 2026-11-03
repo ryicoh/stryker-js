@@ -1,0 +1,197 @@
+{
+  "measuredOn": "2026-11-03",
+  "baseCommit": "0ae5af64a",
+  "implementation": "Local prototype; measured before PR review fixes and structural refactoring.",
+  "environment": {
+    "node": "v26.12.1",
+    "typescript": "5.9.3",
+    "nativeTypescript": "7.1.0-beta",
+    "platform": "darwin",
+    "architecture": "arm64",
+    "concurrency": 1,
+    "incremental": false
+  },
+  "workload": {
+    "sourceFiles": 8,
+    "mutants": 1107,
+    "nullValueMutants": 29,
+    "checkerCalls": 1047,
+    "runsPerFileAndMode": 1,
+    "scope": "Application route with loader, action, schema, helpers, colocated tests, and imported dependencies."
+  },
+  "equivalence": {
+    "identicalMutantIdentities": true,
+    "checkerStatusDifferences": 0,
+    "noCheckerDetectedDifferences": 65,
+    "noCheckerDifferences": {
+      "CompileError -> Survived": 55,
+      "CompileError -> NoCoverage": 10
+    }
+  },
+  "results": {
+    "none": {
+      "totalSeconds": 155.408624542,
+      "speedupAgainstLegacy": null,
+      "savedPercentAgainstLegacy": null,
+      "eligible": false,
+      "statusDifferences": 377,
+      "detectedDifferences": 65
+    },
+    "legacy": {
+      "totalSeconds": 2759.097058417,
+      "speedupAgainstLegacy": 1,
+      "savedPercentAgainstLegacy": 0,
+      "eligible": true,
+      "statusDifferences": 0,
+      "detectedDifferences": 0
+    },
+    "fast": {
+      "totalSeconds": 2494.4918529140004,
+      "speedupAgainstLegacy": 1.1060757946328406,
+      "savedPercentAgainstLegacy": 9.590282614226474,
+      "eligible": true,
+      "statusDifferences": 0,
+      "detectedDifferences": 0
+    },
+    "snapshot": {
+      "totalSeconds": 1326.3240255000003,
+      "speedupAgainstLegacy": 2.0802586738763704,
+      "savedPercentAgainstLegacy": 51.92905514309949,
+      "eligible": true,
+      "statusDifferences": 0,
+      "detectedDifferences": 0
+    }
+  },
+  "statuses": {
+    "legacy": {
+      "Ignored": 60,
+      "CompileError": 377,
+      "Killed": 574,
+      "NoCoverage": 15,
+      "Survived": 81
+    },
+    "fast": {
+      "Ignored": 60,
+      "CompileError": 377,
+      "Killed": 574,
+      "NoCoverage": 15,
+      "Survived": 81
+    },
+    "snapshot": {
+      "Ignored": 60,
+      "CompileError": 377,
+      "Killed": 574,
+      "NoCoverage": 15,
+      "Survived": 81
+    }
+  },
+  "perFile": [
+    {
+      "workload": 1,
+      "kind": "action",
+      "mutants": 451,
+      "seconds": {
+        "none": 50.415777209,
+        "legacy": 1137.521177583,
+        "fast": 1024.370252333,
+        "snapshot": 527.7968032910001
+      }
+    },
+    {
+      "workload": 2,
+      "kind": "loader",
+      "mutants": 255,
+      "seconds": {
+        "none": 42.95676258300001,
+        "legacy": 603.076699042,
+        "fast": 543.5747846250001,
+        "snapshot": 295.17599941700007
+      }
+    },
+    {
+      "workload": 3,
+      "kind": "helper",
+      "mutants": 6,
+      "seconds": {
+        "none": 6.45353075,
+        "legacy": 25.299767708,
+        "fast": 24.730366666,
+        "snapshot": 13.592554250000001
+      }
+    },
+    {
+      "workload": 4,
+      "kind": "helper",
+      "mutants": 25,
+      "seconds": {
+        "none": 7.222072542,
+        "legacy": 67.33392625,
+        "fast": 62.356759666,
+        "snapshot": 32.998748207999995
+      }
+    },
+    {
+      "workload": 5,
+      "kind": "helper",
+      "mutants": 17,
+      "seconds": {
+        "none": 7.0033994580000005,
+        "legacy": 53.626338167,
+        "fast": 49.437636,
+        "snapshot": 27.003346833
+      }
+    },
+    {
+      "workload": 6,
+      "kind": "helper",
+      "mutants": 20,
+      "seconds": {
+        "none": 6.952600084,
+        "legacy": 59.824451583,
+        "fast": 55.722076666,
+        "snapshot": 29.124565916999998
+      }
+    },
+    {
+      "workload": 7,
+      "kind": "helper",
+      "mutants": 7,
+      "seconds": {
+        "none": 11.229829958,
+        "legacy": 33.78631941700001,
+        "fast": 33.29229,
+        "snapshot": 16.586821417
+      }
+    },
+    {
+      "workload": 8,
+      "kind": "schema",
+      "mutants": 326,
+      "seconds": {
+        "none": 23.174651958000002,
+        "legacy": 778.628378667,
+        "fast": 701.007686958,
+        "snapshot": 384.045186167
+      }
+    }
+  ],
+  "limitations": [
+    "Times sum one fresh run per source file and mode; these are not medians.",
+    "No-checker results fail detected/survived equivalence and are excluded from speed comparisons.",
+    "The TypeScript configuration covers the route, tests, and imported dependencies, not the entire application.",
+    "Application source and raw mutation reports remain local.",
+    "PR review adds config parsing diagnostics at initialization; the measured successful mutant-check algorithm is unchanged."
+  ],
+  "reviewValidation": {
+    "build": "passed",
+    "lint": "passed",
+    "node24PackageSuites": 12,
+    "node24": "24.22.1",
+    "browser": "system Google Chrome 156.0.8078.80 via PLAYWRIGHT_LAUNCH_OPTIONS_EXECUTABLE_PATH",
+    "checkerUnitTests": 72,
+    "checkerIntegrationTests": 24,
+    "frozenLockfile": "passed offline",
+    "mapsSmokeMutants": 6,
+    "mapsSmokeIdentityAndStatusDifferences": 0
+  }
+}

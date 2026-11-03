@@ -61,6 +61,29 @@ Default: `true`
 
 Sets the performance strategy for the typescript-checker. Defaults to `true` which the fastest strategy with the consequence of losing some accuracy. The accuracy that is lost comes down to having mutants with a status other than `CompileError` while they should have this status. This result in a report that may not be 100% accurate. Setting this option to `false` results in an accurate report but may take (way) longer.
 
+### `typescriptChecker.backend` [`"typescript"` | `"native"`]
+
+Default: `'typescript'`
+
+Selects the compiler implementation. The default uses your installed `typescript` package. The experimental `native` backend uses the TypeScript 7.1 Beta snapshot API to check in-memory changes against an immutable original project.
+
+The native compiler is installed as the optional `@typescript/native` dependency, alongside the existing TypeScript compiler. Keep a TypeScript package with the legacy compiler API installed, such as `typescript@5.9.3`; both backends use it for configuration and diagnostic formatting. If you install without optional dependencies, install the native compiler explicitly:
+
+```bash
+npm install --save-dev @typescript/native@npm:typescript@7.1.0-beta
+```
+
+```json
+{
+  "checkers": ["typescript"],
+  "typescriptChecker": {
+    "backend": "native"
+  }
+}
+```
+
+The native backend requires compiler options supported by TypeScript 7.1. It does not fall back to the legacy compiler when configuration or compilation fails.
+
 ## Peer dependencies
 
 The `@stryker-mutator/typescript-checker` package for `stryker` to enable `typescript` support. As such, you should make sure you have the correct versions of its dependencies installed:
@@ -69,7 +92,6 @@ The `@stryker-mutator/typescript-checker` package for `stryker` to enable `types
 - `@stryker-mutator/core`
 
 For the current versions, see the `peerDependencies` section in the [package.json](https://github.com/stryker-mutator/stryker-js/blob/master/packages/typescript-checker/package.json).
-
 
 ## Load the plugin
 
