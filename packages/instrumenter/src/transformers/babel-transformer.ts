@@ -18,6 +18,7 @@ import {
 } from '../mutant-placers/index.js';
 import { Mutable, Mutant } from '../mutant.js';
 import { allMutators } from '../mutators/index.js';
+import { createNullableExpressionChecker } from '../util/nullable-expression-checker.js';
 
 import { DirectiveBookkeeper } from './directive-bookkeeper.js';
 import { IgnorerBookkeeper } from './ignorer-bookkeeper.js';
@@ -46,6 +47,13 @@ export const transformBabel: AstTransformer<ScriptFormat> = (
     { filename: originFileName },
     { code: rawContent, ast: root },
   );
+  const isNullable = options.excludedMutations.includes('NullValue')
+    ? undefined
+    : createNullableExpressionChecker(
+        originFileName,
+        rawContent,
+        options.tsconfigFile,
+      );
 
   // Create a placementMap for the mutation switching bookkeeping
   const placementMap: PlacementMap = new Map();
@@ -191,6 +199,7 @@ export const transformBabel: AstTransformer<ScriptFormat> = (
     for (const mutator of mutators) {
       for (const replacement of mutator.mutate(node, {
         sourceFileName: originFileName,
+        isNullable,
       })) {
         yield {
           replacement,

@@ -67,7 +67,10 @@ function expectMutation(
 
   babel.traverse(ast, {
     enter(path) {
-      for (const replacement of sut.mutate(path, { sourceFileName })) {
+      for (const replacement of sut.mutate(path, {
+        sourceFileName,
+        isNullable: () => true,
+      })) {
         const mutatedCode = generate(replacement).code;
         const isRemoval = replacement.type === 'Noop';
         const [cutStart, cutEnd] = isRemoval

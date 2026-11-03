@@ -11,7 +11,10 @@ export const nullValueMutator: NodeMutator = {
 
   *mutate(
     path: NodePath,
-    context?: { sourceFileName: string },
+    context?: {
+      sourceFileName: string;
+      isNullable?: (node: babel.types.Node) => boolean;
+    },
   ): Iterable<babel.types.Node> {
     if (!context?.sourceFileName.match(/\.[cm]?tsx?$/)) {
       return;
@@ -23,13 +26,17 @@ export const nullValueMutator: NodeMutator = {
         parent?.isOptionalCallExpression() ||
         parent?.isNewExpression()) &&
       path.isExpression() &&
-      !path.isNullLiteral()
+      !path.isNullLiteral() &&
+      context.isNullable?.(path.node)
     ) {
       yield types.nullLiteral();
     }
 
     if (path.isObjectProperty() && parent?.isObjectExpression()) {
-      if (types.isNullLiteral(path.node.value)) {
+      if (
+        types.isNullLiteral(path.node.value) ||
+        !context.isNullable?.(path.node.value)
+      ) {
         return;
       }
       const replacement = types.objectProperty(
