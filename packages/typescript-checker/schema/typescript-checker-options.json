@@ -11,6 +11,11 @@
       "type": "object",
       "default": {},
       "properties": {
+        "backend": {
+          "description": "TypeScript compiler backend. Defaults to typescript. The native backend uses the TypeScript 7.1 snapshot API.",
+          "type": "string",
+          "enum": ["typescript", "native"]
+        },
         "prioritizePerformanceOverAccuracy": {
           "description": "Configures the performance of the TypescriptChecker. Setting this to false results in a slower, but more accurate result.",
           "type": "boolean",

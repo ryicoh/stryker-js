@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": ["missing-native-checker-test-type"]
+  }
+}

@@ -17,7 +17,11 @@ import { Mutant, StrykerOptions } from '@stryker-mutator/api/core';
 import { split, strykerReportBugUrl } from '@stryker-mutator/util';
 
 import * as pluginTokens from './plugin-tokens.js';
-import { TypescriptCompiler } from './typescript-compiler.js';
+import {
+  TypescriptCompiler,
+  ITypescriptCompiler,
+} from './typescript-compiler.js';
+import { NativeTypescriptCompiler } from './native-typescript-compiler.js';
 import { createGroups } from './grouping/create-groups.js';
 import { toPosixFileName } from './tsconfig-helpers.js';
 import { TSFileNode } from './grouping/ts-file-node.js';
@@ -51,8 +55,20 @@ export function create(injector: Injector<PluginContext>): TypescriptChecker {
       Scope.Transient,
     )
     .provideClass(pluginTokens.fs, HybridFileSystem)
-    .provideClass(pluginTokens.tsCompiler, TypescriptCompiler)
+    .provideFactory(pluginTokens.tsCompiler, createCompiler)
     .injectClass(TypescriptChecker);
+}
+
+createCompiler.inject = TypescriptCompiler.inject;
+function createCompiler(
+  logger: Logger,
+  options: StrykerOptions,
+  fs: HybridFileSystem,
+): ITypescriptCompiler {
+  const checkerOptions = options as TypescriptCheckerOptionsWithStrykerOptions;
+  return checkerOptions.typescriptChecker.backend === 'native'
+    ? new NativeTypescriptCompiler(logger, options, fs)
+    : new TypescriptCompiler(logger, options, fs);
 }
 
 /**
@@ -73,7 +89,7 @@ export class TypescriptChecker implements Checker {
   constructor(
     private readonly logger: Logger,
     options: StrykerOptions,
-    private readonly tsCompiler: TypescriptCompiler,
+    private readonly tsCompiler: ITypescriptCompiler,
   ) {
     this.options = options as TypescriptCheckerOptionsWithStrykerOptions;
   }
@@ -85,10 +101,15 @@ export class TypescriptChecker implements Checker {
     const errors = await this.tsCompiler.init();
 
     if (errors.length) {
+      this.tsCompiler.dispose?.();
       throw new Error(
         `Typescript error(s) found in dry run compilation: ${this.createErrorText(errors)}`,
       );
     }
+  }
+
+  public dispose(): void {
+    this.tsCompiler.dispose?.();
   }
 
   /**

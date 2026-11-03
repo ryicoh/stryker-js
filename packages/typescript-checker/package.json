@@ -52,6 +52,9 @@
     "@stryker-mutator/test-helpers": "workspace:*",
     "@types/semver": "7.7.1"
   },
+  "optionalDependencies": {
+    "@typescript/native": "npm:typescript@7.1.0-beta"
+  },
   "peerDependencies": {
     "@stryker-mutator/core": "workspace:*",
     "typescript": ">=3.6"

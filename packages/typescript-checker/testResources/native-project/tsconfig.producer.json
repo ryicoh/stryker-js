@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "outDir": "dist/producer"
+  },
+  "include": [],
+  "files": ["producer.ts"]
+}

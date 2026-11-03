@@ -103,11 +103,13 @@ describe(MutantInstrumenterExecutor.name, () => {
   });
 
   it('should instrument the given files', async () => {
+    testInjector.options.tsconfigFile = 'custom-tsconfig.json';
     testInjector.options.mutator.plugins = ['functionSent'];
     testInjector.options.mutator.excludedMutations = ['fooMutator'];
     await sut.execute();
     const expectedInstrumenterOptions: InstrumenterOptions = {
       ...testInjector.options.mutator,
+      tsconfigFile: 'custom-tsconfig.json',
       ignorers: [],
     };
     sinon.assert.calledOnceWithExactly(
@@ -126,6 +128,7 @@ describe(MutantInstrumenterExecutor.name, () => {
     await sut.execute();
     const expectedInstrumenterOptions: InstrumenterOptions = {
       ...testInjector.options.mutator,
+      tsconfigFile: testInjector.options.tsconfigFile,
       ignorers: [notIgnorer],
     };
     sinon.assert.calledOnceWithExactly(

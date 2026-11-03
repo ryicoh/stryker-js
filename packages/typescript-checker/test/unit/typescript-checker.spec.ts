@@ -28,6 +28,19 @@ describe(TypescriptChecker.name, () => {
       .injectClass(TypescriptChecker);
   });
 
+  describe(TypescriptChecker.prototype.init.name, () => {
+    it('should release compiler resources when dry-run diagnostics reject initialization', async () => {
+      const dispose = sinon.stub();
+      Object.assign(compilerMock, { dispose });
+      compilerMock.init.resolves([createTSDiagnostic()]);
+
+      await expect(sut.init()).rejectedWith(
+        'Typescript error(s) found in dry run compilation',
+      );
+      expect(dispose).calledOnce;
+    });
+  });
+
   describe(TypescriptChecker.prototype.group.name, () => {
     it('should not group mutants if prioritizePerformanceOverAccuracy is false', async () => {
       options.typescriptChecker.prioritizePerformanceOverAccuracy = false;

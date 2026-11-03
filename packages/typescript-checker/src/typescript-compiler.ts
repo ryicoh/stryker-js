@@ -19,12 +19,10 @@ import { TSFileNode } from './grouping/ts-file-node.js';
 import * as pluginTokens from './plugin-tokens.js';
 
 export interface ITypescriptCompiler {
+  readonly nodes: Map<string, TSFileNode>;
   init(): Promise<ts.Diagnostic[]>;
   check(mutants: Mutant[]): Promise<ts.Diagnostic[]>;
-}
-
-export interface IFileRelationCreator {
-  get nodes(): Map<string, TSFileNode>;
+  dispose?(): void;
 }
 
 export type SourceFiles = Map<
@@ -36,9 +34,7 @@ export type SourceFiles = Map<
 >;
 const FILE_CHANGE_DETECTED_DIAGNOSTIC_CODE = 6032;
 
-export class TypescriptCompiler
-  implements ITypescriptCompiler, IFileRelationCreator
-{
+export class TypescriptCompiler implements ITypescriptCompiler {
   public static inject = tokens(
     commonTokens.logger,
     commonTokens.options,
@@ -70,6 +66,9 @@ export class TypescriptCompiler
     const host = ts.createSolutionBuilderWithWatchHost(
       {
         ...ts.sys,
+        // Mutant changes are applied synchronously; defer only to batch their watcher callbacks.
+        setTimeout: (callback, _ms, ...args: unknown[]) =>
+          setTimeout(callback, 0, ...args),
         readFile: (fileName) => {
           if (this.fileNameIsBuildInfo(fileName)) {
             return undefined;

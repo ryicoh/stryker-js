@@ -8,6 +8,7 @@ import {
   assertions,
 } from '@stryker-mutator/test-helpers';
 import { expect } from 'chai';
+import sinon from 'sinon';
 import { Location, Mutant } from '@stryker-mutator/api/core';
 import { CheckResult, CheckStatus } from '@stryker-mutator/api/check';
 
@@ -149,7 +150,7 @@ describe('Typescript checker on a single project', () => {
     const actual = await sut.check([mutant]);
     expect(actual).deep.eq(expectedResult);
   });
-  it('should be able invalidate 2 mutants that do result in a compile errors', async () => {
+  it('should invalidate a mutant group on the next timer turn', async () => {
     const mutant = createMutant(
       'todo.ts',
       'TodoList.allTodos.push(newItem)',
@@ -162,7 +163,17 @@ describe('Typescript checker on a single project', () => {
       'return "This should not return a string 🙄"',
       'mutId2',
     );
-    const actual = await sut.check([mutant, mutant2]);
+    const clock = sinon.useFakeTimers({
+      toFake: ['setTimeout', 'clearTimeout'],
+    });
+    let completed = false;
+    const pending = sut.check([mutant, mutant2]).then((result) => {
+      completed = true;
+      return result;
+    });
+    await clock.tickAsync(0);
+    expect(completed).true;
+    const actual = await pending;
     assertions.expectCompileError(actual.mutId);
     assertions.expectCompileError(actual.mutId2);
     expect(actual.mutId.reason).has.string('todo.ts(15,9): error TS2322');

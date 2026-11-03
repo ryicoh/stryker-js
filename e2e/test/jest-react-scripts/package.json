@@ -39,7 +39,8 @@
     "@stryker-mutator/jest-runner": "workspace:*",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
-    "@testing-library/user-event": "^13.5.0"
+    "@testing-library/user-event": "^13.5.0",
+    "typescript": "5.9.3"
   },
   "dependenciesMeta": {
     "@stryker-mutator/core": {
