@@ -49,23 +49,29 @@ function stryMutAct_9fa48(id) {
 }
 export class InjectionError extends TypedInjectError {
   constructor(public readonly path: InjectionTarget[], public readonly cause: Error) {
-    super(stryMutAct_9fa48(\\"0\\") ? \`\` : (stryCov_9fa48(\\"0\\"), \`Could not \${describeInjectAction(path[0])} \${path.map(name).join(stryMutAct_9fa48(\\"1\\") ? \\"\\" : (stryCov_9fa48(\\"1\\"), ' -> '))}. Cause: \${cause.message}\`));
+    super(stryMutAct_9fa48(\\"1\\") ? \`\` : stryMutAct_9fa48(\\"0\\") ? null : (stryCov_9fa48(\\"0\\", \\"1\\"), \`Could not \${describeInjectAction(stryMutAct_9fa48(\\"2\\") ? null : (stryCov_9fa48(\\"2\\"), path[0]))} \${path.map(stryMutAct_9fa48(\\"3\\") ? null : (stryCov_9fa48(\\"3\\"), name)).join(stryMutAct_9fa48(\\"5\\") ? \\"\\" : stryMutAct_9fa48(\\"4\\") ? null : (stryCov_9fa48(\\"4\\", \\"5\\"), ' -> '))}. Cause: \${cause.message}\`));
   }
 }
 
 // See https://github.com/stryker-mutator/stryker-js/issues/4744
 export class UniqueKeyFailedError<T> extends UnprocessableEntityException {
   constructor(public readonly fields: ReadonlyArray<keyof T & string>) {
-    const errorBody: UnprocessableEntityBody<T> = stryMutAct_9fa48(\\"4\\") ? {
-      status: stryMutAct_9fa48(\\"3\\") ? \\"\\" : (stryCov_9fa48(\\"3\\"), 'uniqueness_failed')
-    } : stryMutAct_9fa48(\\"2\\") ? {
+    const errorBody: UnprocessableEntityBody<T> = stryMutAct_9fa48(\\"10\\") ? {
+      status: stryMutAct_9fa48(\\"8\\") ? \\"\\" : (stryCov_9fa48(\\"8\\"), 'uniqueness_failed')
+    } : stryMutAct_9fa48(\\"9\\") ? {
+      status: stryMutAct_9fa48(\\"8\\") ? \\"\\" : (stryCov_9fa48(\\"8\\"), 'uniqueness_failed'),
+      fields: null
+    } : stryMutAct_9fa48(\\"7\\") ? {
       fields
-    } : (stryCov_9fa48(\\"2\\", \\"4\\"), {
-      status: stryMutAct_9fa48(\\"3\\") ? \\"\\" : (stryCov_9fa48(\\"3\\"), 'uniqueness_failed'),
+    } : stryMutAct_9fa48(\\"6\\") ? {
+      status: null,
+      fields
+    } : (stryCov_9fa48(\\"6\\", \\"7\\", \\"9\\", \\"10\\"), {
+      status: stryMutAct_9fa48(\\"8\\") ? \\"\\" : (stryCov_9fa48(\\"8\\"), 'uniqueness_failed'),
       fields
     });
-    super(errorBody);
-    console.log(stryMutAct_9fa48(\\"5\\") ? \`\` : (stryCov_9fa48(\\"5\\"), \`\${this.message} created\`));
+    super(stryMutAct_9fa48(\\"11\\") ? null : (stryCov_9fa48(\\"11\\"), errorBody));
+    console.log(stryMutAct_9fa48(\\"13\\") ? \`\` : stryMutAct_9fa48(\\"12\\") ? null : (stryCov_9fa48(\\"12\\", \\"13\\"), \`\${this.message} created\`));
   }
 }"
 `;

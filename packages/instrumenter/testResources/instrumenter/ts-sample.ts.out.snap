@@ -68,7 +68,7 @@ class Person {
           {}
         } else {
           stryCov_9fa48(\\"8\\");
-          throw new Error(stryMutAct_9fa48(\\"9\\") ? \\"\\" : (stryCov_9fa48(\\"9\\"), 'Name should be at least 2 characters long'));
+          throw new Error(stryMutAct_9fa48(\\"10\\") ? \\"\\" : stryMutAct_9fa48(\\"9\\") ? null : (stryCov_9fa48(\\"9\\", \\"10\\"), 'Name should be at least 2 characters long'));
         }
       }
       this.#name = value;

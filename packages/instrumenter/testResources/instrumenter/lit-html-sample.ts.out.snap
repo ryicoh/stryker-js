@@ -74,26 +74,26 @@ export class MutationTestReportTotalsComponent extends LitElement {
           stryCov_9fa48(\\"6\\");
           return stryMutAct_9fa48(\\"7\\") ? html\`\` : (stryCov_9fa48(\\"7\\"), html\`
         <table class=\\"table table-sm table-hover table-bordered table-no-top\\">
-          \${this.renderHead()} \${this.renderTableBody(this.model)}
+          \${this.renderHead()} \${this.renderTableBody(stryMutAct_9fa48(\\"8\\") ? null : (stryCov_9fa48(\\"8\\"), this.model))}
         </table>
       \`);
         }
       } else {
-        if (stryMutAct_9fa48(\\"8\\")) {
+        if (stryMutAct_9fa48(\\"9\\")) {
           {}
         } else {
-          stryCov_9fa48(\\"8\\");
+          stryCov_9fa48(\\"9\\");
           return undefined;
         }
       }
     }
   }
   private renderHead() {
-    if (stryMutAct_9fa48(\\"9\\")) {
+    if (stryMutAct_9fa48(\\"10\\")) {
       {}
     } else {
-      stryCov_9fa48(\\"9\\");
-      return stryMutAct_9fa48(\\"10\\") ? html\`\` : (stryCov_9fa48(\\"10\\"), html\`<thead>
+      stryCov_9fa48(\\"10\\");
+      return stryMutAct_9fa48(\\"11\\") ? html\`\` : (stryCov_9fa48(\\"11\\"), html\`<thead>
       <tr>
         <th colspan=\\"2\\" style=\\"width: 217px\\">
           <div><span>File / Directory</span></div>
@@ -136,77 +136,77 @@ export class MutationTestReportTotalsComponent extends LitElement {
     }
   }
   private renderTableBody(model: MetricsResult) {
-    if (stryMutAct_9fa48(\\"11\\")) {
+    if (stryMutAct_9fa48(\\"12\\")) {
       {}
     } else {
-      stryCov_9fa48(\\"11\\");
+      stryCov_9fa48(\\"12\\");
       const renderChildren = () => {
-        if (stryMutAct_9fa48(\\"12\\")) {
+        if (stryMutAct_9fa48(\\"13\\")) {
           {}
         } else {
-          stryCov_9fa48(\\"12\\");
-          if (stryMutAct_9fa48(\\"14\\") ? false : stryMutAct_9fa48(\\"13\\") ? true : (stryCov_9fa48(\\"13\\", \\"14\\"), model.file)) {
-            if (stryMutAct_9fa48(\\"15\\")) {
-              {}
-            } else {
-              stryCov_9fa48(\\"15\\");
-              return undefined;
-            }
-          } else {
+          stryCov_9fa48(\\"13\\");
+          if (stryMutAct_9fa48(\\"15\\") ? false : stryMutAct_9fa48(\\"14\\") ? true : (stryCov_9fa48(\\"14\\", \\"15\\"), model.file)) {
             if (stryMutAct_9fa48(\\"16\\")) {
               {}
             } else {
               stryCov_9fa48(\\"16\\");
-              return model.childResults.map(childResult => {
-                if (stryMutAct_9fa48(\\"17\\")) {
+              return undefined;
+            }
+          } else {
+            if (stryMutAct_9fa48(\\"17\\")) {
+              {}
+            } else {
+              stryCov_9fa48(\\"17\\");
+              return model.childResults.map(stryMutAct_9fa48(\\"18\\") ? null : (stryCov_9fa48(\\"18\\"), childResult => {
+                if (stryMutAct_9fa48(\\"19\\")) {
                   {}
                 } else {
-                  stryCov_9fa48(\\"17\\");
+                  stryCov_9fa48(\\"19\\");
                   let fullName: string = childResult.name;
-                  while (stryMutAct_9fa48(\\"19\\") ? !childResult.file || childResult.childResults.length === 1 : stryMutAct_9fa48(\\"18\\") ? false : (stryCov_9fa48(\\"18\\", \\"19\\"), (stryMutAct_9fa48(\\"20\\") ? childResult.file : (stryCov_9fa48(\\"20\\"), !childResult.file)) && (stryMutAct_9fa48(\\"22\\") ? childResult.childResults.length !== 1 : stryMutAct_9fa48(\\"21\\") ? true : (stryCov_9fa48(\\"21\\", \\"22\\"), childResult.childResults.length === 1)))) {
-                    if (stryMutAct_9fa48(\\"23\\")) {
+                  while (stryMutAct_9fa48(\\"21\\") ? !childResult.file || childResult.childResults.length === 1 : stryMutAct_9fa48(\\"20\\") ? false : (stryCov_9fa48(\\"20\\", \\"21\\"), (stryMutAct_9fa48(\\"22\\") ? childResult.file : (stryCov_9fa48(\\"22\\"), !childResult.file)) && (stryMutAct_9fa48(\\"24\\") ? childResult.childResults.length !== 1 : stryMutAct_9fa48(\\"23\\") ? true : (stryCov_9fa48(\\"23\\", \\"24\\"), childResult.childResults.length === 1)))) {
+                    if (stryMutAct_9fa48(\\"25\\")) {
                       {}
                     } else {
-                      stryCov_9fa48(\\"23\\");
+                      stryCov_9fa48(\\"25\\");
                       childResult = childResult.childResults[0];
-                      fullName = pathJoin(fullName, childResult.name);
+                      fullName = pathJoin(stryMutAct_9fa48(\\"26\\") ? null : (stryCov_9fa48(\\"26\\"), fullName), stryMutAct_9fa48(\\"27\\") ? null : (stryCov_9fa48(\\"27\\"), childResult.name));
                     }
                   }
-                  return this.renderRow(fullName, childResult, pathJoin(...this.currentPath, fullName));
+                  return this.renderRow(stryMutAct_9fa48(\\"28\\") ? null : (stryCov_9fa48(\\"28\\"), fullName), stryMutAct_9fa48(\\"29\\") ? null : (stryCov_9fa48(\\"29\\"), childResult), stryMutAct_9fa48(\\"30\\") ? null : (stryCov_9fa48(\\"30\\"), pathJoin(...this.currentPath, stryMutAct_9fa48(\\"31\\") ? null : (stryCov_9fa48(\\"31\\"), fullName))));
                 }
-              });
+              }));
             }
           }
         }
       };
-      return stryMutAct_9fa48(\\"24\\") ? html\`\` : (stryCov_9fa48(\\"24\\"), html\`
+      return stryMutAct_9fa48(\\"32\\") ? html\`\` : (stryCov_9fa48(\\"32\\"), html\`
       <tbody>
-        \${this.renderRow(model.name, model, undefined)} \${renderChildren()}
+        \${this.renderRow(stryMutAct_9fa48(\\"33\\") ? null : (stryCov_9fa48(\\"33\\"), model.name), stryMutAct_9fa48(\\"34\\") ? null : (stryCov_9fa48(\\"34\\"), model), stryMutAct_9fa48(\\"35\\") ? null : (stryCov_9fa48(\\"35\\"), undefined))} \${renderChildren()}
       </tbody>
     \`);
     }
   }
   private renderRow(name: string, row: MetricsResult, path: string | undefined) {
-    if (stryMutAct_9fa48(\\"25\\")) {
+    if (stryMutAct_9fa48(\\"36\\")) {
       {}
     } else {
-      stryCov_9fa48(\\"25\\");
+      stryCov_9fa48(\\"36\\");
       const {
         mutationScore
       } = row.metrics;
-      const scoreIsPresent = stryMutAct_9fa48(\\"26\\") ? isNaN(mutationScore) : (stryCov_9fa48(\\"26\\"), !isNaN(mutationScore));
-      const coloringClass = this.determineColoringClass(mutationScore);
-      const mutationScoreRounded = mutationScore.toFixed(2);
-      const progressBarStyle = stryMutAct_9fa48(\\"27\\") ? \`\` : (stryCov_9fa48(\\"27\\"), \`width: \${mutationScore}%\`);
-      return stryMutAct_9fa48(\\"28\\") ? html\`\` : (stryCov_9fa48(\\"28\\"), html\` <tr title=\\"\${row.name}\\">
+      const scoreIsPresent = stryMutAct_9fa48(\\"37\\") ? isNaN(mutationScore) : (stryCov_9fa48(\\"37\\"), !isNaN(stryMutAct_9fa48(\\"38\\") ? null : (stryCov_9fa48(\\"38\\"), mutationScore)));
+      const coloringClass = this.determineColoringClass(stryMutAct_9fa48(\\"39\\") ? null : (stryCov_9fa48(\\"39\\"), mutationScore));
+      const mutationScoreRounded = mutationScore.toFixed(stryMutAct_9fa48(\\"40\\") ? null : (stryCov_9fa48(\\"40\\"), 2));
+      const progressBarStyle = stryMutAct_9fa48(\\"41\\") ? \`\` : (stryCov_9fa48(\\"41\\"), \`width: \${mutationScore}%\`);
+      return stryMutAct_9fa48(\\"42\\") ? html\`\` : (stryCov_9fa48(\\"42\\"), html\` <tr title=\\"\${row.name}\\">
       <td style=\\"width: 32px;\\" class=\\"icon no-border-right\\"
         >\${row.file ? this.fileIcon : this.directoryIcon}</td
       >
       <td width=\\"\\" class=\\"no-border-left\\"
-        >\${(stryMutAct_9fa48(\\"31\\") ? typeof path !== 'string' : stryMutAct_9fa48(\\"30\\") ? false : stryMutAct_9fa48(\\"29\\") ? true : (stryCov_9fa48(\\"29\\", \\"30\\", \\"31\\"), typeof path === (stryMutAct_9fa48(\\"32\\") ? \\"\\" : (stryCov_9fa48(\\"32\\"), 'string')))) ? stryMutAct_9fa48(\\"33\\") ? html\`\` : (stryCov_9fa48(\\"33\\"), html\`<a href=\\"\${toAbsoluteUrl(path)}\\">\${name}</a>\`) : stryMutAct_9fa48(\\"34\\") ? html\`\` : (stryCov_9fa48(\\"34\\"), html\`<span>\${row.name}</span>\`)}</td
+        >\${(stryMutAct_9fa48(\\"45\\") ? typeof path !== 'string' : stryMutAct_9fa48(\\"44\\") ? false : stryMutAct_9fa48(\\"43\\") ? true : (stryCov_9fa48(\\"43\\", \\"44\\", \\"45\\"), typeof path === (stryMutAct_9fa48(\\"46\\") ? \\"\\" : (stryCov_9fa48(\\"46\\"), 'string')))) ? stryMutAct_9fa48(\\"47\\") ? html\`\` : (stryCov_9fa48(\\"47\\"), html\`<a href=\\"\${toAbsoluteUrl(stryMutAct_9fa48(\\"48\\") ? null : (stryCov_9fa48(\\"48\\"), path))}\\">\${name}</a>\`) : stryMutAct_9fa48(\\"49\\") ? html\`\` : (stryCov_9fa48(\\"49\\"), html\`<span>\${row.name}</span>\`)}</td
       >
       <td class=\\"no-border-right vertical-middle\\">
-        \${scoreIsPresent ? stryMutAct_9fa48(\\"35\\") ? html\`\` : (stryCov_9fa48(\\"35\\"), html\` <div class=\\"progress\\">
+        \${scoreIsPresent ? stryMutAct_9fa48(\\"50\\") ? html\`\` : (stryCov_9fa48(\\"50\\"), html\` <div class=\\"progress\\">
               <div
                 class=\\"progress-bar bg-\${coloringClass}\\"
                 role=\\"progressbar\\"
@@ -217,7 +217,7 @@ export class MutationTestReportTotalsComponent extends LitElement {
               >
                 \${mutationScoreRounded}%
               </div>
-            </div>\`) : stryMutAct_9fa48(\\"36\\") ? html\`\` : (stryCov_9fa48(\\"36\\"), html\` <span class=\\"font-weight-bold text-muted\\">N/A</span> \`)}
+            </div>\`) : stryMutAct_9fa48(\\"51\\") ? html\`\` : (stryCov_9fa48(\\"51\\"), html\` <span class=\\"font-weight-bold text-muted\\">N/A</span> \`)}
       </td>
       <td style=\\"width: 50px;\\" class=\\"no-border-left font-weight-bold text-center text-\${coloringClass}\\">
         \${scoreIsPresent ? mutationScoreRounded : undefined}
@@ -236,44 +236,44 @@ export class MutationTestReportTotalsComponent extends LitElement {
     }
   }
   private determineColoringClass(mutationScore: number) {
-    if (stryMutAct_9fa48(\\"37\\")) {
+    if (stryMutAct_9fa48(\\"52\\")) {
       {}
     } else {
-      stryCov_9fa48(\\"37\\");
-      if (stryMutAct_9fa48(\\"40\\") ? !isNaN(mutationScore) || this.thresholds : stryMutAct_9fa48(\\"39\\") ? false : stryMutAct_9fa48(\\"38\\") ? true : (stryCov_9fa48(\\"38\\", \\"39\\", \\"40\\"), (stryMutAct_9fa48(\\"41\\") ? isNaN(mutationScore) : (stryCov_9fa48(\\"41\\"), !isNaN(mutationScore))) && this.thresholds)) {
-        if (stryMutAct_9fa48(\\"42\\")) {
+      stryCov_9fa48(\\"52\\");
+      if (stryMutAct_9fa48(\\"55\\") ? !isNaN(mutationScore) || this.thresholds : stryMutAct_9fa48(\\"54\\") ? false : stryMutAct_9fa48(\\"53\\") ? true : (stryCov_9fa48(\\"53\\", \\"54\\", \\"55\\"), (stryMutAct_9fa48(\\"56\\") ? isNaN(mutationScore) : (stryCov_9fa48(\\"56\\"), !isNaN(stryMutAct_9fa48(\\"57\\") ? null : (stryCov_9fa48(\\"57\\"), mutationScore)))) && this.thresholds)) {
+        if (stryMutAct_9fa48(\\"58\\")) {
           {}
         } else {
-          stryCov_9fa48(\\"42\\");
-          if (stryMutAct_9fa48(\\"46\\") ? mutationScore >= this.thresholds.low : stryMutAct_9fa48(\\"45\\") ? mutationScore <= this.thresholds.low : stryMutAct_9fa48(\\"44\\") ? false : stryMutAct_9fa48(\\"43\\") ? true : (stryCov_9fa48(\\"43\\", \\"44\\", \\"45\\", \\"46\\"), mutationScore < this.thresholds.low)) {
-            if (stryMutAct_9fa48(\\"47\\")) {
+          stryCov_9fa48(\\"58\\");
+          if (stryMutAct_9fa48(\\"62\\") ? mutationScore >= this.thresholds.low : stryMutAct_9fa48(\\"61\\") ? mutationScore <= this.thresholds.low : stryMutAct_9fa48(\\"60\\") ? false : stryMutAct_9fa48(\\"59\\") ? true : (stryCov_9fa48(\\"59\\", \\"60\\", \\"61\\", \\"62\\"), mutationScore < this.thresholds.low)) {
+            if (stryMutAct_9fa48(\\"63\\")) {
               {}
             } else {
-              stryCov_9fa48(\\"47\\");
-              return stryMutAct_9fa48(\\"48\\") ? \\"\\" : (stryCov_9fa48(\\"48\\"), 'danger');
+              stryCov_9fa48(\\"63\\");
+              return stryMutAct_9fa48(\\"64\\") ? \\"\\" : (stryCov_9fa48(\\"64\\"), 'danger');
             }
-          } else if (stryMutAct_9fa48(\\"52\\") ? mutationScore >= this.thresholds.high : stryMutAct_9fa48(\\"51\\") ? mutationScore <= this.thresholds.high : stryMutAct_9fa48(\\"50\\") ? false : stryMutAct_9fa48(\\"49\\") ? true : (stryCov_9fa48(\\"49\\", \\"50\\", \\"51\\", \\"52\\"), mutationScore < this.thresholds.high)) {
-            if (stryMutAct_9fa48(\\"53\\")) {
+          } else if (stryMutAct_9fa48(\\"68\\") ? mutationScore >= this.thresholds.high : stryMutAct_9fa48(\\"67\\") ? mutationScore <= this.thresholds.high : stryMutAct_9fa48(\\"66\\") ? false : stryMutAct_9fa48(\\"65\\") ? true : (stryCov_9fa48(\\"65\\", \\"66\\", \\"67\\", \\"68\\"), mutationScore < this.thresholds.high)) {
+            if (stryMutAct_9fa48(\\"69\\")) {
               {}
             } else {
-              stryCov_9fa48(\\"53\\");
-              return stryMutAct_9fa48(\\"54\\") ? \\"\\" : (stryCov_9fa48(\\"54\\"), 'warning');
+              stryCov_9fa48(\\"69\\");
+              return stryMutAct_9fa48(\\"70\\") ? \\"\\" : (stryCov_9fa48(\\"70\\"), 'warning');
             }
           } else {
-            if (stryMutAct_9fa48(\\"55\\")) {
+            if (stryMutAct_9fa48(\\"71\\")) {
               {}
             } else {
-              stryCov_9fa48(\\"55\\");
-              return stryMutAct_9fa48(\\"56\\") ? \\"\\" : (stryCov_9fa48(\\"56\\"), 'success');
+              stryCov_9fa48(\\"71\\");
+              return stryMutAct_9fa48(\\"72\\") ? \\"\\" : (stryCov_9fa48(\\"72\\"), 'success');
             }
           }
         }
       } else {
-        if (stryMutAct_9fa48(\\"57\\")) {
+        if (stryMutAct_9fa48(\\"73\\")) {
           {}
         } else {
-          stryCov_9fa48(\\"57\\");
-          return stryMutAct_9fa48(\\"58\\") ? \\"\\" : (stryCov_9fa48(\\"58\\"), 'default');
+          stryCov_9fa48(\\"73\\");
+          return stryMutAct_9fa48(\\"74\\") ? \\"\\" : (stryCov_9fa48(\\"74\\"), 'default');
         }
       }
     }

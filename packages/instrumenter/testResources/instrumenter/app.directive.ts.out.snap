@@ -56,13 +56,13 @@ class StepDetailDirective {}
   selector: '[appDirective]'
 })
 export class AppDirective {
-  normalInput = input(stryMutAct_9fa48(\\"0\\") ? \\"Stryker was here!\\" : (stryCov_9fa48(\\"0\\"), ''), {
+  normalInput = input(stryMutAct_9fa48(\\"1\\") ? \\"Stryker was here!\\" : stryMutAct_9fa48(\\"0\\") ? null : (stryCov_9fa48(\\"0\\", \\"1\\"), ''), {
     alias: 'normal-input'
   });
   requiredInput = input.required<string>({
     alias: 'required-input'
   });
-  normalModel = model(stryMutAct_9fa48(\\"5\\") ? \\"Stryker was here!\\" : (stryCov_9fa48(\\"5\\"), ''), {
+  normalModel = model(stryMutAct_9fa48(\\"11\\") ? \\"Stryker was here!\\" : stryMutAct_9fa48(\\"10\\") ? null : (stryCov_9fa48(\\"10\\", \\"11\\"), ''), {
     alias: 'normal-model'
   });
   requiredModel = model.required<string>({
@@ -71,31 +71,35 @@ export class AppDirective {
   normalOutput = output<string>({
     alias: 'normal-output'
   });
-  inputFalseAlias = input(stryMutAct_9fa48(\\"12\\") ? {} : (stryCov_9fa48(\\"12\\"), {
-    alias: stryMutAct_9fa48(\\"13\\") ? \\"\\" : (stryCov_9fa48(\\"13\\"), 'this-is-actually-the-default-value')
+  inputFalseAlias = input(stryMutAct_9fa48(\\"26\\") ? {
+    alias: null
+  } : stryMutAct_9fa48(\\"25\\") ? {} : stryMutAct_9fa48(\\"24\\") ? null : (stryCov_9fa48(\\"24\\", \\"25\\", \\"26\\"), {
+    alias: stryMutAct_9fa48(\\"27\\") ? \\"\\" : (stryCov_9fa48(\\"27\\"), 'this-is-actually-the-default-value')
   }));
-  modelFalseAlias = model(stryMutAct_9fa48(\\"14\\") ? {} : (stryCov_9fa48(\\"14\\"), {
-    alias: stryMutAct_9fa48(\\"15\\") ? \\"\\" : (stryCov_9fa48(\\"15\\"), 'this-is-actually-the-default-value')
+  modelFalseAlias = model(stryMutAct_9fa48(\\"30\\") ? {
+    alias: null
+  } : stryMutAct_9fa48(\\"29\\") ? {} : stryMutAct_9fa48(\\"28\\") ? null : (stryCov_9fa48(\\"28\\", \\"29\\", \\"30\\"), {
+    alias: stryMutAct_9fa48(\\"31\\") ? \\"\\" : (stryCov_9fa48(\\"31\\"), 'this-is-actually-the-default-value')
   }));
-  readonly contentChildField = contentChild(StepDetailDirective, {
+  readonly contentChildField = contentChild(stryMutAct_9fa48(\\"32\\") ? null : (stryCov_9fa48(\\"32\\"), StepDetailDirective), {
     read: TemplateRef
   });
-  readonly contentChildrenField = contentChildren(StepDetailDirective, {
+  readonly contentChildrenField = contentChildren(stryMutAct_9fa48(\\"36\\") ? null : (stryCov_9fa48(\\"36\\"), StepDetailDirective), {
     read: TemplateRef,
     descendants: true
   });
-  readonly viewChildField = viewChild(stryMutAct_9fa48(\\"20\\") ? \\"\\" : (stryCov_9fa48(\\"20\\"), 'tpl'), {
+  readonly viewChildField = viewChild(stryMutAct_9fa48(\\"44\\") ? \\"\\" : stryMutAct_9fa48(\\"43\\") ? null : (stryCov_9fa48(\\"43\\", \\"44\\"), 'tpl'), {
     read: TemplateRef
   });
-  readonly viewChildrenField = viewChildren(stryMutAct_9fa48(\\"22\\") ? \\"\\" : (stryCov_9fa48(\\"22\\"), 'tpl'), {
+  readonly viewChildrenField = viewChildren(stryMutAct_9fa48(\\"49\\") ? \\"\\" : stryMutAct_9fa48(\\"48\\") ? null : (stryCov_9fa48(\\"48\\", \\"49\\"), 'tpl'), {
     read: TemplateRef
   });
-  readonly contentChildRequiredField = contentChild.required(StepDetailDirective, {
+  readonly contentChildRequiredField = contentChild.required(stryMutAct_9fa48(\\"53\\") ? null : (stryCov_9fa48(\\"53\\"), StepDetailDirective), {
     read: TemplateRef
   });
-  readonly viewChildRequiredField = viewChild.required(stryMutAct_9fa48(\\"25\\") ? \\"\\" : (stryCov_9fa48(\\"25\\"), 'tpl'), {
+  readonly viewChildRequiredField = viewChild.required(stryMutAct_9fa48(\\"58\\") ? \\"\\" : stryMutAct_9fa48(\\"57\\") ? null : (stryCov_9fa48(\\"57\\", \\"58\\"), 'tpl'), {
     read: TemplateRef
   });
-  readonly contentChildNoOptionsField = contentChild(StepDetailDirective);
+  readonly contentChildNoOptionsField = contentChild(stryMutAct_9fa48(\\"62\\") ? null : (stryCov_9fa48(\\"62\\"), StepDetailDirective));
 }"
 `;

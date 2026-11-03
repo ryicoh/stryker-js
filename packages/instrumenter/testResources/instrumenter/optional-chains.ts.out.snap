@@ -49,13 +49,13 @@ function stryMutAct_9fa48(id) {
 }
 const baz = stryMutAct_9fa48(\\"0\\") ? foo?.bar?.()?.[1] && 'qux' : (stryCov_9fa48(\\"0\\"), (stryMutAct_9fa48(\\"3\\") ? foo.bar?.()?.[1] : stryMutAct_9fa48(\\"2\\") ? foo?.bar()?.[1] : stryMutAct_9fa48(\\"1\\") ? foo?.bar?.()[1] : (stryCov_9fa48(\\"1\\", \\"2\\", \\"3\\"), foo?.bar?.()?.[1])) ?? (stryMutAct_9fa48(\\"4\\") ? \\"\\" : (stryCov_9fa48(\\"4\\"), 'qux')));
 stryMutAct_9fa48(\\"5\\") ? qux().map() : (stryCov_9fa48(\\"5\\"), qux()?.map());
-const directiveRanges = stryMutAct_9fa48(\\"6\\") ? comments.map(tryParseTSDirective) : (stryCov_9fa48(\\"6\\"), comments?.map(tryParseTSDirective));
-const qux = quux(stryMutAct_9fa48(\\"7\\") ? corge.cov() : (stryCov_9fa48(\\"7\\"), corge?.cov()));
-stryMutAct_9fa48(\\"8\\") ? input.id!.toString() : (stryCov_9fa48(\\"8\\"), input?.id!.toString());
-stryMutAct_9fa48(\\"9\\") ? bar.baz[0] : (stryCov_9fa48(\\"9\\"), bar?.baz[0]);
-state.stats[stryMutAct_9fa48(\\"10\\") ? organization.organization_id : (stryCov_9fa48(\\"10\\"), organization?.organization_id)] = action.payload.stats;
+const directiveRanges = stryMutAct_9fa48(\\"6\\") ? comments.map(tryParseTSDirective) : (stryCov_9fa48(\\"6\\"), comments?.map(stryMutAct_9fa48(\\"7\\") ? null : (stryCov_9fa48(\\"7\\"), tryParseTSDirective)));
+const qux = quux(stryMutAct_9fa48(\\"9\\") ? corge.cov() : stryMutAct_9fa48(\\"8\\") ? null : (stryCov_9fa48(\\"8\\", \\"9\\"), corge?.cov()));
+stryMutAct_9fa48(\\"10\\") ? input.id!.toString() : (stryCov_9fa48(\\"10\\"), input?.id!.toString());
+stryMutAct_9fa48(\\"11\\") ? bar.baz[0] : (stryCov_9fa48(\\"11\\"), bar?.baz[0]);
+state.stats[stryMutAct_9fa48(\\"12\\") ? organization.organization_id : (stryCov_9fa48(\\"12\\"), organization?.organization_id)] = action.payload.stats;
 
 // https://github.com/stryker-mutator/stryker-js/issues/4741
-stryMutAct_9fa48(\\"11\\") ? delete myVariable[indexer] : (stryCov_9fa48(\\"11\\"), delete myVariable?.[indexer]);
-void (stryMutAct_9fa48(\\"12\\") ? foo() : (stryCov_9fa48(\\"12\\"), foo?.()));"
+stryMutAct_9fa48(\\"13\\") ? delete myVariable[indexer] : (stryCov_9fa48(\\"13\\"), delete myVariable?.[indexer]);
+void (stryMutAct_9fa48(\\"14\\") ? foo() : (stryCov_9fa48(\\"14\\"), foo?.()));"
 `;

@@ -189,7 +189,9 @@ export const transformBabel: AstTransformer<ScriptFormat> = (
    */
   function* mutate(node: NodePath): Iterable<Mutable> {
     for (const mutator of mutators) {
-      for (const replacement of mutator.mutate(node)) {
+      for (const replacement of mutator.mutate(node, {
+        sourceFileName: originFileName,
+      })) {
         yield {
           replacement,
           mutatorName: mutator.name,

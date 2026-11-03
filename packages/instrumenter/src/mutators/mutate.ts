@@ -19,6 +19,7 @@ import { optionalChainingMutator } from './optional-chaining-mutator.js';
 import { assignmentOperatorMutator } from './assignment-operator-mutator.js';
 import { ascDescSwapMutator } from './asc-desc-swap-mutator.js';
 import { comparisonBoundarySwapMutator } from './comparison-boundary-swap-mutator.js';
+import { nullValueMutator } from './null-value-mutator.js';
 
 export const allMutators: NodeMutator[] = [
   arithmeticOperatorMutator,
@@ -32,6 +33,7 @@ export const allMutators: NodeMutator[] = [
   conditionalExpressionMutator,
   equalityOperatorMutator,
   logicalOperatorMutator,
+  nullValueMutator,
   methodExpressionMutator,
   objectLiteralMutator,
   objectPropertyRemovalMutator,

@@ -40,7 +40,23 @@ export function expectJSMutation(
   originalCode: string,
   ...expectedReplacements: string[]
 ): void {
-  const sourceFileName = 'source.js';
+  expectMutation(sut, 'source.js', originalCode, expectedReplacements);
+}
+
+export function expectTSMutation(
+  sut: NodeMutator,
+  originalCode: string,
+  ...expectedReplacements: string[]
+): void {
+  expectMutation(sut, 'source.ts', originalCode, expectedReplacements);
+}
+
+function expectMutation(
+  sut: NodeMutator,
+  sourceFileName: string,
+  originalCode: string,
+  expectedReplacements: string[],
+): void {
   const ast = parse(originalCode, {
     sourceFilename: sourceFileName,
     plugins,
@@ -51,7 +67,7 @@ export function expectJSMutation(
 
   babel.traverse(ast, {
     enter(path) {
-      for (const replacement of sut.mutate(path)) {
+      for (const replacement of sut.mutate(path, { sourceFileName })) {
         const mutatedCode = generate(replacement).code;
         const isRemoval = replacement.type === 'Noop';
         const [cutStart, cutEnd] = isRemoval
@@ -118,7 +134,10 @@ function expandRemovalRange(
     cutEnd = i;
     // Drop the line indentation that introduced the removed property.
     let cutStart = start;
-    while (cutStart > 0 && (source[cutStart - 1] === ' ' || source[cutStart - 1] === '\t')) {
+    while (
+      cutStart > 0 &&
+      (source[cutStart - 1] === ' ' || source[cutStart - 1] === '\t')
+    ) {
       cutStart--;
     }
     return [cutStart, cutEnd];
@@ -138,7 +157,10 @@ function expandRemovalRange(
     // comma (e.g. `{ a: 1, b: 2 }` → `{ a: 1 }`). For multi-line literals strip
     // the trailing whitespace of the previous line so it stays unchanged.
     const cutOriginal = cutStart;
-    while (cutStart > 0 && (source[cutStart - 1] === ' ' || source[cutStart - 1] === '\t')) {
+    while (
+      cutStart > 0 &&
+      (source[cutStart - 1] === ' ' || source[cutStart - 1] === '\t')
+    ) {
       cutStart--;
     }
     if (source[cutStart] === ' ' && source[cutOriginal] === ',') {
