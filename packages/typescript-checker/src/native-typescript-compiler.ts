@@ -57,47 +57,7 @@ export class NativeTypescriptCompiler implements ITypescriptCompiler {
         ensurePrograms: true,
       });
       const programs = this.getPrograms(this.snapshot);
-      for (const program of programs) {
-        for (const fileName of program.getSourceFileNames()) {
-          if (
-            !fileName.endsWith('.d.ts') &&
-            !fileName.includes('/node_modules/')
-          ) {
-            this.nodes.set(fileName, new TSFileNode(fileName, [], []));
-          }
-        }
-      }
-      for (const program of programs) {
-        for (const fileName of program.getSourceFileNames()) {
-          const node = this.nodes.get(fileName);
-          if (!node) continue;
-          const source = program.getSourceFile(fileName);
-          if (!source) continue;
-          const references = source.externalModuleIndicator
-            ? source.imports
-                .filter(isStringLiteralLikeNode)
-                .flatMap((specifier) => {
-                  const resolved = program.getResolvedModuleFromModuleSpecifier(
-                    specifier,
-                    fileName,
-                  );
-                  return resolved ? [resolved.resolvedFileName] : [];
-                })
-                .concat(
-                  source.referencedFiles.map((reference) =>
-                    path.resolve(path.dirname(fileName), reference.fileName),
-                  ),
-                )
-            : [...this.nodes.keys()];
-          for (const reference of references) {
-            const child = this.nodes.get(toPosixFileName(reference));
-            if (child && child !== node && !node.children.includes(child)) {
-              node.children.push(child);
-              child.parents.push(node);
-            }
-          }
-        }
-      }
+      this.createFileGraph(programs, isStringLiteralLikeNode);
       this.log.debug(
         'Initialized native TypeScript checker with %s source files',
         this.nodes.size,
@@ -154,6 +114,53 @@ export class NativeTypescriptCompiler implements ITypescriptCompiler {
     this.snapshot = undefined;
     this.api = undefined;
     api?.close();
+  }
+
+  private createFileGraph(
+    programs: Program[],
+    isStringLiteralLikeNode: typeof import('@typescript/native/ast').isStringLiteralLikeNode,
+  ): void {
+    for (const program of programs) {
+      for (const fileName of program.getSourceFileNames()) {
+        if (
+          !fileName.endsWith('.d.ts') &&
+          !fileName.includes('/node_modules/')
+        ) {
+          this.nodes.set(fileName, new TSFileNode(fileName, [], []));
+        }
+      }
+    }
+    for (const program of programs) {
+      for (const fileName of program.getSourceFileNames()) {
+        const node = this.nodes.get(fileName);
+        if (!node) continue;
+        const source = program.getSourceFile(fileName);
+        if (!source) continue;
+        const references = source.externalModuleIndicator
+          ? source.imports
+              .filter(isStringLiteralLikeNode)
+              .flatMap((specifier) => {
+                const resolved = program.getResolvedModuleFromModuleSpecifier(
+                  specifier,
+                  fileName,
+                );
+                return resolved ? [resolved.resolvedFileName] : [];
+              })
+              .concat(
+                source.referencedFiles.map((reference) =>
+                  path.resolve(path.dirname(fileName), reference.fileName),
+                ),
+              )
+          : [...this.nodes.keys()];
+        for (const reference of references) {
+          const child = this.nodes.get(toPosixFileName(reference));
+          if (child && child !== node && !node.children.includes(child)) {
+            node.children.push(child);
+            child.parents.push(node);
+          }
+        }
+      }
+    }
   }
 
   private getPrograms(snapshot: Snapshot): Program[] {
