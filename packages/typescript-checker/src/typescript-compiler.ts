@@ -22,6 +22,7 @@ export interface ITypescriptCompiler {
   readonly nodes: Map<string, TSFileNode>;
   init(): Promise<ts.Diagnostic[]>;
   check(mutants: Mutant[]): Promise<ts.Diagnostic[]>;
+  dispose?(): void;
 }
 
 export type SourceFiles = Map<
