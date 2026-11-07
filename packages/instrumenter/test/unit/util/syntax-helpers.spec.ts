@@ -15,8 +15,24 @@ describe('syntax-helpers', () => {
   describe('isTypeNode', () => {
     it('should identify type assertions ("as")', () => {
       const input = findNodePath(
+        parseTS('const foo = { bar: "baz" } as Foo'),
+        (p) => p.isTSAsExpression(),
+      );
+      expect(syntaxHelpers.isTypeNode(input)).true;
+    });
+
+    it('should be false for const assertions ("as const"), so that their expression is mutated', () => {
+      const input = findNodePath(
         parseTS('const foo = { bar: "baz" } as const'),
         (p) => p.isTSAsExpression(),
+      );
+      expect(syntaxHelpers.isTypeNode(input)).false;
+    });
+
+    it('should identify the "const" of a const assertion', () => {
+      const input = findNodePath(
+        parseTS('const foo = { bar: "baz" } as const'),
+        (p) => p.isTSTypeReference(),
       );
       expect(syntaxHelpers.isTypeNode(input)).true;
     });
