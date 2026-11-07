@@ -161,9 +161,38 @@ export function isTypeNode(path: babel.NodePath): boolean {
   return (
     path.isTypeAnnotation() ||
     flowTypeAnnotationNodeTypes.includes(path.node.type) ||
-    tsTypeAnnotationNodeTypes.includes(path.node.type) ||
+    (tsTypeAnnotationNodeTypes.includes(path.node.type) &&
+      !isConstAssertion(path)) ||
+    isConstAssertionType(path) ||
     isDeclareVariableStatement(path) ||
     isDeclareModule(path)
+  );
+}
+
+/**
+ * Determines whether or not it is a const assertion, whose expression is a runtime value.
+ * @example
+ * const foo = { bar: 'baz' } as const;
+ */
+function isConstAssertion(path: babel.NodePath): boolean {
+  return (
+    path.isTSAsExpression() &&
+    babel.types.isTSTypeReference(path.node.typeAnnotation) &&
+    babel.types.isIdentifier(path.node.typeAnnotation.typeName, {
+      name: 'const',
+    })
+  );
+}
+
+/**
+ * Determines whether or not it is the `const` of a const assertion.
+ * @example
+ * const foo = { bar: 'baz' } as const;
+ */
+function isConstAssertionType(path: babel.NodePath): boolean {
+  return (
+    path.key === 'typeAnnotation' &&
+    path.parentPath?.isTSAsExpression() === true
   );
 }
 

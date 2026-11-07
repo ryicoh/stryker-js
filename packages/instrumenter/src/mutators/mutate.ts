@@ -3,6 +3,7 @@ import { NodeMutator } from './node-mutator.js';
 import { blockStatementMutator } from './block-statement-mutator.js';
 import { conditionalExpressionMutator } from './conditional-expression-mutator.js';
 import { stringLiteralMutator } from './string-literal-mutator.js';
+import { stringFilterSwapMutator } from './string-filter-swap-mutator.js';
 import { arrayElementRemovalMutator } from './array-element-removal-mutator.js';
 import { arrayDeclarationMutator } from './array-declaration-mutator.js';
 import { arrowFunctionMutator } from './arrow-function-mutator.js';
@@ -19,6 +20,7 @@ import { optionalChainingMutator } from './optional-chaining-mutator.js';
 import { assignmentOperatorMutator } from './assignment-operator-mutator.js';
 import { ascDescSwapMutator } from './asc-desc-swap-mutator.js';
 import { comparisonBoundarySwapMutator } from './comparison-boundary-swap-mutator.js';
+import { nullFilterSwapMutator } from './null-filter-swap-mutator.js';
 import { nullValueMutator } from './null-value-mutator.js';
 
 export const allMutators: NodeMutator[] = [
@@ -33,10 +35,12 @@ export const allMutators: NodeMutator[] = [
   conditionalExpressionMutator,
   equalityOperatorMutator,
   logicalOperatorMutator,
+  nullFilterSwapMutator,
   nullValueMutator,
   methodExpressionMutator,
   objectLiteralMutator,
   objectPropertyRemovalMutator,
+  stringFilterSwapMutator,
   stringLiteralMutator,
   unaryOperatorMutator,
   updateOperatorMutator,
