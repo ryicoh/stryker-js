@@ -3,6 +3,7 @@ import { NodeMutator } from './node-mutator.js';
 import { blockStatementMutator } from './block-statement-mutator.js';
 import { conditionalExpressionMutator } from './conditional-expression-mutator.js';
 import { stringLiteralMutator } from './string-literal-mutator.js';
+import { stringFilterSwapMutator } from './string-filter-swap-mutator.js';
 import { arrayElementRemovalMutator } from './array-element-removal-mutator.js';
 import { arrayDeclarationMutator } from './array-declaration-mutator.js';
 import { arrowFunctionMutator } from './arrow-function-mutator.js';
@@ -37,6 +38,7 @@ export const allMutators: NodeMutator[] = [
   methodExpressionMutator,
   objectLiteralMutator,
   objectPropertyRemovalMutator,
+  stringFilterSwapMutator,
   stringLiteralMutator,
   unaryOperatorMutator,
   updateOperatorMutator,
